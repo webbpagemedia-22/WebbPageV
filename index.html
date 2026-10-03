@@ -136,6 +136,10 @@
   .band p { max-width: 60ch; }
   .band-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px clamp(28px, 5vw, 64px); align-items: start; }
 
+  /* Who we've worked with: plain name tiles, no logos */
+  .names { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .names li { border: 1px solid var(--line); border-radius: 6px; background: var(--surface); padding: 20px 18px; min-height: 84px; display: flex; align-items: center; font-family: var(--display); font-weight: 700; font-size: 1.15rem; line-height: 1.2; min-width: 0; }
+
   /* About */
   .people { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px clamp(24px, 4vw, 56px); }
   .person { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 18px; align-items: start; }
@@ -175,6 +179,7 @@
     <nav class="site-nav" aria-label="Main">
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
+      <a href="#experience">Experience</a>
       <a href="#about">About us</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -312,10 +317,28 @@
         <h2 id="proof-h">Our own businesses run this way.</h2>
       </div>
       <div class="stack">
-        <p>We run WebbPageMedia, a wedding photography and film business, and Forest Hounds, a dog walking service in the Forest of Dean.</p>
+        <p>We run WebbPageMedia, a photography and film business, and Forest Hounds, a dog walking service in the Forest of Dean.</p>
         <p>Both use the same setup we build for clients. Enquiries are sorted and replies drafted before breakfast, and social posts are written and waiting for approval. We only recommend what we rely on every day.</p>
       </div>
     </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head">
+      <p class="eyebrow">Experience</p>
+      <h2>Who we've worked with.</h2>
+      <p class="lede">Organisations David and Rosy have worked with and for over their careers, before starting Webb Page Ventura.</p>
+    </div>
+    <ul class="names">
+      <li>RBS Insurance</li>
+      <li>Green Flag</li>
+      <li>MAPFRE</li>
+      <li>ERGO Group</li>
+      <li>Grupo Cursach</li>
+      <li>DELTA Group</li>
+      <li>Bristol City Council</li>
+      <li>The Speech House</li>
+    </ul>
   </section>
 
   <section id="about">
