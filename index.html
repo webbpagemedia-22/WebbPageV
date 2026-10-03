@@ -138,7 +138,8 @@
 
   /* Who we've worked with: plain name tiles, no logos */
   .names { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
-  .names li { border: 1px solid var(--line); border-radius: 6px; background: var(--surface); padding: 20px 18px; min-height: 84px; display: flex; align-items: center; font-family: var(--display); font-weight: 700; font-size: 1.15rem; line-height: 1.2; min-width: 0; }
+  .names li { border: 1px solid var(--line); border-radius: 6px; background: var(--surface); padding: 20px 18px; min-height: 84px; display: flex; flex-direction: column; justify-content: space-between; gap: 14px; font-family: var(--display); font-weight: 700; font-size: 1.15rem; line-height: 1.2; min-width: 0; }
+  .names img { display: block; height: 64px; width: auto; max-width: 100%; object-fit: contain; border-radius: 4px; }
 
   /* About */
   .people { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px clamp(24px, 4vw, 56px); }
@@ -330,14 +331,14 @@
       <p class="lede">Organisations David and Rosy have worked with and for over their careers, before starting Webb Page Ventura.</p>
     </div>
     <ul class="names">
-      <li>RBS Insurance</li>
+      <li>RBS Insurance<img src="images/logos/rbs.png" width="485" height="152" loading="lazy" alt=""></li>
       <li>Green Flag</li>
-      <li>MAPFRE</li>
-      <li>ERGO Group</li>
-      <li>Grupo Cursach</li>
-      <li>DELTA Group</li>
-      <li>Bristol City Council</li>
-      <li>The Speech House</li>
+      <li>MAPFRE<img src="images/logos/mapfre.jpg" width="492" height="127" loading="lazy" alt=""></li>
+      <li>ERGO Group<img src="images/logos/ergo.png" width="240" height="240" loading="lazy" alt=""></li>
+      <li>Grupo Cursach<img src="images/logos/grupo-cursach.png" width="158" height="170" loading="lazy" alt=""></li>
+      <li>Pryzm (Deltic Group)<img src="images/logos/pryzm.jpg" width="240" height="240" loading="lazy" alt=""></li>
+      <li>Bristol City Council<img src="images/logos/bristol-city-council.png" width="223" height="226" loading="lazy" alt=""></li>
+      <li>The Speech House<img src="images/logos/speech-house.png" width="240" height="240" loading="lazy" alt=""></li>
     </ul>
   </section>
 
