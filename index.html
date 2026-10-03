@@ -18,18 +18,22 @@
 <style>
   /* Layout: left-aligned, one column of plain talk. The hero pairs the promise with the
      thing we actually deliver each morning (a report on the desk). Services are ruled rows,
-     not cards. One green band for proof, one for contact. */
+     not cards. One deep-blue band for proof, one for contact.
+     Palette: Blue Sapphire and All Aboard (deep blues), Lavender Blue (lines, page tint),
+     Pastel Blue (soft glow), Desert Sun (sunset highlight). */
   :root {
-    --bg: #E9EBDD;          /* pale lichen */
-    --surface: #F5F6EA;     /* paper */
-    --ink: #1E2A1C;         /* dark moss */
-    --muted: #55604F;
-    --line: #C7CCB4;
-    --accent: #2E5B39;      /* forest green */
-    --on-accent: #F5F6EA;
-    --ochre: #B97A12;       /* highlight */
-    --ochre-soft: #F0DFB4;
-    --shadow: 30 42 28;
+    --bg: #EEF0F8;          /* lavender-tinted evening */
+    --surface: #F8F9FD;
+    --ink: #13233A;         /* deep night blue */
+    --muted: #4A5870;
+    --line: #C5CBE1;        /* Lavender Blue */
+    --accent: #126180;      /* Blue Sapphire */
+    --deep: #1D4B73;        /* All Aboard */
+    --on-accent: #F8F9FD;
+    --ochre: #C9652E;       /* Desert Sun */
+    --ochre-soft: #F6D5BF;  /* sunset glow */
+    --pastel: #AEC6CF;      /* Pastel Blue */
+    --shadow: 19 35 58;
 
     --display: "Bricolage Grotesque", "Trebuchet MS", "Segoe UI", sans-serif;
     --body: "Instrument Sans", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -37,14 +41,16 @@
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #131913; --surface: #1C241C; --ink: #E6EAD8; --muted: #A2AC97; --line: #303B2F;
-      --accent: #8DC198; --on-accent: #131913; --ochre: #E2AC42; --ochre-soft: #3A3018;
+      --bg: #0E1726; --surface: #16223A; --ink: #E6EAF5; --muted: #A3AEC6; --line: #2A3854;
+      --accent: #7FB8D4; --deep: #AEC6CF; --on-accent: #0E1726; --ochre: #F0995F; --ochre-soft: #4A2E1F;
+      --pastel: #23384A;
       --shadow: 0 0 0; color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #131913; --surface: #1C241C; --ink: #E6EAD8; --muted: #A2AC97; --line: #303B2F;
-    --accent: #8DC198; --on-accent: #131913; --ochre: #E2AC42; --ochre-soft: #3A3018;
+    --bg: #0E1726; --surface: #16223A; --ink: #E6EAF5; --muted: #A3AEC6; --line: #2A3854;
+    --accent: #7FB8D4; --deep: #AEC6CF; --on-accent: #0E1726; --ochre: #F0995F; --ochre-soft: #4A2E1F;
+    --pastel: #23384A;
     --shadow: 0 0 0; color-scheme: dark;
   }
 
@@ -98,7 +104,7 @@
   }
   .report-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding-bottom: 12px; border-bottom: 1px dashed var(--line); }
   .report-head strong { font-weight: 500; }
-  .tag { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; background: var(--ochre-soft); color: var(--ink); padding: 2px 8px; border-radius: 3px; }
+  .tag { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; background: var(--pastel); color: var(--ink); padding: 2px 8px; border-radius: 3px; }
   .report dl { margin: 14px 0 0; display: flex; flex-direction: column; gap: 14px; }
   .report dt { color: var(--muted); font-size: 0.76rem; letter-spacing: 0.08em; text-transform: uppercase; }
   .report dd { margin: 2px 0 0; }
@@ -125,7 +131,7 @@
   .steps p { color: var(--muted); font-size: 1rem; }
 
   /* Green bands */
-  .band { background: var(--accent); color: var(--on-accent); border-radius: 10px; padding: clamp(28px, 5vw, 56px); }
+  .band { background: linear-gradient(135deg, var(--accent), var(--deep)); color: var(--on-accent); border-radius: 10px; padding: clamp(28px, 5vw, 56px); }
   .band .eyebrow { color: var(--on-accent); opacity: 0.8; }
   .band p { max-width: 60ch; }
   .band-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px clamp(28px, 5vw, 64px); align-items: start; }
