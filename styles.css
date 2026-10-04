@@ -1,20 +1,19 @@
   /* Layout: left-aligned, one column of plain talk. The hero pairs the promise with the
      thing we actually deliver each morning (a report on the desk). Services are ruled rows,
      not cards. One deep-blue band for proof, one for contact.
-     Palette: Blue Sapphire and All Aboard (deep blues), Lavender Blue (lines, page tint),
-     Pastel Blue (soft glow), Desert Sun (sunset highlight). */
+     Palette: lavender-blue page and lines; highlights in the logo's leaf greens and gold. */
   :root {
     --bg: #EEF0F8;          /* lavender-tinted evening */
     --surface: #F8F9FD;
     --ink: #13233A;         /* deep night blue */
     --muted: #4A5870;
     --line: #C5CBE1;        /* Lavender Blue */
-    --accent: #126180;      /* Blue Sapphire */
-    --deep: #1D4B73;        /* All Aboard */
+    --accent: #2E5B39;      /* logo dark leaf */
+    --deep: #234630;        /* deeper leaf, band gradient */
     --on-accent: #F8F9FD;
-    --ochre: #C9652E;       /* Desert Sun */
-    --ochre-soft: #F6D5BF;  /* sunset glow */
-    --pastel: #AEC6CF;      /* Pastel Blue */
+    --ochre: #A8720F;       /* logo gold, darkened for contrast */
+    --ochre-soft: #F2E1B5;  /* pale gold */
+    --pastel: #CFE3D3;      /* pale leaf green */
     --shadow: 19 35 58;
 
     --display: "Bricolage Grotesque", "Trebuchet MS", "Segoe UI", sans-serif;
@@ -24,15 +23,15 @@
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --bg: #0E1726; --surface: #16223A; --ink: #E6EAF5; --muted: #A3AEC6; --line: #2A3854;
-      --accent: #7FB8D4; --deep: #AEC6CF; --on-accent: #0E1726; --ochre: #F0995F; --ochre-soft: #4A2E1F;
-      --pastel: #23384A;
+      --accent: #8CC79A; --deep: #5C9A69; --on-accent: #0E1726; --ochre: #E2AC42; --ochre-soft: #3A3018;
+      --pastel: #1E3A2A;
       --shadow: 0 0 0; color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
     --bg: #0E1726; --surface: #16223A; --ink: #E6EAF5; --muted: #A3AEC6; --line: #2A3854;
-    --accent: #7FB8D4; --deep: #AEC6CF; --on-accent: #0E1726; --ochre: #F0995F; --ochre-soft: #4A2E1F;
-    --pastel: #23384A;
+    --accent: #8CC79A; --deep: #5C9A69; --on-accent: #0E1726; --ochre: #E2AC42; --ochre-soft: #3A3018;
+    --pastel: #1E3A2A;
     --shadow: 0 0 0; color-scheme: dark;
   }
 
@@ -57,8 +56,8 @@
   /* Header */
   header.site { padding-block: 22px; }
   .site-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 28px; }
-  .wordmark { font-family: var(--display); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.02em; text-decoration: none; }
-  .wordmark span { color: var(--accent); }
+  .wordmark { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.02em; text-decoration: none; }
+  .wordmark-text span { color: var(--accent); }
   nav.site-nav { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 0.98rem; }
   nav.site-nav a { text-decoration: none; padding-block: 4px; border-bottom: 2px solid transparent; }
   nav.site-nav a:hover { border-bottom-color: var(--ochre); }
@@ -166,3 +165,4 @@
   .service-summary p { color: var(--muted); font-size: 1rem; }
   .portrait { display: block; width: 112px; height: 112px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent); }
   @media (max-width: 480px) { .person { grid-template-columns: 84px minmax(0, 1fr); } .portrait { width: 84px; height: 84px; } }
+  .logo-mark { display: block; height: 38px; width: auto; }
