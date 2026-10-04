@@ -125,7 +125,7 @@
 
   /* About */
   .people { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px clamp(24px, 4vw, 56px); }
-  .person { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 18px; align-items: start; }
+  .person { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 18px; align-items: start; }
   .mono-badge { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--accent); display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 1.25rem; color: var(--accent); }
   .person p { color: var(--muted); font-size: 1rem; }
 
@@ -164,3 +164,5 @@
   .service-summary li { border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
   .service-summary h3 { font-size: 1.3rem; }
   .service-summary p { color: var(--muted); font-size: 1rem; }
+  .portrait { display: block; width: 112px; height: 112px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent); }
+  @media (max-width: 480px) { .person { grid-template-columns: 84px minmax(0, 1fr); } .portrait { width: 84px; height: 84px; } }
