@@ -158,3 +158,9 @@
   .more-link { margin-top: clamp(20px, 3vw, 28px); }
   .band .btn { background: var(--on-accent); color: var(--accent); }
   nav.site-nav a[aria-current] { border-bottom-color: var(--ochre); }
+
+  /* Home page: services at a glance */
+  .service-summary { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px clamp(24px, 4vw, 48px); }
+  .service-summary li { border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .service-summary h3 { font-size: 1.3rem; }
+  .service-summary p { color: var(--muted); font-size: 1rem; }
