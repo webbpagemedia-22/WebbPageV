@@ -57,8 +57,8 @@
   /* Header */
   header.site { padding-block: 22px; }
   .site-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 28px; }
-  .wordmark { font-family: var(--display); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.02em; text-decoration: none; }
-  .wordmark span { color: var(--accent); }
+  .wordmark { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.02em; text-decoration: none; }
+  .wordmark-text span { color: var(--accent); }
   nav.site-nav { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 0.98rem; }
   nav.site-nav a { text-decoration: none; padding-block: 4px; border-bottom: 2px solid transparent; }
   nav.site-nav a:hover { border-bottom-color: var(--ochre); }
@@ -166,3 +166,4 @@
   .service-summary p { color: var(--muted); font-size: 1rem; }
   .portrait { display: block; width: 112px; height: 112px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent); }
   @media (max-width: 480px) { .person { grid-template-columns: 84px minmax(0, 1fr); } .portrait { width: 84px; height: 84px; } }
+  .logo-mark { display: block; height: 38px; width: auto; }
