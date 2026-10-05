@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Christmas Kitchen · Secret Forest Kitchen</title>
+<meta name="description" content="A Boxing Day feast at a secret spot in the Forest of Dean. £400 a table of four, children under 12 free.">
+<meta property="og:title" content="The Christmas Kitchen · Secret Forest Kitchen">
+<meta property="og:description" content="A Boxing Day feast at a secret spot in the Forest of Dean. Saturday 26 December 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1611'/%3E%3Cpath d='M32 10L16 34h9L14 50h36L39 34h9z' fill='%23e8a948'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Karla:wght@400;500;700&family=Noto+Sans+Gurmukhi:wght@500&display=swap">
+<style>
+/* Layout: one long night walk — canvas forest hero, a menu "clearing", then the booking lantern-box. Deliberately single dark theme (night in the woods). */
+:root{
+  --night:#0d1611;        /* page ground: forest at night */
+  --moss:#16241b;         /* raised surfaces */
+  --bark:#2a3a2e;         /* borders, rules */
+  --fern:#8fae8b;         /* muted secondary text */
+  --mist:#e7ebe1;         /* main text */
+  --lantern:#e8a948;      /* accent: lantern glow */
+  --holly:#c4473a;        /* errors, Christmas red */
+  --river:#6f9fa8;        /* water, links */
+  --display:"IM Fell English SC","IM Fell English",Georgia,serif;
+  --serif:"IM Fell English",Georgia,serif;
+  --body:"Karla",system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--night);color:var(--mist);font-family:var(--body);font-size:1.0625rem;line-height:1.6;margin:0}
+a{color:var(--river)}
+:focus-visible{outline:2px solid var(--lantern);outline-offset:3px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;min-height:560px;display:flex;align-items:flex-end;border-bottom:1px solid var(--bark)}
+#forest{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-inner{position:relative;width:100%;max-width:1080px;margin:0 auto;padding:120px 20px 56px}
+.eyebrow{font-family:var(--body);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--lantern);margin:0 0 14px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.8rem,8vw,5.6rem);line-height:.95;margin:0;text-wrap:balance;text-shadow:0 2px 30px rgba(0,0,0,.6)}
+h1 em{font-family:var(--serif);font-style:italic;color:var(--lantern)}
+.lede{max-width:34rem;font-size:1.15rem;color:var(--mist);margin:20px 0 28px;text-shadow:0 1px 12px rgba(0,0,0,.8)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin:0 0 30px;padding:0;list-style:none;font-size:.95rem}
+.facts li{display:flex;gap:8px;align-items:baseline}
+.facts b{font-weight:700;color:var(--lantern);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--lantern);color:#1a1206;font-family:var(--body);font-weight:700;font-size:1rem;border:0;border-radius:3px;padding:14px 24px;cursor:pointer;text-decoration:none;box-shadow:0 0 0 0 rgba(232,169,72,.5);transition:box-shadow .3s,transform .2s}
+.btn:hover{box-shadow:0 0 28px 4px rgba(232,169,72,.35);transform:translateY(-1px)}
+.btn[disabled]{opacity:.5;cursor:not-allowed;box-shadow:none;transform:none}
+.btn.ghost{background:transparent;color:var(--mist);border:1px solid var(--bark)}
+
+main{max-width:1080px;margin:0 auto;padding-inline:20px}
+section{padding-block:72px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(2rem,5vw,3rem);line-height:1.05;margin:0 0 12px;text-wrap:balance}
+.sub{color:var(--fern);max-width:38rem;margin:0}
+
+/* Premise */
+.premise{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:36px;border-bottom:1px solid var(--bark)}
+.premise div{min-width:0}
+.premise h3{font-family:var(--serif);font-style:italic;font-weight:400;font-size:1.45rem;color:var(--lantern);margin:0 0 6px}
+.premise p{margin:0;color:var(--mist);opacity:.88}
+
+/* Menu */
+.menu-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:36px}
+.dishes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:2px;background:var(--bark);border:1px solid var(--bark)}
+.dish{background:var(--moss);padding:34px 30px;min-width:0;position:relative}
+.course{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fern);margin:0 0 14px}
+.dish h3{font-family:var(--display);font-weight:400;font-size:2rem;line-height:1.05;margin:0}
+.gurmukhi{font-family:"Noto Sans Gurmukhi",var(--body);color:var(--lantern);font-size:1.15rem;margin:8px 0 2px}
+.translit{font-family:var(--serif);font-style:italic;color:var(--fern);margin:0 0 16px}
+.dish p.desc{margin:0;max-width:34rem}
+.dish .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+.dish .tags li{font-size:.78rem;border:1px solid var(--bark);border-radius:99px;padding:3px 11px;color:var(--fern)}
+.menu-note{color:var(--fern);font-size:.95rem;margin:18px 0 0}
+
+/* Booking */
+.booking{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:48px;align-items:start;border-top:1px solid var(--bark)}
+@media (max-width:820px){.booking{grid-template-columns:1fr}}
+.sittings{display:grid;gap:14px;margin:28px 0 0}
+.sitting{border:1px solid var(--bark);border-radius:3px;padding:16px 18px;background:var(--moss)}
+.sitting-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.sitting strong{font-family:var(--serif);font-size:1.3rem;font-weight:400}
+.left{font-variant-numeric:tabular-nums;font-size:.9rem;color:var(--fern)}
+.left.low{color:var(--lantern)}
+.left.full{color:var(--holly)}
+.bar{height:4px;background:var(--bark);border-radius:2px;margin-top:10px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--lantern);width:0;transition:width .6s ease}
+.small{font-size:.88rem;color:var(--fern)}
+
+form, .panel{background:var(--moss);border:1px solid var(--bark);border-radius:4px;padding:30px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:520px){.row{grid-template-columns:1fr}form,.panel{padding:22px}}
+.field{display:grid;gap:6px;margin-bottom:18px;min-width:0}
+label,.legend{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fern);font-weight:700}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;color:var(--mist);background:var(--night);border:1px solid var(--bark);border-radius:3px;padding:11px 12px}
+input:focus,select:focus,textarea:focus{border-color:var(--lantern);outline:none}
+textarea{min-height:84px;resize:vertical}
+fieldset{border:0;padding:0;margin:0 0 18px;min-width:0}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.choice label{display:block;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400;color:var(--mist);font-size:1rem;border:1px solid var(--bark);border-radius:3px;padding:12px 14px;background:var(--night)}
+.choice input{position:absolute;opacity:0;width:1px;height:1px}
+.choice input:checked+span{color:var(--lantern)}
+.choice label:has(input:checked){border-color:var(--lantern);box-shadow:inset 0 0 0 1px var(--lantern)}
+.choice label:has(input:disabled){opacity:.45;cursor:not-allowed}
+.choice label:has(input:focus-visible){outline:2px solid var(--lantern);outline-offset:2px}
+.choice small{display:block;color:var(--fern);font-size:.82rem}
+.total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed var(--bark);padding-top:16px;margin:4px 0 20px;font-variant-numeric:tabular-nums}
+.total b{font-family:var(--serif);font-size:1.6rem;font-weight:400;color:var(--lantern)}
+.msg{margin:14px 0 0;font-size:.95rem}
+.msg.err{color:var(--holly)}
+.notice{border-left:3px solid var(--lantern);padding:10px 14px;background:var(--night);color:var(--mist);font-size:.95rem;margin:0 0 20px}
+.ticket{border:1px dashed var(--lantern);border-radius:4px;padding:22px;margin-bottom:18px}
+.ticket .ref{font-family:ui-monospace,Menlo,monospace;letter-spacing:.12em;color:var(--lantern);font-size:1.2rem}
+.ticket dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:14px 0 0}
+.ticket dt{color:var(--fern);font-size:.85rem}
+.ticket dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+
+/* Host list */
+.host{border-top:1px solid var(--bark)}
+.host-stats{display:flex;flex-wrap:wrap;gap:28px;margin:18px 0 22px;font-variant-numeric:tabular-nums}
+.host-stats div b{display:block;font-family:var(--serif);font-weight:400;font-size:2rem;color:var(--lantern)}
+.tablewrap{overflow-x:auto;border:1px solid var(--bark);border-radius:4px}
+table{border-collapse:collapse;width:100%;min-width:680px;font-size:.92rem}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--bark);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fern);background:var(--moss)}
+td.num{font-variant-numeric:tabular-nums}
+
+footer{border-top:1px solid var(--bark);padding:36px 20px 48px;text-align:center;color:var(--fern);font-size:.9rem}
+footer .mark{font-family:var(--display);font-size:1.4rem;color:var(--mist);display:block;margin-bottom:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.price-list{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px}
+.price-list li{display:flex;justify-content:space-between;gap:16px;border-bottom:1px dashed var(--bark);padding-bottom:10px}
+.price-list li span:last-child{font-variant-numeric:tabular-nums;color:var(--lantern);white-space:nowrap}
+.btn.big{font-size:1.1rem;padding:16px 28px}
+.soldout{color:var(--holly);font-weight:700}
+.demo-flag{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--night);background:var(--river);border-radius:2px;padding:5px 10px;margin:0 0 14px}
+.steps{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 22px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern)}
+.steps .on{color:var(--lantern);font-weight:700}
+.summary{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0 0 18px}
+.summary dt{color:var(--fern);font-size:.85rem}.summary dd{margin:0;min-width:0;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<header class="hero">
+  <canvas id="forest" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow">Secret Forest Kitchen · Forest of Dean</p>
+    <h1>The Christmas<br><em>Kitchen</em></h1>
+    <p class="lede">One long table under the oaks, lanterns in the branches and the sound of the brook nearby. A Boxing Day feast cooked over fire at a secret spot in the forest.</p>
+    <ul class="facts">
+      <li><b>Date</b> Saturday 26 December 2026</li>
+      <li><b>Where</b> A secret clearing, revealed to guests</li>
+      <li><b>Per table</b> £400 for 4, children free</li>
+    </ul>
+    <a class="btn" href="#book">Reserve your place</a>
+  </div>
+</header>
+
+<main>
+  <section class="premise" aria-label="How it works">
+    <div>
+      <h3>You book a table</h3>
+      <p>Reserve a table for four and we'll email you an invoice. Bring up to two children under 12 at no extra cost. There's one sitting and only ten tables.</p>
+    </div>
+    <div>
+      <h3>We send directions</h3>
+      <p>The location stays secret until the week of the event. Guests get a map pin and parking notes by email.</p>
+    </div>
+    <div>
+      <h3>You eat in the woods</h3>
+      <p>Wrap up warm. There's a fire, blankets, hot drinks, and food carried straight from the pot to the table.</p>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="menu-head">
+      <div>
+        <h2>The Boxing Day menu</h2>
+        <p class="sub">The best part of Christmas is the leftovers. Two family dishes, cooked properly.</p>
+      </div>
+    </div>
+    <div class="dishes">
+      <article class="dish">
+        <p class="course">From the Punjabi pot</p>
+        <h3>Turkey Tari Wala</h3>
+        <p class="gurmukhi" lang="pa">ਤਰੀ ਵਾਲਾ ਟਰਕੀ</p>
+        <p class="translit">"tari wala" · home-style turkey in a rich gravy</p>
+        <p class="desc">Christmas turkey slow-cooked Punjabi style: onions browned low and slow, ginger, garlic, green chilli and garam masala, finished in a loose, spiced gravy for mopping up. Served with rice and warm rotis.</p>
+        <ul class="tags"><li>Spiced, not fierce</li><li>Rice &amp; roti</li></ul>
+      </article>
+      <article class="dish">
+        <p class="course">From Grandma James' kitchen</p>
+        <h3>Bubble &amp; Squeak with Wild Boar Sausages</h3>
+        <p class="translit">Grandma James' recipe</p>
+        <p class="desc">Crisp-edged cakes of Christmas potatoes, sprouts and cabbage, fried in the pan until they bubble and squeak. Topped with fat boar sausages and a proper onion gravy.</p>
+        <ul class="tags"><li>Boar sausages</li><li>Onion gravy</li></ul>
+      </article>
+    </div>
+    <p class="menu-note">Tell us about allergies or dietary needs when you book and we'll be in touch.</p>
+  </section>
+
+  <section class="booking" id="book">
+    <div>
+      <h2>Book a table</h2>
+      <p class="sub">One sitting on Boxing Day, ten tables in the clearing. Each table seats four adults, and up to two children under 12 can join for free.</p>
+      <div class="sittings">
+        <div class="sitting">
+          <div class="sitting-top"><strong>Boxing Day sitting</strong><span class="left" id="leftText">10 tables</span></div>
+          <div class="small">Saturday 26 December 2026 · one sitting</div>
+          <div class="bar"><i id="leftBar"></i></div>
+        </div>
+      </div>
+      <ul class="price-list" style="margin-top:22px">
+        <li><span>Table for four adults</span><span>£400</span></li>
+        <li><span>Up to two children under 12</span><span>Free</span></li>
+      </ul>
+      <p class="small">The exact location is shared with confirmed guests only.</p>
+    </div>
+
+    <div>
+      <p class="demo-flag">Prototype · no booking is stored and no email is sent</p>
+
+      <form id="bookForm" novalidate>
+        <div class="steps" aria-hidden="true"><span class="on">1 Your details</span><span>2 Booked</span></div>
+        <div class="row">
+          <div class="field"><label for="f-name">Full name</label><input id="f-name" autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="f-email">Email (for the secret location)</label><input id="f-email" type="email" autocomplete="email"></div>
+        <div class="field"><label for="f-tables">Tables</label><select id="f-tables"></select></div>
+        <div class="row">
+          <div class="field"><label for="f-adults">Adults</label><select id="f-adults"></select></div>
+          <div class="field"><label for="f-children">Children under 12 (free)</label><select id="f-children"></select></div>
+        </div>
+        <div class="field"><label for="f-notes">Allergies, dietary needs or access</label><textarea id="f-notes" placeholder="e.g. one guest is gluten free"></textarea></div>
+        <div class="total"><span class="small">Total</span><b id="totalText">£400</b></div>
+        <p class="small" style="margin-top:-8px">Nothing to pay now. We'll email you an invoice.</p>
+        <button class="btn" type="submit" id="nextBtn">Book table</button>
+        <p class="msg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="panel" id="confirmed" hidden>
+        <div class="steps" aria-hidden="true"><span>1 Your details</span><span class="on">2 Booked</span></div>
+        <p class="eyebrow">You're on the table</p>
+        <div class="ticket">
+          <div class="ref" id="c-ref"></div>
+          <dl id="c-list"></dl>
+        </div>
+        <p class="small" id="c-next"></p>
+        <div class="actions" style="margin-top:16px">
+          <button class="btn ghost" type="button" id="againBtn">Make another booking</button>
+          <button class="btn ghost" type="button" id="resetBtn">Reset demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="mark">Secret Forest Kitchen</span>
+  Long tables, open fire and good food, somewhere in the Forest of Dean.
+</footer>
+
+<script>
+/* ---------- Prototype settings ---------- */
+const TABLE_PRICE = 400, ADULTS_PER_TABLE = 4, KIDS_FREE_PER_TABLE = 2;
+const TOTAL_TABLES = 10, MAX_TABLES_PER_BOOKING = 3;
+const DEMO_ALREADY_SOLD = 6;   // example figure so the counter has something to show
+
+const $ = (id) => document.getElementById(id);
+const gbp = (n) => "£" + n.toLocaleString("en-GB");
+const plural = (n, one, many) => n + " " + (n === 1 ? one : many);
+const KEY = "sfk-demo-sold";
+let sold = DEMO_ALREADY_SOLD;
+try { const v = Number(localStorage.getItem(KEY)); if (v >= DEMO_ALREADY_SOLD && v <= TOTAL_TABLES) sold = v; } catch (e) {}
+const left = () => TOTAL_TABLES - sold;
+
+function renderCounter() {
+  const l = left();
+  const t = $("leftText");
+  t.textContent = l === 0 ? "Fully booked" : `${l} of ${TOTAL_TABLES} tables left`;
+  t.className = "left" + (l === 0 ? " full" : l <= 2 ? " low" : "");
+  $("leftBar").style.width = (sold / TOTAL_TABLES * 100) + "%";
+}
+function fillSelect(sel, from, to, fmt, keep) {
+  sel.innerHTML = "";
+  for (let i = from; i <= to; i++) sel.add(new Option(fmt(i), i));
+  sel.value = Math.min(Math.max(keep, from), to);
+}
+function updateTables() {
+  const max = Math.min(MAX_TABLES_PER_BOOKING, left());
+  fillSelect($("f-tables"), 1, Math.max(max, 1), (i) => plural(i, "table", "tables") + " · " + gbp(i * TABLE_PRICE), Number($("f-tables").value) || 1);
+  $("f-tables").disabled = $("nextBtn").disabled = max === 0;
+  $("formMsg").className = "msg err"; $("formMsg").textContent = max === 0 ? "All ten tables are booked." : "";
+  updateParty();
+}
+function updateParty() {
+  const t = Number($("f-tables").value) || 1;
+  fillSelect($("f-adults"), 1, t * ADULTS_PER_TABLE, (i) => plural(i, "adult", "adults"), Number($("f-adults").value) || t * ADULTS_PER_TABLE);
+  fillSelect($("f-children"), 0, t * KIDS_FREE_PER_TABLE, (i) => i === 0 ? "None" : plural(i, "child", "children"), Number($("f-children").value) || 0);
+  $("totalText").textContent = gbp(t * TABLE_PRICE);
+}
+$("f-tables").addEventListener("change", () => { $("f-adults").value = ""; updateParty(); });
+
+function rows(dl, pairs) {
+  dl.innerHTML = "";
+  pairs.forEach(([k, v]) => { const dt = document.createElement("dt"), dd = document.createElement("dd"); dt.textContent = k; dd.textContent = v; dl.append(dt, dd); });
+}
+function show(step) {
+  $("bookForm").hidden = step !== "form"; $("confirmed").hidden = step !== "done";
+  $("book").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+const party = (d) => plural(d.adults, "adult", "adults") + (d.children ? " + " + plural(d.children, "child", "children") : "");
+
+$("bookForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const d = { name: $("f-name").value.trim(), phone: $("f-phone").value.trim(), email: $("f-email").value.trim(), tables: Number($("f-tables").value), adults: Number($("f-adults").value), children: Number($("f-children").value), notes: $("f-notes").value.trim() };
+  const missing = [];
+  if (!d.name) missing.push("your name");
+  if (!d.phone) missing.push("a phone number");
+  if (!/^\S+@\S+\.\S+$/.test(d.email)) missing.push("a valid email address");
+  if (missing.length) { $("formMsg").className = "msg err"; $("formMsg").textContent = "Please add " + missing.join(", ") + "."; return; }
+  const btn = $("nextBtn"); btn.disabled = true; btn.textContent = "Booking…";
+  setTimeout(() => {
+    sold = Math.min(TOTAL_TABLES, sold + d.tables);
+    try { localStorage.setItem(KEY, String(sold)); } catch (e) {}
+    const a = "ABCDEFGHJKMNPQRSTUVWXYZ23456789"; let ref = "SFK-";
+    for (let i = 0; i < 5; i++) ref += a[Math.floor(Math.random() * a.length)];
+    $("c-ref").textContent = "Ref " + ref;
+    rows($("c-list"), [["Name", d.name], ["Date", "Saturday 26 December 2026"], ["Tables", String(d.tables)], ["Party", party(d)], ["Invoice", gbp(d.tables * TABLE_PRICE)], ["Sent to", d.email], ...(d.notes ? [["Notes", d.notes]] : [])]);
+    $("c-next").textContent = `Your invoice for ${gbp(d.tables * TABLE_PRICE)} is on its way to ${d.email}. Pay it to secure your table. Directions to the clearing follow in the week before 26 December.`;
+    btn.disabled = false; btn.textContent = "Book table";
+    renderCounter(); updateTables(); show("done");
+  }, 700);
+});
+$("againBtn").addEventListener("click", () => { $("bookForm").reset(); updateTables(); show("form"); });
+$("resetBtn").addEventListener("click", () => {
+  sold = DEMO_ALREADY_SOLD; try { localStorage.removeItem(KEY); } catch (e) {}
+  $("bookForm").reset(); renderCounter(); updateTables(); show("form");
+});
+renderCounter(); updateTables();
+
+/* ---------- Forest canvas ---------- */
+(function forest() {
+  const c = $("forest"), ctx = c.getContext("2d");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let W, H, dpr, layers = [], lights = [];
+  function rnd(seed) { return () => (seed = (seed * 16807) % 2147483647) / 2147483647; }
+  function build() {
+    dpr = Math.min(devicePixelRatio || 1, 2);
+    W = c.clientWidth; H = c.clientHeight;
+    c.width = W * dpr; c.height = H * dpr;
+    const r = rnd(7);
+    const cols = ["#1b2d22", "#132119", "#0b130e"];
+    layers = cols.map((col, i) => {
+      const trees = [], n = Math.ceil(W / (60 - i * 12)) + 2;
+      for (let k = 0; k < n; k++) trees.push({ x: k * (W / (n - 2)) + r() * 40 - 20, h: H * (0.38 + i * 0.12 + r() * 0.2), w: 26 + i * 14 + r() * 24, kind: r() < 0.55 ? "pine" : "oak" });
+      return { col, trees, base: H * (0.72 + i * 0.05) };
+    });
+    lights = Array.from({ length: Math.round(W / 26) }, () => ({ x: r() * W, y: H * (0.25 + r() * 0.5), r: 1 + r() * 2.2, p: r() * 6.28, s: 0.2 + r() * 0.5 }));
+  }
+  function tree(t, base) {
+    ctx.beginPath();
+    if (t.kind === "pine") {
+      const tiers = 4;
+      for (let i = 0; i < tiers; i++) {
+        const y0 = base - t.h * (i / tiers) * 0.95, w = t.w * (1 - i / tiers * 0.7);
+        ctx.moveTo(t.x - w, y0); ctx.lineTo(t.x, y0 - t.h * 0.42); ctx.lineTo(t.x + w, y0);
+      }
+    } else {
+      ctx.rect(t.x - 3, base - t.h * 0.5, 6, t.h * 0.5);
+      for (let i = 0; i < 5; i++) ctx.arc(t.x + Math.cos(i * 1.3) * t.w * 0.5, base - t.h * 0.62 + Math.sin(i * 1.9) * t.w * 0.35, t.w * 0.55, 0, 7);
+    }
+    ctx.fill();
+  }
+  function draw(time) {
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const sky = ctx.createLinearGradient(0, 0, 0, H);
+    sky.addColorStop(0, "#0a1410"); sky.addColorStop(0.55, "#1d3326"); sky.addColorStop(1, "#0d1611");
+    ctx.fillStyle = sky; ctx.fillRect(0, 0, W, H);
+    // moon glow
+    const g = ctx.createRadialGradient(W * 0.78, H * 0.2, 0, W * 0.78, H * 0.2, H * 0.5);
+    g.addColorStop(0, "rgba(231,235,225,.18)"); g.addColorStop(1, "rgba(231,235,225,0)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    layers.forEach((L, i) => {
+      ctx.fillStyle = L.col;
+      L.trees.forEach((t) => tree(t, L.base));
+      ctx.fillRect(0, L.base - 1, W, H);
+      if (i === 0) {
+        // lanterns between the far and middle trees
+        lights.forEach((l) => {
+          const a = reduce ? 0.8 : 0.45 + 0.45 * Math.sin(time / 900 * l.s + l.p);
+          const y = l.y + (reduce ? 0 : Math.sin(time / 2400 + l.p) * 4);
+          const gl = ctx.createRadialGradient(l.x, y, 0, l.x, y, l.r * 7);
+          gl.addColorStop(0, `rgba(232,169,72,${a})`); gl.addColorStop(1, "rgba(232,169,72,0)");
+          ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(l.x, y, l.r * 7, 0, 7); ctx.fill();
+        });
+        ctx.fillStyle = L.col;
+      }
+    });
+    // brook along the bottom with moving glints
+    const wy = H * 0.9;
+    const wg = ctx.createLinearGradient(0, wy, 0, H);
+    wg.addColorStop(0, "#1c3438"); wg.addColorStop(1, "#0d1611");
+    ctx.fillStyle = wg; ctx.fillRect(0, wy, W, H - wy);
+    ctx.strokeStyle = "rgba(111,159,168,.35)"; ctx.lineWidth = 1;
+    for (let k = 0; k < 6; k++) {
+      ctx.beginPath();
+      const y = wy + 6 + k * ((H - wy) / 6);
+      for (let x = 0; x <= W; x += 12) ctx.lineTo(x, y + Math.sin(x / 40 + time / 1100 + k) * 1.6);
+      ctx.stroke();
+    }
+    // darken bottom-left for headline legibility
+    const sh = ctx.createLinearGradient(0, 0, W * 0.7, 0);
+    sh.addColorStop(0, "rgba(13,22,17,.75)"); sh.addColorStop(1, "rgba(13,22,17,0)");
+    ctx.fillStyle = sh; ctx.fillRect(0, 0, W, H);
+    if (!reduce) requestAnimationFrame(draw);
+  }
+  build(); draw(0);
+  addEventListener("resize", () => { build(); if (reduce) draw(0); });
+})();
+
+</script>
+</body>
+</html>
