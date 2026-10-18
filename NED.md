@@ -29,8 +29,15 @@ summary: One or two sentences, shown on the front page and the blog list.
 source: https://full-link-to-the-original
 source_name: Outlet, D Month YYYY
 type: AI news               (or: AI tip)
+image: /images/blog/YYYY-MM-DD-slug.jpg
+image_alt: Short plain description of what the picture shows
+image_credit: Creator via Source (licence), e.g. EVG Photos via StockSnap (CC0)
+image_credit_link: https://the-image's-own-page
 ---
 ```
+
+`image_credit` and `image_credit_link` can be left out only for images that are
+Webb Page Ventura's own.
 
 ## Each run
 
@@ -48,12 +55,27 @@ type: AI news               (or: AI tip)
 3. **Write it.** 150–300 words, plain English, in your own words. Never copy
    sentences from the article. End with a `## What this means for your business`
    section of 2–3 sentences. Credit and link the source in front matter.
-4. **Build.** `node blog/build.js`. It must say "Built N post(s)" with today's post
+4. **Add an image.** Every new post gets one relevant, free-to-use picture.
+   - Search Openverse, which needs no key, keeping to the safest licences:
+     `curl -s "https://api.openverse.org/v1/images/?q=<search words>&license=cc0,pdm,by&page_size=10"`
+     Only use `cc0`, `pdm` or `by` results. Never use NC (non-commercial), ND or
+     SA images, or anything with a recognisable person, a brand logo or a
+     watermark. Pick something that suits the story; a calm, simple photo beats a
+     busy one.
+   - Download it with a browser user agent (`curl -sSL -A 'Mozilla/5.0' -o raw "<url>"`),
+     check it really is an image (`file raw`), then shrink it:
+     `convert raw -resize '1600x1600>' -strip -quality 80 images/blog/<post-file-name>.jpg`
+     Aim for under 300 KB.
+   - Credit it in the front matter: creator, source and licence, linking to the
+     image's own page (`foreign_landing_url`). CC BY images must always be credited.
+   - If no suitable free image turns up, publish without one and say so in the
+     final message. Never take images from news articles or Google Images.
+5. **Build.** `node blog/build.js`. It must say "Built N post(s)" with today's post
    as the latest.
-5. **Commit and push.** One commit, e.g. `Add blog post: <title>`, pushed to `main`.
-6. **Confirm the deploy.** Wait a minute or two, then fetch
+6. **Commit and push.** One commit, e.g. `Add blog post: <title>`, pushed to `main`.
+7. **Confirm the deploy.** Wait a minute or two, then fetch
    `https://webbpageventura.co.uk/blog/<post-file-name-without-.md>` and the front
-   page, and check that both show today's post. Try for up to about 10 minutes, no
+   page, and check that both show today's post and its image. Try for up to about 10 minutes, no
    more.
 
 ## If anything fails

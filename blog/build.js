@@ -5,6 +5,9 @@
 // "AI news & tip of the day" block on the front page (between the
 // ned:latest markers in index.html). No dependencies, no network.
 // Fails loudly on a bad post so nothing half-built gets committed.
+//
+// Optional image fields: image (a path under /images/blog/), image_alt,
+// and for photos that aren't ours, image_credit and image_credit_link.
 
 const fs = require("fs");
 const path = require("path");
@@ -86,13 +89,19 @@ function loadPosts() {
     if (meta.date !== slug.slice(0, 10)) fail(`${file}: date ${meta.date} doesn't match the file name`);
     if (!/^https?:\/\//.test(meta.source)) fail(`${file}: source must be a full link`);
     if (!/What this means for your business/.test(body)) fail(`${file}: needs a "What this means for your business" section`);
+    if (meta.image) {
+      if (!/^\/images\/blog\/[\w.-]+\.(jpe?g|png|webp)$/.test(meta.image)) fail(`${file}: image must be a file in /images/blog/`);
+      if (!fs.existsSync(path.join(ROOT, meta.image))) fail(`${file}: image ${meta.image} doesn't exist`);
+      if (!meta.image_alt) fail(`${file}: image needs image_alt (a short description for screen readers)`);
+      if (meta.image_credit_link && !meta.image_credit) fail(`${file}: image_credit_link needs image_credit too`);
+    }
     return { ...meta, slug, url: `/blog/${slug}`, html: markdown(body) };
   });
   // Newest first; same-day posts by file name, last one first.
   return posts.reverse();
 }
 
-function page({ title, description, canonical, current, main }) {
+function page({ title, description, canonical, current, main, image }) {
   return `<!doctype html>
 <html lang="en-GB">
 <head>
@@ -102,9 +111,9 @@ function page({ title, description, canonical, current, main }) {
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="${SITE}/images/brand/share.png">
+${image ? `<meta property="og:image" content="${SITE}${image}">` : `<meta property="og:image" content="${SITE}/images/brand/share.png">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:height" content="630">`}
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:url" content="${SITE}${canonical}">
 <link rel="canonical" href="${SITE}${canonical}">
@@ -152,12 +161,23 @@ function meta(p) {
   return `<p class="eyebrow post-meta"><span class="tag">${esc(p.type)}</span> <time datetime="${p.date}">${ukDate(p.date)}</time></p>`;
 }
 
+function figure(p, cls, eager) {
+  if (!p.image) return "";
+  const credit = p.image_credit
+    ? `\n        <figcaption>Image: ${p.image_credit_link ? `<a href="${esc(p.image_credit_link)}">${esc(p.image_credit)}</a>` : esc(p.image_credit)}</figcaption>`
+    : "";
+  return `<figure class="${cls}">
+        <img src="${p.image}" alt="${esc(p.image_alt)}"${eager ? "" : ' loading="lazy"'}>${credit}
+      </figure>`;
+}
+
 function postPage(p) {
   return page({
     title: p.title,
     description: p.summary,
     canonical: p.url,
     current: true,
+    image: p.image,
     main: `
   <article class="post">
     <header class="page-head stack">
@@ -165,6 +185,7 @@ function postPage(p) {
       <h1>${esc(p.title)}</h1>
       <p class="lede">${esc(p.summary)}</p>
     </header>
+    ${figure(p, "post-image", true)}
     <div class="prose">
 ${p.html}
     </div>
@@ -176,10 +197,13 @@ ${p.html}
 }
 
 function indexPage(posts) {
-  const items = posts.map((p) => `      <li>
+  const items = posts.map((p) => `      <li${p.image ? ' class="has-image"' : ""}>
+        ${p.image ? `<a class="post-thumb" href="${p.url}" tabindex="-1" aria-hidden="true"><img src="${p.image}" alt="" loading="lazy"></a>` : ""}
+        <div class="post-text">
         ${meta(p)}
         <h2><a href="${p.url}">${esc(p.title)}</a></h2>
         <p>${esc(p.summary)}</p>
+        </div>
       </li>`).join("\n");
   return page({
     title: "AI news and tips",
@@ -213,6 +237,7 @@ function homeBlock(posts) {
     </div>
     <div class="today">
       <article class="today-latest">
+        ${latest.image ? `<a class="today-image" href="${latest.url}" tabindex="-1" aria-hidden="true"><img src="${latest.image}" alt="" loading="lazy"></a>` : ""}
         ${meta(latest)}
         <h3><a href="${latest.url}">${esc(latest.title)}</a></h3>
         <p class="today-summary">${esc(latest.summary)}</p>
