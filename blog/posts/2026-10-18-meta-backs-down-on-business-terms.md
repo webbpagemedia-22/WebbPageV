@@ -5,6 +5,8 @@ summary: Meta's new business terms seemed to let it scrape the websites of any b
 source: https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites
 source_name: The Verge, 17 October 2026 (also reported by TechCrunch)
 type: AI news
+image: /images/blog/2026-10-18-meta-backs-down-on-business-terms.jpg
+image_alt: Illustration of a glowing circuit-board brain with robotic arms collecting documents, while two people inspect and type
 ---
 
 If your business has a Facebook or Instagram business account, or runs ads through Meta, this one is worth knowing about.
