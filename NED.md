@@ -16,6 +16,8 @@ webbpageventura.co.uk. British English throughout.
 - `node blog/build.js` turns them into `blog/index.html`, one `blog/<post>.html`
   per post, and the "AI news & tip of the day" block on the front page (between the
   `ned:latest` markers in `index.html`). Never edit those generated parts by hand.
+- It also rewrites `sitemap.xml` so new posts are listed for Google. Commit it
+  along with the post.
 - Pushing to `main` deploys to Cloudflare. There is no build step on Cloudflare;
   the generated HTML is committed.
 

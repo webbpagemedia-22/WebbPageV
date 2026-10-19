@@ -3,7 +3,8 @@
 //   node blog/build.js
 // Writes blog/index.html, one blog/<post>.html per post, and the
 // "AI news & tip of the day" block on the front page (between the
-// ned:latest markers in index.html). No dependencies, no network.
+// ned:latest markers in index.html), plus sitemap.xml at the site root.
+// No dependencies, no network.
 // Fails loudly on a bad post so nothing half-built gets committed.
 //
 // Optional image fields: image (a path under /images/blog/), image_alt,
@@ -17,6 +18,9 @@ const BLOG = path.join(ROOT, "blog");
 const POSTS = path.join(BLOG, "posts");
 const HOME = path.join(ROOT, "index.html");
 const SITE = "https://webbpageventura.co.uk";
+// Main pages listed in sitemap.xml (blog posts are added automatically).
+// Add new top-level pages here. Leave out noindex pages.
+const SITEMAP_PAGES = ["/", "/services", "/how-it-works", "/experience"];
 const TYPES = ["AI news", "AI tip"];
 const REQUIRED = ["title", "date", "summary", "source", "source_name", "type"];
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July",
@@ -277,5 +281,14 @@ const home = fs.readFileSync(HOME, "utf8");
 const marker = /<!-- ned:latest:start[\s\S]*?<!-- ned:latest:end -->/;
 if (!marker.test(home)) fail("index.html is missing the ned:latest markers");
 fs.writeFileSync(HOME, home.replace(marker, homeBlock(posts)));
+
+const sitemapUrls = SITEMAP_PAGES.map((u) => ({ loc: SITE + u }))
+  .concat({ loc: `${SITE}/blog/`, lastmod: posts[0].date })
+  .concat(posts.map((p) => ({ loc: SITE + p.url, lastmod: p.date })));
+fs.writeFileSync(path.join(ROOT, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.map((u) => `  <url><loc>${esc(u.loc)}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}</url>`).join("\n")}
+</urlset>
+`);
 
 console.log(`Built ${posts.length} post(s). Latest: ${posts[0].date} ${posts[0].title}`);
