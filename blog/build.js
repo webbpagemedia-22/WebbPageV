@@ -105,7 +105,7 @@ function loadPosts() {
   return posts.reverse();
 }
 
-function page({ title, description, canonical, current, main, image }) {
+function page({ title, description, canonical, current, main, image, ogType = "website", extraHead = "" }) {
   return `<!doctype html>
 <html lang="en-GB">
 <head>
@@ -123,7 +123,7 @@ function page({ title, description, canonical, current, main, image }) {
 <meta name="description" content="${esc(description)}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="${ogType}">
 ${image ? `<meta property="og:image" content="${SITE}${image}">` : `<meta property="og:image" content="${SITE}/images/brand/share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">`}
@@ -138,7 +138,7 @@ ${image ? `<meta property="og:image" content="${SITE}${image}">` : `<meta proper
 <title>${esc(title)} | Webb Page Ventura</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/styles.css">
-
+${extraHead}
 </head>
 <body>
 <header class="site">
@@ -184,6 +184,37 @@ function figure(p, cls, eager) {
       </figure>`;
 }
 
+// Article metadata for a post page: published date for social previews and
+// schema.org BlogPosting for search engines. Only facts from the post's own
+// front matter, plus the business name and logo already used site-wide.
+function postHead(p) {
+  const ld = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: p.title,
+    description: p.summary,
+    datePublished: p.date,
+    url: SITE + p.url,
+    mainEntityOfPage: SITE + p.url,
+    image: SITE + (p.image || "/images/brand/share.png"),
+    isBasedOn: p.source,
+    inLanguage: "en-GB",
+    author: { "@type": "Organization", name: "Webb Page Ventura", url: SITE + "/" },
+    publisher: {
+      "@type": "Organization",
+      name: "Webb Page Ventura",
+      url: SITE + "/",
+      logo: { "@type": "ImageObject", url: SITE + "/images/brand/logo-mark.png" },
+    },
+  };
+  // Stop "</script>" in a title or summary from closing the tag early.
+  const json = JSON.stringify(ld, null, 2).replace(/</g, "\\u003c");
+  return `<meta property="article:published_time" content="${p.date}">
+<script type="application/ld+json">
+${json}
+</script>`;
+}
+
 function postPage(p) {
   return page({
     title: p.title,
@@ -191,6 +222,8 @@ function postPage(p) {
     canonical: p.url,
     current: true,
     image: p.image,
+    ogType: "article",
+    extraHead: postHead(p),
     main: `
   <article class="post">
     <header class="page-head stack">
