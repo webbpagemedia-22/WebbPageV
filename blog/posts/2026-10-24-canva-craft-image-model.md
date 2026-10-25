@@ -17,7 +17,7 @@ Canva says it works in two steps. First it plans the picture from your prompt, d
 
 Unusually, Canva says it trained the model on designs from its own template library, such as posters, menus and infographics, rather than on photographs. Images can be turned into layered, editable designs with its Magic tool.
 
-Craft is open to all Canva users through the Dream Lab tab, and will come to Canva's API later. TechCrunch reports no pricing for users and says cheaper, faster versions are on the way. Canva's claims about quality haven't been independently tested.
+Craft is open to all Canva users through the Dream Lab tab, and developers can already use it through Canva's API. TechCrunch reports no pricing for users and says cheaper, faster versions are on the way. Canva's claims about quality haven't been independently tested.
 
 ## What this means for your business
 
