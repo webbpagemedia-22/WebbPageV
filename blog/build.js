@@ -124,6 +124,8 @@ function page({ title, description, canonical, current, main, image, ogType = "w
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="${ogType}">
+<meta property="og:site_name" content="Webb Page Ventura">
+<meta property="og:locale" content="en_GB">
 ${image ? `<meta property="og:image" content="${SITE}${image}">` : `<meta property="og:image" content="${SITE}/images/brand/share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">`}
@@ -180,7 +182,7 @@ function figure(p, cls, eager) {
     ? `\n        <figcaption>Image: ${p.image_credit_link ? `<a href="${esc(p.image_credit_link)}">${esc(p.image_credit)}</a>` : esc(p.image_credit)}</figcaption>`
     : "";
   return `<figure class="${cls}">
-        <img src="${p.image}" alt="${esc(p.image_alt)}"${eager ? "" : ' loading="lazy"'}>${credit}
+        <img src="${p.image}" alt="${esc(p.image_alt)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'}>${credit}
       </figure>`;
 }
 
