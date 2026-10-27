@@ -5,6 +5,10 @@ summary: PHP, the software behind most of the world's websites, has rushed out e
 source: https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/
 source_name: BleepingComputer, 21 October 2026 (also reported by The Next Web)
 type: AI news
+image: /images/blog/2026-10-22-php2shell-is-your-website-safe.jpg
+image_alt: Macro close-up of components and a diode on a circuit board
+image_credit: Lenharth Systems via StockSnap (CC0)
+image_credit_link: https://stocksnap.io/photo/circuit-macro-MADL8CN3KW
 ---
 
 PHP is the behind-the-scenes language that powers a huge share of the web, including most WordPress sites. On 21 October its developers released emergency fixes for two critical flaws, nicknamed PHP2Shell.
