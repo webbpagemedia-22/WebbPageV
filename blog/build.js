@@ -35,6 +35,39 @@ function esc(s) {
   return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
+// Width and height of a JPEG, PNG or WebP file, read from its header so
+// social sites can lay out the preview before downloading the picture.
+// Returns null if the format isn't recognised (the tags are then left out).
+function imageSize(file) {
+  const b = fs.readFileSync(file);
+  if (b.length > 24 && b.toString("ascii", 1, 4) === "PNG") {
+    return { width: b.readUInt32BE(16), height: b.readUInt32BE(20) };
+  }
+  if (b.length > 30 && b.toString("ascii", 0, 4) === "RIFF" && b.toString("ascii", 8, 12) === "WEBP") {
+    const kind = b.toString("ascii", 12, 16);
+    if (kind === "VP8X") return { width: 1 + b.readUIntLE(24, 3), height: 1 + b.readUIntLE(27, 3) };
+    if (kind === "VP8 ") return { width: b.readUInt16LE(26) & 0x3fff, height: b.readUInt16LE(28) & 0x3fff };
+    if (kind === "VP8L") {
+      const n = b.readUInt32LE(21);
+      return { width: (n & 0x3fff) + 1, height: ((n >> 14) & 0x3fff) + 1 };
+    }
+    return null;
+  }
+  if (b[0] === 0xff && b[1] === 0xd8) {
+    let i = 2;
+    while (i + 9 < b.length) {
+      if (b[i] !== 0xff) { i++; continue; }
+      const marker = b[i + 1];
+      if (marker === 0xff) { i++; continue; }
+      if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+        return { width: b.readUInt16BE(i + 7), height: b.readUInt16BE(i + 5) };
+      }
+      i += 2 + b.readUInt16BE(i + 2);
+    }
+  }
+  return null;
+}
+
 function ukDate(iso) {
   const [y, m, d] = iso.split("-").map(Number);
   return `${d} ${MONTHS[m - 1]} ${y}`;
@@ -99,13 +132,14 @@ function loadPosts() {
       if (!meta.image_alt) fail(`${file}: image needs image_alt (a short description for screen readers)`);
       if (meta.image_credit_link && !meta.image_credit) fail(`${file}: image_credit_link needs image_credit too`);
     }
-    return { ...meta, slug, url: `/blog/${slug}`, html: markdown(body) };
+    const imageDims = meta.image ? imageSize(path.join(ROOT, meta.image)) : null;
+    return { ...meta, slug, url: `/blog/${slug}`, html: markdown(body), imageDims };
   });
   // Newest first; same-day posts by file name, last one first.
   return posts.reverse();
 }
 
-function page({ title, description, canonical, current, main, image, ogType = "website", extraHead = "" }) {
+function page({ title, description, canonical, current, main, image, imageDims, imageAlt, ogType = "website", extraHead = "" }) {
   return `<!doctype html>
 <html lang="en-GB">
 <head>
@@ -126,7 +160,10 @@ function page({ title, description, canonical, current, main, image, ogType = "w
 <meta property="og:type" content="${ogType}">
 <meta property="og:site_name" content="Webb Page Ventura">
 <meta property="og:locale" content="en_GB">
-${image ? `<meta property="og:image" content="${SITE}${image}">` : `<meta property="og:image" content="${SITE}/images/brand/share.png">
+${image ? `<meta property="og:image" content="${SITE}${image}">${imageDims ? `
+<meta property="og:image:width" content="${imageDims.width}">
+<meta property="og:image:height" content="${imageDims.height}">` : ""}${imageAlt ? `
+<meta property="og:image:alt" content="${esc(imageAlt)}">` : ""}` : `<meta property="og:image" content="${SITE}/images/brand/share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">`}
 <meta name="twitter:card" content="summary_large_image">
@@ -209,11 +246,24 @@ function postHead(p) {
       logo: { "@type": "ImageObject", url: SITE + "/images/brand/logo-mark.png" },
     },
   };
+  // Home > Blog > this post, so search results can show where the page sits.
+  const crumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: SITE + "/blog/" },
+      { "@type": "ListItem", position: 3, name: p.title, item: SITE + p.url },
+    ],
+  };
   // Stop "</script>" in a title or summary from closing the tag early.
-  const json = JSON.stringify(ld, null, 2).replace(/</g, "\\u003c");
+  const toJson = (o) => JSON.stringify(o, null, 2).replace(/</g, "\\u003c");
   return `<meta property="article:published_time" content="${p.date}">
 <script type="application/ld+json">
-${json}
+${toJson(ld)}
+</script>
+<script type="application/ld+json">
+${toJson(crumbs)}
 </script>`;
 }
 
@@ -224,6 +274,8 @@ function postPage(p) {
     canonical: p.url,
     current: true,
     image: p.image,
+    imageDims: p.imageDims,
+    imageAlt: p.image_alt,
     ogType: "article",
     extraHead: postHead(p),
     main: `
