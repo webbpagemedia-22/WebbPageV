@@ -139,6 +139,15 @@ function loadPosts() {
   return posts.reverse();
 }
 
+// The <title> shown in search results. Google cuts titles off at roughly
+// 60 to 65 characters, so the " | Webb Page Ventura" suffix is only added
+// when it still fits; on long post headlines it would just push the words
+// that matter out of view. og:site_name already carries the business name.
+function titleTag(title) {
+  const full = `${title} | Webb Page Ventura`;
+  return full.length <= 65 ? full : title;
+}
+
 function page({ title, description, canonical, current, main, image, imageDims, imageAlt, ogType = "website", extraHead = "" }) {
   return `<!doctype html>
 <html lang="en-GB">
@@ -174,7 +183,7 @@ ${image ? `<meta property="og:image" content="${SITE}${image}">${imageDims ? `
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>html{scroll-behavior:smooth}body{margin:0}img{max-width:100%}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
-<title>${esc(title)} | Webb Page Ventura</title>
+<title>${esc(titleTag(title))}</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/styles.css">
 ${extraHead}
