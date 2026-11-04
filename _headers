@@ -12,3 +12,10 @@
 # compete with webbpageventura.co.uk as duplicate content.
 https://:worker.:subdomain.workers.dev/*
   X-Robots-Tag: noindex
+
+# Let browsers keep pictures for a week instead of re-checking them on every
+# page view (Cloudflare's default is max-age=0). Faster repeat visits. If a
+# picture is ever replaced under the same file name, give it a new name or
+# allow up to a week for returning visitors to see the new one.
+/images/*
+  Cache-Control: public, max-age=604800
