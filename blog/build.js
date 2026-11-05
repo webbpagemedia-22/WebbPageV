@@ -299,6 +299,7 @@ function postPage(p) {
 ${p.html}
     </div>
     <p class="source-credit">Source: <a href="${esc(p.source)}">${esc(p.source_name)}</a>. This is our own summary; read the original for the full story.</p>
+    <p>Want a hand with AI in your own business? <a class="text-link" href="/services">See our services</a> or <a class="text-link" href="/#contact">book a free chat</a>.</p>
     <p><a class="text-link" href="/blog/">All posts</a></p>
   </article>
 `,
