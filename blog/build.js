@@ -276,10 +276,19 @@ ${toJson(crumbs)}
 </script>`;
 }
 
+// Search-result descriptions that differ from a post's summary, keyed by the
+// post's file name. Used for the meta and og:description only; the post's
+// Markdown, lede and structured data keep Ned's summary. Add one only when
+// the SEO plan asks for it, using facts already in the post.
+const SEO_DESCRIPTIONS = {
+  "2026-10-25-ai-assistants-you-can-text":
+    "AI assistants you can text by SMS, WhatsApp or iMessage can now book, schedule and send emails for you. Several are still in beta, so check privacy before you trust one.",
+};
+
 function postPage(p) {
   return page({
     title: p.title,
-    description: p.summary,
+    description: SEO_DESCRIPTIONS[p.slug] || p.summary,
     canonical: p.url,
     current: true,
     image: p.image,
@@ -316,7 +325,7 @@ function indexPage(posts) {
         </div>
       </li>`).join("\n");
   return page({
-    title: "AI news and tips",
+    title: "AI News and Tips for Small Businesses",
     description: "One useful bit of AI news or a practical AI tip each day, written in plain English for UK small businesses.",
     canonical: "/blog/",
     current: true,
