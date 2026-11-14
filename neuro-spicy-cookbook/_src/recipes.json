@@ -870,7 +870,9 @@
           ]
         }
       ],
-      "tips": []
+      "tips": [],
+      "image": "images/pizza.jpg",
+      "imageAlt": "Salami pizza with melted cheese and a sprig of basil, cut into slices"
     },
     {
       "id": "roast-chicken",
