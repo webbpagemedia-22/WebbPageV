@@ -18,3 +18,9 @@ Build (from this folder):
 Video rules: short (ideally under 4 mins), shows exactly that step, reputable channel, and it must
 be allowed to embed: `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=ID&format=json`
 returns 200 (401/403 = embedding off, 404 = gone).
+
+## Amazon KDP files
+`python3 build_kdp.py /path/outside/the/repo` builds the paperback interior PDF, the wrap-around
+cover PDF, the Kindle EPUB and the eBook cover JPG. Rebuild after any recipe, photo or foreword
+change, then re-upload to KDP. The cover's spine width depends on the page count, so always
+upload the interior and cover from the same build.

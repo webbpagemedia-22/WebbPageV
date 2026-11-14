@@ -71,7 +71,7 @@ for c in order:
     if rs:
         toc.append(f'<p class="cat">{e(c)}</p><ul class="tocl">' + ''.join(f'<li><span>{e(r["name"])}</span></li>' for r in rs) + '</ul>')
 pages.append(f"""<section class="page"><h2 class="toc">What's cooking</h2>
-<p class="howto"><b>How the codes work.</b> Point your phone camera at the square next to any step. It opens that step on the The Neuro Spicy Cookbook website and plays a short video showing how it's done.</p>
+<p class="howto"><b>How the codes work.</b> Point your phone camera at the square next to any step. It opens that step on The Neuro Spicy Cookbook website and plays a short video showing how it's done.</p>
 {''.join(toc)}</section>""")
 
 for r in R:
