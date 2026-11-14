@@ -312,8 +312,7 @@
           "text": "Add the prawns and stir through until they turn pink.",
           "tech": [
             "cook-prawns"
-          ],
-          "check": "Your note lists prawns but doesn't say when they go in. I've put them in here."
+          ]
         },
         {
           "text": "Add the Arroz de OG and stir it through.",
@@ -396,8 +395,7 @@
           "text": "Coat the chicken, then add the chicken stock.",
           "tech": [
             "make-stock"
-          ],
-          "check": "Your ingredients say 400ml stock but the method says 250ml. I've left it as 'the stock'. Which is it?"
+          ]
         },
         {
           "text": "Add 50ml of cream or Elmlea.",
@@ -415,15 +413,13 @@
           "text": "Simmer for 20 mins until the chicken's cooked through and the sauce has thickened.",
           "tech": [
             "simmer"
-          ],
-          "check": "Added. Your note doesn't give a cooking time."
+          ]
         },
         {
           "text": "Stir in the garam masala at the end and taste for salt and chilli.",
           "tech": [
             "garam-masala"
-          ],
-          "check": "Added. Your note says to hold back the garam masala but doesn't say when it goes in."
+          ]
         }
       ],
       "tips": [
@@ -447,9 +443,6 @@
         "Tin of bamboo shoots",
         "Chilli, to taste"
       ],
-      "ingredientChecks": {
-        "400ml coconut milk": "Your note says coconut OIL. I've assumed you meant milk."
-      },
       "steps": [
         {
           "text": "Fry the onions on a medium heat and soften them until they go translucent.",
@@ -480,8 +473,7 @@
           "text": "Drain the bamboo shoots and add them.",
           "tech": [
             "drain-tin"
-          ],
-          "check": "Your note lists bamboo shoots but doesn't say when they go in. I've put them in here."
+          ]
         },
         {
           "text": "Mix, bring to a simmer and cook for 20 mins.",
@@ -594,10 +586,6 @@
         "250g pancetta",
         "Mole, or a square of dark chocolate"
       ],
-      "ingredientChecks": {
-        "400ml passata": "Your ingredients say 250ml but the method says 400ml. I've gone with 400ml.",
-        "1 tbsp tomato purée": "Used in your method but missing from the ingredients. I've added it."
-      },
       "steps": [
         {
           "text": "Chop the onion and garlic finely (grated garlic, granules or powder will do too).",
@@ -704,10 +692,6 @@
         "Beef stock",
         "250g pancetta"
       ],
-      "ingredientChecks": {
-        "1 tbsp tomato purée": "Used in your method but missing from the ingredients. I've added it.",
-        "Pinch of nutmeg": "Used in your method but missing from the ingredients. I've added it."
-      },
       "steps": [
         {
           "text": "Dice the carrot, onion and celery finely into a frito mix.",
@@ -813,36 +797,31 @@
           "text": "Heat the oven as hot as it goes (around 220°C fan) with a baking tray inside.",
           "tech": [
             "preheat-tray"
-          ],
-          "check": "Your note has the ingredients only. Every step of this method is mine, so please check them."
+          ]
         },
         {
           "text": "Mix the flour, salt and baking powder in a bowl.",
           "tech": [
             "no-yeast-dough"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Add the olive oil and water and mix into a soft dough.",
           "tech": [
             "no-yeast-dough"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Knead on a floured worktop for 2–3 mins until it's smooth.",
           "tech": [
             "knead-dough"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Split it in two and roll each half out thin.",
           "tech": [
             "roll-pizza"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Mix the passata with salt, pepper and garlic.",
@@ -854,29 +833,25 @@
           "text": "Spread the sauce over the bases.",
           "tech": [
             "pizza-sauce"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Add the salami, chorizo and mushrooms.",
           "tech": [
             "pizza-toppings"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Cover with grated mature cheddar.",
           "tech": [
             "grate-cheese"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Bake on the hot tray for 12–15 mins until the base is crisp and the cheese is bubbling.",
           "tech": [
             "bake-pizza"
-          ],
-          "check": "Added."
+          ]
         }
       ],
       "tips": []
@@ -960,43 +935,37 @@
           "text": "After 20 mins, add the parsnips and a few bashed garlic cloves to the tray, turn everything in the oil and put back in.",
           "tech": [
             "roast-parsnips"
-          ],
-          "check": "Your note stops here. Everything from this step on is mine, so please check it."
+          ]
         },
         {
           "text": "Check the chicken is cooked: the juices should run clear when you push a skewer into the thickest part of the thigh.",
           "tech": [
             "check-chicken"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Take the chicken out, cover with foil and rest it for 15–20 mins. It'll carry on cooking.",
           "tech": [
             "rest-meat"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "While it rests, turn the oven up to about 220°C fan to crisp the spuds and parsnips, and put the Yorkshires in.",
           "tech": [
             "yorkshires"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Make the Bisto gravy with boiling water, and stir in the juices from the chicken tray.",
           "tech": [
             "gravy"
-          ],
-          "check": "Added."
+          ]
         },
         {
           "text": "Carve the chicken and serve it all up.",
           "tech": [
             "carve-chicken"
-          ],
-          "check": "Added."
+          ]
         }
       ],
       "tips": []

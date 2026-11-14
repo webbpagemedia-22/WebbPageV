@@ -12,7 +12,3 @@
 # compete with webbpageventura.co.uk as duplicate content.
 https://:worker.:subdomain.workers.dev/*
   X-Robots-Tag: noindex
-
-# Cooking with OG draft print book: keep it out of Google while OG reviews it.
-/cooking-with-og/cooking-with-og-draft.pdf
-  X-Robots-Tag: noindex
