@@ -25,6 +25,9 @@ body{margin:0;font:400 9.6pt/1.5 Lexend,sans-serif;color:#232836;-webkit-print-c
 .cover p{font-size:11pt;color:#5B6170;margin:0;max-width:95mm}
 .cover .foot{margin-top:auto;padding:0 14mm 12mm;font-size:8.5pt;color:#5B6170}
 h2.toc{font:800 22pt/1 'Bricolage Grotesque';color:#1C3F94;margin:0 0 6mm}
+.fw{font-size:11.5pt;line-height:1.65;max-width:100mm;margin-top:8mm}
+.fw p{margin:0 0 5mm}
+.fwsign{font:800 15pt 'Bricolage Grotesque';color:#5E6B2A}
 .howto{background:#fff;border-left:3pt solid #E9A21B;padding:3mm 4mm;margin:0 0 7mm;font-size:9pt}
 .cat{font:700 10pt/1.2 'Bricolage Grotesque';color:#5E6B2A;margin:3mm 0 .5mm}
 .toc ol,.tocl{list-style:none;margin:0;padding:0}
@@ -58,6 +61,10 @@ pages.append(f"""<section class="page cover"><div class="tiles"></div><div class
 <h1>The Neuro<br>Spicy<br>Cookbook</h1><p>The family recipes, written the way OG actually cooks them. Every step has a code: scan it with your phone camera and the video for that step plays.</p></div>
 <div class="foot">webbpageventura.co.uk/neuro-spicy-cookbook</div></section>""")
 
+fw = book.get('foreword')
+if fw:
+    pages.append(f"""<section class="page"><h2 class="toc">{e(fw['title'])}</h2>
+<div class="fw">{''.join(f'<p>{e(x)}</p>' for x in fw['paragraphs'])}<p class="fwsign">{e(fw['sign'])}</p></div></section>""")
 toc = []
 for c in order:
     rs = [r for r in R if r['category'] == c]

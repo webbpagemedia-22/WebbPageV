@@ -1,5 +1,13 @@
 {
   "title": "The Neuro Spicy Cookbook",
+  "foreword": {
+    "title": "Foreword",
+    "paragraphs": [
+      "This recipe book was written for my wife Rosy, who has for many Christmases and birthdays asked for something that could help her cook.",
+      "This book will hopefully be of help, and the supporting website links are there for anyone who doesn't understand terms usually used in cookery books."
+    ],
+    "sign": "OG"
+  },
   "recipes": [
     {
       "id": "arroz-de-og",
