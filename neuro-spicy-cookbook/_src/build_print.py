@@ -1,6 +1,6 @@
 import json, sys, html, segno, asyncio, io, os
 review = '--public' not in sys.argv
-BASE = 'https://webbpageventura.co.uk/cooking-with-og/'
+BASE = 'https://webbpageventura.co.uk/neuro-spicy-cookbook/'
 book = json.load(open('recipes.json'))
 order = ['Basics','Breakfast','Sauces','Rice & Curries','Mince','Weekend']
 R = sorted(book['recipes'], key=lambda r: order.index(r['category']))
@@ -56,7 +56,7 @@ h3{font:700 12pt 'Bricolage Grotesque';margin:3mm 0 1.5mm}
 pages = []
 pages.append(f"""<section class="page cover"><div class="tiles"></div><div class="t">
 <h1>The Neuro<br>Spicy<br>Cookbook</h1><p>The family recipes, written the way OG actually cooks them. Every step has a code: scan it with your phone camera and the video for that step plays.</p></div>
-<div class="foot">webbpageventura.co.uk/cooking-with-og</div></section>""")
+<div class="foot">webbpageventura.co.uk/neuro-spicy-cookbook</div></section>""")
 
 toc = []
 for c in order:

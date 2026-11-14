@@ -20,7 +20,7 @@ const HOME = path.join(ROOT, "index.html");
 const SITE = "https://webbpageventura.co.uk";
 // Main pages listed in sitemap.xml (blog posts are added automatically).
 // Add new top-level pages here. Leave out noindex pages.
-const SITEMAP_PAGES = ["/", "/services", "/how-it-works", "/experience", "/cooking-with-og/"];
+const SITEMAP_PAGES = ["/", "/services", "/how-it-works", "/experience", "/neuro-spicy-cookbook/"];
 const TYPES = ["AI news", "AI tip"];
 const REQUIRED = ["title", "date", "summary", "source", "source_name", "type"];
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July",

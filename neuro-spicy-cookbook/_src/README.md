@@ -1,6 +1,6 @@
 # The Neuro Spicy Cookbook (formerly Cooking with OG): source
 
-The recipe book at webbpageventura.co.uk/cooking-with-og is built from these files.
+The recipe book at webbpageventura.co.uk/neuro-spicy-cookbook is built from these files.
 Never edit `../index.html` or the PDF by hand; edit here and rebuild.
 
 - `recipes.json`: the recipes, from OG's Apple Notes. Each step lists technique IDs in `tech`.
@@ -13,7 +13,7 @@ Build (from this folder):
 - `python3 build.py` builds the DRAFT: yellow "OG to check" notes, noindex. This is what's live now.
 - `python3 build.py --public` builds the final version, once OG has approved every check note.
 - `python3 build_print.py --public` builds the print PDF, ../the-neuro-spicy-cookbook.pdf (needs `pip install segno playwright`).
-  QR codes point at `/cooking-with-og/#/<recipe-id>/<step>`, so swapping a video never needs a reprint.
+  QR codes point at `/neuro-spicy-cookbook/#/<recipe-id>/<step>`, so swapping a video never needs a reprint.
 
 Video rules: short (ideally under 4 mins), shows exactly that step, reputable channel, and it must
 be allowed to embed: `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=ID&format=json`
