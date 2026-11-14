@@ -68,7 +68,7 @@
       "id": "boiled-eggs",
       "name": "OG Boiled Eggs",
       "category": "Basics",
-      "blurb": "Gloriously simple. Dippy eggs done right.",
+      "blurb": "Gloriously simple. Cold water, bring to the boil, three minutes.",
       "prep": "1 min",
       "cook": "6–8 mins",
       "serves": "1+",
@@ -90,7 +90,9 @@
           ]
         }
       ],
-      "tips": []
+      "tips": [],
+      "image": "images/boiled-eggs.jpg",
+      "imageAlt": "Three peeled boiled eggs in a blue and white bowl"
     },
     {
       "id": "scrambled-eggs",
@@ -251,7 +253,9 @@
       "tips": [
         "5 mins for a stir-fry sauce.",
         "10 mins for a satay chicken sauce."
-      ]
+      ],
+      "image": "images/satay-sauce.jpg",
+      "imageAlt": "Peanut satay sauce topped with chopped peanuts and spring onion in a blue and white bowl"
     },
     {
       "id": "nasi-goreng",
