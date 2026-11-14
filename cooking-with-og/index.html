@@ -237,7 +237,12 @@ function route(){
   recipe(id);
   // QR codes in the printed book land on #/recipe/stepNumber: jump to that step and open its video
   const li = step && document.querySelector(`.step[data-step="${parseInt(step,10)-1}"]`);
-  if(li){ li.scrollIntoView({block:'start'}); li.querySelector('.num:not([disabled])')?.click(); }
+  if(li){
+    li.querySelector('.num:not([disabled])')?.click();
+    // re-scroll once fonts and the player have settled, so the page doesn't drift past the step
+    const go = () => li.scrollIntoView({block:'start'});
+    go(); document.fonts && document.fonts.ready.then(go); setTimeout(go, 700); setTimeout(go, 1500);
+  }
 }
 addEventListener('hashchange', route); route();
 </script>
