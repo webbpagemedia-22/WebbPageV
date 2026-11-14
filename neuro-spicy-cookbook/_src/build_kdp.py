@@ -39,11 +39,11 @@ CSS = """
 body{margin:0;font:400 9.6pt/1.5 Lexend,sans-serif;color:#232836;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .page{position:relative;page-break-after:always}
 .tiles{background-image:""" + TILE + """;background-size:12mm 12mm;background-repeat:repeat}
-.tp{height:176mm;display:flex;flex-direction:column;justify-content:center}
+.tp{height:172mm;display:flex;flex-direction:column;justify-content:center}
 .tp h1{font:800 44pt/.92 'Bricolage Grotesque';letter-spacing:-.03em;color:#1C3F94;margin:0 0 8mm}
 .tp .sub{font-size:11.5pt;color:#5B6170;max-width:90mm;margin:0 0 14mm}
 .tp .by{font:700 15pt 'Bricolage Grotesque';color:#5E6B2A;margin:0}
-.cr{height:176mm;display:flex;flex-direction:column;justify-content:flex-end;font-size:8.5pt;color:#5B6170;max-width:95mm}
+.cr{height:172mm;display:flex;flex-direction:column;justify-content:flex-end;font-size:8.5pt;color:#5B6170;max-width:95mm}
 .cr p{margin:0 0 2.5mm}
 h2.toc{font:800 22pt/1 'Bricolage Grotesque';color:#1C3F94;margin:0 0 6mm}
 .fw{font-size:11.5pt;line-height:1.65;max-width:100mm;margin-top:8mm}
@@ -111,7 +111,8 @@ def interior_html(pagenos=None):
     return f'<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(pages)}</body></html>'
 
 
-FOOT = '<div style="width:100%;text-align:center;font-size:8px;color:#5B6170;font-family:Arial,sans-serif"><span class="pageNumber"></span></div>'
+# Page numbers must stay at least 0.25 in (6.4 mm) from the trim edge or KDP rejects the file; this keeps them about 0.45 in up.
+FOOT = '<div style="width:100%;text-align:center;font-size:8px;color:#5B6170;font-family:Arial,sans-serif;margin-bottom:6.5mm"><span class="pageNumber"></span></div>'
 
 
 async def render_interior(pg, path, pagenos=None):
@@ -119,7 +120,7 @@ async def render_interior(pg, path, pagenos=None):
     await pg.goto('file://' + os.path.join(OUT, '_interior.html')); await pg.wait_for_timeout(2500)
     await pg.pdf(path=path, width='139.7mm', height='215.9mm', print_background=True, display_header_footer=True,
                  header_template='<span></span>', footer_template=FOOT,
-                 margin={'top': '13mm', 'bottom': '15mm', 'left': '14mm', 'right': '14mm'})
+                 margin={'top': '13mm', 'bottom': '19mm', 'left': '14mm', 'right': '14mm'})
 
 
 def start_pages(path):
