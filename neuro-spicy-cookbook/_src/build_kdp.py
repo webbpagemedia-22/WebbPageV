@@ -4,7 +4,7 @@ Usage (from this folder):  python3 build_kdp.py /path/to/output-folder
 Writes: kdp-paperback-interior.pdf, kdp-paperback-cover.pdf, kdp-ebook.epub, kdp-ebook-cover.jpg
 Keep the output folder OUTSIDE the website repo: these files are for uploading to KDP, not for the site.
 
-Paperback spec: 5.83 x 8.27 in (148 x 210 mm), no bleed inside, premium colour, white paper.
+Paperback spec: 5.5 x 8.5 in (139.7 x 215.9 mm), no bleed inside, premium colour, white paper.
 Cover: full wrap with 3.2 mm bleed; spine = page count x 0.0596 mm (premium colour).
 """
 import json, sys, html, segno, asyncio, io, os, re, zipfile, uuid, datetime
@@ -39,11 +39,11 @@ CSS = """
 body{margin:0;font:400 9.6pt/1.5 Lexend,sans-serif;color:#232836;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .page{position:relative;page-break-after:always}
 .tiles{background-image:""" + TILE + """;background-size:12mm 12mm;background-repeat:repeat}
-.tp{height:170mm;display:flex;flex-direction:column;justify-content:center}
+.tp{height:176mm;display:flex;flex-direction:column;justify-content:center}
 .tp h1{font:800 44pt/.92 'Bricolage Grotesque';letter-spacing:-.03em;color:#1C3F94;margin:0 0 8mm}
 .tp .sub{font-size:11.5pt;color:#5B6170;max-width:90mm;margin:0 0 14mm}
 .tp .by{font:700 15pt 'Bricolage Grotesque';color:#5E6B2A;margin:0}
-.cr{height:170mm;display:flex;flex-direction:column;justify-content:flex-end;font-size:8.5pt;color:#5B6170;max-width:95mm}
+.cr{height:176mm;display:flex;flex-direction:column;justify-content:flex-end;font-size:8.5pt;color:#5B6170;max-width:95mm}
 .cr p{margin:0 0 2.5mm}
 h2.toc{font:800 22pt/1 'Bricolage Grotesque';color:#1C3F94;margin:0 0 6mm}
 .fw{font-size:11.5pt;line-height:1.65;max-width:100mm;margin-top:8mm}
@@ -117,7 +117,7 @@ FOOT = '<div style="width:100%;text-align:center;font-size:8px;color:#5B6170;fon
 async def render_interior(pg, path, pagenos=None):
     open(os.path.join(OUT, '_interior.html'), 'w').write(interior_html(pagenos))
     await pg.goto('file://' + os.path.join(OUT, '_interior.html')); await pg.wait_for_timeout(2500)
-    await pg.pdf(path=path, width='148mm', height='210mm', print_background=True, display_header_footer=True,
+    await pg.pdf(path=path, width='139.7mm', height='215.9mm', print_background=True, display_header_footer=True,
                  header_template='<span></span>', footer_template=FOOT,
                  margin={'top': '13mm', 'bottom': '15mm', 'left': '14mm', 'right': '14mm'})
 
@@ -136,23 +136,23 @@ def start_pages(path):
 # ---------- paperback cover ----------
 def cover_html(pages):
     spine = pages * 0.0596
-    B, W, H = 3.2, 148, 210
+    B, W, H = 3.2, 139.7, 215.9
     full_w, full_h = B + W + spine + W + B, B + H + B
     fx = B + W + spine  # left edge of the front panel
     band = B + 70
     photos = [r['image'] for r in R if r['id'] in ('roast-chicken', 'nasi-goreng', 'lasagne')]
-    ph = ''.join(f'<img src="file://{IMG}/{p}" style="width:34mm;height:34mm;object-fit:cover;border-radius:2mm">' for p in photos)
+    ph = ''.join(f'<img src="file://{IMG}/{p}" style="width:33mm;height:33mm;object-fit:cover;border-radius:2mm">' for p in photos)
     names = ', '.join(r['name'] for r in R[:-1]) + ' and ' + R[-1]['name']
     doc = f"""<!DOCTYPE html><html><head><meta charset="utf-8">{FONTS}<style>
 @page{{size:{full_w:.2f}mm {full_h:.2f}mm;margin:0}}
 *{{box-sizing:border-box}}body{{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact;font-family:Lexend,sans-serif;color:#232836}}
 .wrap{{position:relative;width:{full_w:.2f}mm;height:{full_h:.2f}mm;background:#F7F7F4;overflow:hidden}}
 .band{{position:absolute;left:0;top:0;width:100%;height:{band}mm;background-image:{TILE};background-size:12mm 12mm}}
-.front{{position:absolute;left:{fx + 14:.2f}mm;top:{band + 12}mm;width:{W - 28}mm}}
-.front h1{{font:800 47pt/.9 'Bricolage Grotesque';letter-spacing:-.03em;color:#1C3F94;margin:0 0 6mm}}
+.front{{position:absolute;left:{fx + 14:.2f}mm;top:{band + 12}mm;width:{W - 28:.1f}mm}}
+.front h1{{font:800 44pt/.9 'Bricolage Grotesque';letter-spacing:-.03em;color:#1C3F94;margin:0 0 6mm}}
 .front p{{font-size:11.5pt;line-height:1.45;color:#5B6170;margin:0;max-width:100mm}}
 .by{{position:absolute;left:{fx + 14:.2f}mm;top:{B + H - 24}mm;font:700 16pt 'Bricolage Grotesque';color:#5E6B2A}}
-.back{{position:absolute;left:{B + 14}mm;top:{band + 9}mm;width:{W - 28}mm}}
+.back{{position:absolute;left:{B + 14}mm;top:{band + 9}mm;width:{W - 28:.1f}mm}}
 .back h2{{font:800 17pt/1.1 'Bricolage Grotesque';color:#1C3F94;margin:0 0 3mm}}
 .back p{{font-size:9.4pt;line-height:1.5;margin:0 0 2.6mm}}
 .ph{{display:flex;gap:4.5mm;margin-top:3mm}}
@@ -270,7 +270,7 @@ async def main():
         await b.close()
     # Chromium rounds page sizes up to whole points; set the exact trim and cover sizes KDP expects.
     from pypdf import PdfReader, PdfWriter
-    for f, (pw, ph) in {interior: (5.83 * 72, 8.27 * 72), os.path.join(OUT, 'kdp-paperback-cover.pdf'): (w / 25.4 * 72, h / 25.4 * 72)}.items():
+    for f, (pw, ph) in {interior: (5.5 * 72, 8.5 * 72), os.path.join(OUT, 'kdp-paperback-cover.pdf'): (w / 25.4 * 72, h / 25.4 * 72)}.items():
         rd = PdfReader(f); wr = PdfWriter()
         for page in rd.pages:
             top = float(page.mediabox.top)
