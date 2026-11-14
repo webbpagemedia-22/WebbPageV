@@ -1,0 +1,554 @@
+{
+ "absorption-rice": {
+  "id": "0qyW2yA0a20",
+  "start": 0,
+  "title": "How to cook rice",
+  "channel": "Good Food",
+  "short": false,
+  "note": "BBC Good Food basics: rice brought to the boil, lidded and simmered until the water is absorbed."
+ },
+ "boil-eggs": {
+  "id": "q8Zdz2KtFfc",
+  "start": 0,
+  "title": "Boiled Eggs - Quick & Easy",
+  "channel": "Australian Eggs",
+  "short": false,
+  "note": "Australian Eggs quick guide; eggs start in cold water, are brought to the boil, then timed. Their timings may differ slightly from OG's 3 mins."
+ },
+ "check-chicken": {
+  "id": "g4_Ajy1WBR8",
+  "start": 0,
+  "title": "How to check if chicken is cooked",
+  "channel": "Chez Beccy",
+  "short": false,
+  "note": "UK home cook shows checking chicken is done, including juices running clear rather than pink."
+ },
+ "chop-onion": {
+  "id": "dCGS067s0zo",
+  "start": 0,
+  "title": "Dicing An Onion | Gordon Ramsay",
+  "channel": "Gordon Ramsay",
+  "short": false,
+  "note": "Gordon Ramsay's official channel: quick, clear onion dicing demo."
+ },
+ "crack-eggs": {
+  "id": "4-LxpfOG3Ts",
+  "start": 0,
+  "title": "How to Crack an Egg Cleanly | Real Simple",
+  "channel": "Real Simple",
+  "short": false,
+  "note": "Real Simple: short demo of cracking an egg cleanly into a bowl without shell bits."
+ },
+ "dice-carrot": {
+  "id": "LmzeyyzF_jo",
+  "start": 0,
+  "title": "How to dice a carrot | Mindful Chef",
+  "channel": "Mindful Chef",
+  "short": false,
+  "note": "UK recipe-box brand Mindful Chef: short, clear carrot dicing."
+ },
+ "finger-rice-water": {
+  "id": "DbTVULD2jmU",
+  "start": 0,
+  "title": "How to Measure Rice Proportions with Your Finger - CHOW Tip",
+  "channel": "Chowhound",
+  "short": false,
+  "note": "Chowhound tip: measuring rice water with your finger to the first crease, fingertip on the rice."
+ },
+ "fry-curry-paste": {
+  "id": "BuySyabUUJw",
+  "start": 0,
+  "title": "Using Coconut Milk to Fry Curry Paste (Speaking in English Only)",
+  "channel": "Mee Living Stories",
+  "short": false,
+  "note": "WEAK: small channel, but shows exactly frying Thai curry paste in a pan (in coconut milk) until fragrant; no reputable short alternative found."
+ },
+ "garam-masala": {
+  "id": "oasS6Qado6k",
+  "start": 0,
+  "title": "This Spice is a Chicken Curry Non-Negotiable",
+  "channel": "Epicurious",
+  "short": true,
+  "note": "WEAK: Epicurious Short on garam masala as the essential finishing spice for chicken curry; content inferred from title, worth a quick watch."
+ },
+ "grate-cheese": {
+  "id": "8KLIBljFg3o",
+  "start": 0,
+  "title": "How to Grate Cheese - Cooking with Kids",
+  "channel": "Great British Chefs",
+  "short": false,
+  "note": "Great British Chefs (UK): simple, safe demo of grating cheese on a box grater."
+ },
+ "knead-dough": {
+  "id": "-RMfhKS6vfs",
+  "start": 0,
+  "title": "How to knead dough perfectly every time | Waitrose",
+  "channel": "Waitrose & Partners",
+  "short": true,
+  "note": "Waitrose (UK) Short on hand-kneading until smooth; shown on a yeast dough but the motion is identical for the no-yeast pizza dough."
+ },
+ "paella-rice": {
+  "id": "6wpi_B4zCSI",
+  "start": 0,
+  "title": "How to make a paella with Paellero Carmencita?",
+  "channel": "Carmencita Especias",
+  "short": false,
+  "note": "Carmencita, makers of the Paellero seasoning sachet: adding the sachet and rice, then simmering until the stock is absorbed."
+ },
+ "pizza-sauce": {
+  "id": "Xrs8Jq-dteg",
+  "start": 0,
+  "title": "Easy No-Cook Pizza Sauce Recipe #shorts",
+  "channel": "Jeremy Potvin Cooking",
+  "short": true,
+  "note": "Short no-cook pizza sauce: tomato mixed with seasoning and garlic, no stove, matches OG's passata mix."
+ },
+ "prep-parsnips": {
+  "id": "SPHLW6bmOr4",
+  "start": 0,
+  "title": "How to cook parsnips",
+  "channel": "Good Food",
+  "short": false,
+  "note": "BBC Good Food (UK): peeling and cutting parsnips lengthways ready to roast."
+ },
+ "reduce-sauce": {
+  "id": "o00jZwV4DRY",
+  "start": 0,
+  "title": "What is a Reduction?  How to Reduce a Sauce",
+  "channel": "DearMartiniKitchen",
+  "short": false,
+  "note": "Explains and shows simmering a sauce down until it thickens to the consistency you want."
+ },
+ "rest-rice": {
+  "id": "6xJpcfQavDI",
+  "start": 0,
+  "title": "Chef Tip of the Day:  Let your rice rest! Here's why 👀 #cooking #shortsvideo #food #cheftips #chef",
+  "channel": "ButcherBox",
+  "short": true,
+  "note": "Short chef tip on leaving cooked rice to rest, lid on, before serving and why it matters."
+ },
+ "roast-chicken": {
+  "id": "-ZiWc-QwAJQ",
+  "start": 0,
+  "title": "How to make classic roast chicken & gravy",
+  "channel": "Good Food",
+  "short": false,
+  "note": "BBC Good Food (UK) classic roast chicken; full recipe but the core roasting technique matches."
+ },
+ "roll-pizza": {
+  "id": "aL1_t-9O9E0",
+  "start": 0,
+  "title": "How to Roll Out Pizza Dough | Real Simple",
+  "channel": "Real Simple",
+  "short": false,
+  "note": "Real Simple: rolling pizza dough out thin with a rolling pin on a floured surface."
+ },
+ "scramble-eggs": {
+  "id": "yKUui_b7JO0",
+  "start": 0,
+  "title": "Perfect Scrambled Eggs | Jamie Oliver",
+  "channel": "Jamie Oliver",
+  "short": false,
+  "note": "Jamie Oliver (UK): eggs into a hot pan, keep stirring and control the heat for soft scrambled eggs."
+ },
+ "simmer": {
+  "id": "A8yPmXpzkvU",
+  "start": 0,
+  "title": "The Difference Between Boiling And Simmering | Cooking Techniques | Whole Foods Market",
+  "channel": "WholeFoodsMarket",
+  "short": false,
+  "note": "Whole Foods Market technique clip showing what a simmer looks like versus a boil."
+ },
+ "slice-pepper": {
+  "id": "hZGqtmwboHU",
+  "start": 0,
+  "title": "How to Cut A Bell Pepper | Gordon Ramsay",
+  "channel": "Gordon Ramsay",
+  "short": false,
+  "note": "Gordon Ramsay's official channel: deseeding a pepper and cutting it into strips."
+ },
+ "soften-onion": {
+  "id": "N122CG9RtrA",
+  "start": 0,
+  "title": "How to Cook Onions until Translucent",
+  "channel": "Robert Alvarez",
+  "short": false,
+  "note": "Shows onions cooked on a medium heat until soft and translucent, not browned."
+ },
+ "whisk-eggs": {
+  "id": "ZdVdYtt9diA",
+  "start": 0,
+  "title": "How to Beat Eggs Perfectly With Just a Fork | Mom Shows You How",
+  "channel": "MOMables - Laura Fuentes",
+  "short": false,
+  "note": "Short demo of beating eggs with a fork until fully mixed, no streaks of white."
+ },
+ "bake-pizza": {
+  "id": "Ne_lA1q3v24",
+  "start": 0,
+  "title": "5 Pro Tips for Cooking Pizza in a Home Oven",
+  "channel": "Vito Iacopelli",
+  "short": false,
+  "note": "Vito Iacopelli's tips for baking pizza in a domestic oven (hot surface, high heat, when it's done); not tray-specific, so a moderate match."
+ },
+ "brown-mince": {
+  "id": "OPEzpj3z8vY",
+  "start": 0,
+  "title": "How to Brown Ground Beef",
+  "channel": "Certified Angus Beef ®",
+  "short": false,
+  "note": "Straightforward demo of browning mince in a pan from a reputable beef producer."
+ },
+ "chocolate-chilli": {
+  "id": "148p9HlT9TM",
+  "start": 0,
+  "title": "Chilli Con Carne With Chocolate | Little Twists",
+  "channel": "Sainsbury's Food",
+  "short": false,
+  "note": "Sainsbury's (UK) short 'Little Twists' clip on finishing chilli con carne with dark chocolate."
+ },
+ "clean-mushrooms": {
+  "id": "85Rl2-qJ1jY",
+  "start": 0,
+  "title": "How to Clean, Prepare and Cut Mushrooms | F.N. Sharp How-To Videos",
+  "channel": "F.N. Sharp",
+  "short": false,
+  "note": "Shows wiping and trimming button mushrooms before cooking."
+ },
+ "cream-curry": {
+  "id": "lnDS-1c1C4o",
+  "start": 0,
+  "title": "Chicken Curry with HEAVY CREAM? | Eid Recipes",
+  "channel": "Katz Kitchen",
+  "short": true,
+  "note": "Short showing cream stirred into a chicken curry; small channel, weakest match in this batch."
+ },
+ "dice-chicken": {
+  "id": "-l3TxkEldPs",
+  "start": 0,
+  "title": "How to Cut Chicken Breasts into Cubes & Pieces | Easy Method",
+  "channel": "MOMables - Laura Fuentes",
+  "short": false,
+  "note": "Clear demo of cutting chicken breast into bite-size chunks."
+ },
+ "fried-rice": {
+  "id": "_ODdLLEKo24",
+  "start": 0,
+  "title": "The Formula to Great Fried Rice with Any Ingredients | Techniquely with Lan Lam",
+  "channel": "America's Test Kitchen",
+  "short": false,
+  "note": "America's Test Kitchen on adding cooked rice to the pan and stirring it through without clumping; may run longer than 4 mins."
+ },
+ "fry-egg": {
+  "id": "jQD6S6v4TyU",
+  "start": 0,
+  "title": "How to Fry an Egg (the extra-crispy method)",
+  "channel": "J. Kenji López-Alt",
+  "short": false,
+  "note": "Kenji's crispy-edged fried egg in hot oil, the style that tops nasi goreng."
+ },
+ "garlic-butter": {
+  "id": "snEb0JWFrtE",
+  "start": 0,
+  "title": "Garlic Butter Sauce (4 Ingredients, 7 Minutes, Goes on Everything)",
+  "channel": "Pinch and Swirl",
+  "short": false,
+  "note": "Butter and garlic melted gently in a small saucepan, as the step describes."
+ },
+ "grate-garlic": {
+  "id": "P2-CjQNfvbs",
+  "start": 0,
+  "title": "How to Grate Garlic on a Microplane",
+  "channel": "Thanks For The Food, A Norwegian Food Blog",
+  "short": false,
+  "note": "Short demo of grating garlic cloves on a fine grater."
+ },
+ "make-stock": {
+  "id": "3EKereTCl_k",
+  "start": 0,
+  "title": "How to make Stock/Broth from Bouillon cube l Tip#1",
+  "channel": "Tasty Kitchen Bites",
+  "short": false,
+  "note": "Making stock from a stock cube and hot water, matching a home-cook 'make a litre of stock'; small channel."
+ },
+ "parboil-potatoes": {
+  "id": "L8M6vAhUHFA",
+  "start": 0,
+  "title": "How to Parboil Potatoes",
+  "channel": "wikiHow",
+  "short": false,
+  "note": "Simple how-to for parboiling potatoes in a pan of water."
+ },
+ "pizza-toppings": {
+  "id": "b4dYCHiThgE",
+  "start": 0,
+  "title": "Learn to Cook: Tips for Topping Pizza",
+  "channel": "America's Test Kitchen",
+  "short": false,
+  "note": "America's Test Kitchen tips on spreading toppings evenly on a pizza."
+ },
+ "prep-roast-chicken": {
+  "id": "0kyvW5XqFsA",
+  "start": 0,
+  "title": "Compound Butter Under Chicken Skin",
+  "channel": "Chowhound",
+  "short": true,
+  "note": "Chowhound short on working butter under the breast skin; does not show the lemon in the cavity."
+ },
+ "rest-foil": {
+  "id": "JB8E6XbQioc",
+  "start": 0,
+  "title": "For Perfect White Rice, Let it Rest",
+  "channel": "America's Test Kitchen",
+  "short": true,
+  "note": "America's Test Kitchen short on leaving cooked rice covered to rest before serving."
+ },
+ "rest-sauce": {
+  "id": null,
+  "start": 0,
+  "title": null,
+  "channel": null,
+  "short": false,
+  "note": "No clear short video found on resting a chilli or bolognese off the heat with the lid on; results were steak resting or reheating. Step is simple enough without one."
+ },
+ "roast-parsnips": {
+  "id": "lkq7ObVyMLE",
+  "start": 0,
+  "title": "Easy Roast Parsnips without Honey #Christmas #Vegan",
+  "channel": "Try Less Meat",
+  "short": false,
+  "note": "Plain roast parsnips turned in oil (no honey), matching the recipe."
+ },
+ "rough-up-potatoes": {
+  "id": "PEZd8VR-aUY",
+  "start": 0,
+  "title": "Perfect Roast Potatoes | #shorts #jamieoliver",
+  "channel": "Jamie Oliver",
+  "short": true,
+  "note": "Jamie Oliver short on roughing up parboiled potatoes for crispy roasties; he may shake them in a colander rather than a lidded pan."
+ },
+ "seal-chicken": {
+  "id": "_gadU4xI5fs",
+  "start": 0,
+  "title": "How to Cook Chicken Pieces in a Pan | Juicy Every Time",
+  "channel": "MOMables - Laura Fuentes",
+  "short": false,
+  "note": "Frying chicken pieces in a hot pan until browned all over."
+ },
+ "slice-chicken": {
+  "id": "PUkcsWrwcKA",
+  "start": 0,
+  "title": "How to cut Chicken for Stir Fry",
+  "channel": "The Woks of Life",
+  "short": true,
+  "note": "The Woks of Life short on slicing chicken thinly for stir-fries."
+ },
+ "slice-spring-onion": {
+  "id": "VI6TTQ1C5-U",
+  "start": 0,
+  "title": "How to Chop a Spring Onion",
+  "channel": "Nosh Books",
+  "short": false,
+  "note": "UK channel; short demo of slicing spring onions."
+ },
+ "stir-fry": {
+  "id": "kObfYtwoyeM",
+  "start": 0,
+  "title": "How to Stir Fry Vegetables",
+  "channel": "Better Homes and Gardens",
+  "short": false,
+  "note": "Basics of stir-frying veg quickly over high heat in a wok."
+ },
+ "wok-toss": {
+  "id": "z5M4eoWgMlY",
+  "start": 0,
+  "title": "How to Toss rice in a wok",
+  "channel": "Mrchang",
+  "short": false,
+  "note": "A chef demonstrating how to toss rice in a wok."
+ },
+ "bloom-spices": {
+  "id": "zdn2-zL8SWQ",
+  "start": 0,
+  "title": "To “bloom” your spices, saute spices in a little oil before adding other ingredients 🧄 #cookingtips",
+  "channel": "Peas and Hoppiness",
+  "short": true,
+  "note": "Short showing spices sizzled in a little oil before other ingredients go in, the bloom step in OG Curry and the chilli."
+ },
+ "carve-chicken": {
+  "id": "h-MNA30zwzg",
+  "start": 0,
+  "title": "How to joint a cooked roast chicken - BBC GoodFood.com - BBC Food",
+  "channel": "Good Food",
+  "short": false,
+  "note": "Official BBC Good Food clip on jointing/carving a cooked roast chicken; UK and to the point."
+ },
+ "chop-garlic": {
+  "id": "viD0YxhCORo",
+  "start": 0,
+  "title": "How to Peel and Chop Garlic",
+  "channel": "Allrecipes",
+  "short": false,
+  "note": "Allrecipes basics: peeling and finely chopping garlic cloves with a knife."
+ },
+ "cook-prawns": {
+  "id": "ommpgjidkzE",
+  "start": 0,
+  "title": "How To Cook Raw Prawns | Good Housekeeping UK",
+  "channel": "Good Housekeeping UK",
+  "short": false,
+  "note": "Good Housekeeping UK showing raw prawns cooked in a pan until they turn pink."
+ },
+ "cube-butter": {
+  "id": "HLqySH9xOFs",
+  "start": 0,
+  "title": "How to Cube Butter",
+  "channel": "DearMartiniKitchen",
+  "short": false,
+  "note": "Simple demo of cutting a block of butter into small squares/cubes."
+ },
+ "drain-tin": {
+  "id": "nKNE_VG6jag",
+  "start": 0,
+  "title": "How to drain canned products",
+  "channel": "Kids Cooking With Chef Mark",
+  "short": false,
+  "note": "Generic how-to on draining tinned products, works for both bamboo shoots and kidney beans."
+ },
+ "fry-chorizo": {
+  "id": "R-lpaOqm7xM",
+  "start": 0,
+  "title": "How to make chorizo oil",
+  "channel": "ShetlandChef",
+  "short": false,
+  "note": "UK chef rendering Spanish chorizo gently so the red oil comes out, which is what the step wants."
+ },
+ "fry-pancetta": {
+  "id": "eMPeiV9uc8g",
+  "start": 0,
+  "title": "Crispy Pancetta Recipe",
+  "channel": "The Heirloom Pantry",
+  "short": false,
+  "note": "Crisping pancetta in a pan; closest clear match found, few dedicated pancetta-frying clips exist."
+ },
+ "garlic-mushrooms": {
+  "id": "MYaom6X0dQU",
+  "start": 0,
+  "title": "Buttery Garlic Mushrooms, Simple Pan Fried Side",
+  "channel": "Cooking by Hod",
+  "short": false,
+  "note": "Mushrooms pan-fried in butter and garlic, stirred until coated and cooked through."
+ },
+ "gravy": {
+  "id": "iyU-qEC5edQ",
+  "start": 0,
+  "title": "Goldenfry original beef gravy granules demonstration made in Yorkshire",
+  "channel": "anthony mckie",
+  "short": false,
+  "note": "Gravy granules stirred into boiling water in a jug, same method as Bisto granules (brand shown is Goldenfry)."
+ },
+ "no-yeast-dough": {
+  "id": "hwETeWr6sj8",
+  "start": 0,
+  "title": "No Yeast Pizza Dough",
+  "channel": "Just a Taste with Kelly Senyei",
+  "short": false,
+  "note": "Quick no-yeast pizza dough made with flour, baking powder, salt, oil and water."
+ },
+ "peel-potatoes": {
+  "id": "F_DIEazODwg",
+  "start": 0,
+  "title": "How to Safely Peel Potatoes Quickly with a Vegetable Peeler",
+  "channel": "Online Culinary School",
+  "short": false,
+  "note": "Shows safe, quick potato peeling with a vegetable peeler."
+ },
+ "preheat-tray": {
+  "id": "7nM491bKJxk",
+  "start": 0,
+  "title": "The Preheat Secret for Perfect Homemade Pizza 🍕✨ #PizzaNight #PizzaTips",
+  "channel": "Prepa Pizza",
+  "short": true,
+  "note": "Short on preheating the oven and surface before the pizza goes in for a crisp base."
+ },
+ "quarter-mushrooms": {
+  "id": "hSZbeUp4PK8",
+  "start": 0,
+  "title": "How to Slice and Quarter Mushrooms from @whatsgabycooking123",
+  "channel": "What's Gaby Cooking",
+  "short": false,
+  "note": "What's Gaby Cooking: slicing and quartering mushrooms."
+ },
+ "rest-meat": {
+  "id": "PT2Tj3AW9_0",
+  "start": 0,
+  "title": "Resting Chicken After Cooking #HowTo #Chicken #CookingTips",
+  "channel": "Just Maika Cooking",
+  "short": true,
+  "note": "Short on resting a cooked chicken before cutting so it stays juicy."
+ },
+ "rinse-rice": {
+  "id": "G717sY8vkPY",
+  "start": 0,
+  "title": "How to Rinse Rice",
+  "channel": "WebstaurantStore",
+  "short": false,
+  "note": "Rinsing rice under cold water repeatedly until the water runs clear."
+ },
+ "roast-potatoes": {
+  "id": "hl3JnxBKmJs",
+  "start": 0,
+  "title": "Super Crispy Roast Potatoes",
+  "channel": "Uncle Matt's Cookery Lessons",
+  "short": false,
+  "note": "UK channel: parboiled spuds tipped into a hot oiled tray for crispy roasties."
+ },
+ "satay-paste": {
+  "id": "ZtK81MzVoJ4",
+  "start": 0,
+  "title": "Easy Thai Peanut Satay Sauce Recipe | Thai Girl in the Kitchen",
+  "channel": "Thai Girl in the Kitchen",
+  "short": false,
+  "note": "Easy peanut satay sauce mixed into coconut milk; OG's version is a simpler peanut-butter paste but the method matches."
+ },
+ "season": {
+  "id": "PqPf5uhHHAM",
+  "start": 0,
+  "title": "Chef Justine Kelly's Tips for Seasoning and Tasting Food",
+  "channel": "Home Made Simple",
+  "short": false,
+  "note": "Chef's tips on seasoning with salt and pepper and tasting as you go."
+ },
+ "slice-mushrooms": {
+  "id": "unaj8e81czo",
+  "start": 0,
+  "title": "How To Slice Mushrooms",
+  "channel": "Days Well Spent",
+  "short": false,
+  "note": "Straightforward demo of slicing mushrooms."
+ },
+ "socarrat": {
+  "id": "usNY8ghrkAA",
+  "start": 0,
+  "title": "Paella's Hidden Secret - SOCARRAT - In Your Own Kitchen",
+  "channel": "CulinaryCam",
+  "short": false,
+  "note": "Explains and shows getting the crispy socarrat at the bottom of a paella pan at home."
+ },
+ "thai-curry": {
+  "id": "nyF8rwMIMM0",
+  "start": 0,
+  "title": "Quick and Easy Thai Red Curry | Aromatic, Fresh & Full of Flavour!",
+  "channel": "Kitchen Sanctuary",
+  "short": false,
+  "note": "Kitchen Sanctuary (UK): chicken coated in Thai curry paste then simmered with stock and coconut milk; full recipe, so longer than ideal."
+ },
+ "yorkshires": {
+  "id": "bsbG0o8ruJA",
+  "start": 0,
+  "title": "How to make quick Yorkshire puddings",
+  "channel": "loveFOOD",
+  "short": false,
+  "note": "Weak match: UK loveFOOD clip on quick Yorkshire puddings in a hot oven; no clear video of shop-bought/frozen Yorkies in a conventional oven was found."
+ }
+}

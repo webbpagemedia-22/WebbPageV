@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-93R8LZEV92"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-93R8LZEV92');
+</script>
+<!--ROBOTS-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cooking with OG</title>
+<meta name="description" content="OG's family recipes, from Arroz de OG to the Sunday roast. Tap any step to watch how it's done.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cobalt:#1C3F94; --cobalt-deep:#132C6B; --saffron:#E9A21B; --saffron-soft:#FCEFD2;
+  --olive:#5E6B2A; --plaster:#F7F7F4; --ink:#232836; --muted:#5B6170; --line:#DADCE3;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Lexend",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--plaster);color:var(--ink);font:400 1.125rem/1.6 var(--body)}
+a{color:var(--cobalt)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px;border-radius:4px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+
+/* tile band: the cover's one statement */
+.tiles{
+  --t:56px;
+  background-color:var(--cobalt);
+  background-image:
+    radial-gradient(circle at 50% 50%, var(--plaster) 0 18%, transparent 19%),
+    radial-gradient(circle at 0 0, var(--plaster) 0 30%, transparent 31%),
+    radial-gradient(circle at 100% 0, var(--plaster) 0 30%, transparent 31%),
+    radial-gradient(circle at 0 100%, var(--plaster) 0 30%, transparent 31%),
+    radial-gradient(circle at 100% 100%, var(--plaster) 0 30%, transparent 31%),
+    radial-gradient(circle at 50% 50%, var(--saffron) 0 8%, transparent 9%);
+  background-size:var(--t) var(--t);
+  background-blend-mode:normal;
+}
+.cover-tiles{height:9rem}
+.strip{height:14px}
+
+.review{background:var(--saffron-soft);border-bottom:2px solid var(--saffron);font-size:.95rem}
+.review p{margin:0;padding:.6rem 0}
+
+/* cover */
+.cover h1{font:800 clamp(3.2rem,11vw,7.5rem)/.92 var(--display);letter-spacing:-.03em;color:var(--cobalt);margin:2.5rem 0 1rem}
+.cover .lede{max-width:34rem;font-size:1.25rem;color:var(--muted);margin:0 0 2.5rem}
+.contents{display:grid;gap:2rem 3rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));padding-bottom:4rem}
+.contents h2{font:700 1.35rem/1.2 var(--display);margin:0 0 .6rem;color:var(--olive)}
+.contents ul{list-style:none;margin:0;padding:0}
+.contents li a{display:block;padding:.55rem 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink);font-weight:700}
+.contents li a:hover{color:var(--cobalt)}
+.contents li small{display:block;font-weight:400;color:var(--muted);font-size:.9rem}
+
+/* recipe */
+.top{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;font-size:.95rem}
+.top a{text-decoration:none;font-weight:700}
+.rhead{padding:1rem 0 1.5rem;border-bottom:1px solid var(--line)}
+.rhead .cat{color:var(--olive);font-weight:700;margin:0}
+.rhead h1{font:800 clamp(2.4rem,7vw,4.4rem)/1 var(--display);letter-spacing:-.02em;color:var(--cobalt);margin:.2rem 0 .3rem}
+.rhead .aka{font-style:italic;color:var(--muted);margin:0 0 .6rem}
+.rhead .blurb{max-width:40rem;margin:.4rem 0 1rem;font-size:1.2rem}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem 2rem;margin:0}
+.meta div{display:flex;gap:.4rem;align-items:baseline}
+.meta dt{color:var(--muted);font-size:.95rem}
+.meta dd{margin:0;font-weight:700}
+.intro{background:#fff;border-left:5px solid var(--olive);padding:1rem 1.25rem;margin:1.5rem 0 0;max-width:46rem}
+
+.body{display:grid;gap:2.5rem;padding:2rem 0 3rem}
+@media(min-width:900px){.body{grid-template-columns:19rem 1fr}.ingr{position:sticky;top:1rem;align-self:start}}
+.ingr h2,.method h2{font:700 1.5rem/1.2 var(--display);margin:0 0 .8rem}
+.ingr ul{list-style:none;margin:0;padding:0}
+.ingr li{border-top:1px solid var(--line)}
+.ingr label{display:flex;gap:.7rem;padding:.55rem 0;cursor:pointer;align-items:flex-start}
+.ingr input{width:1.2rem;height:1.2rem;margin-top:.25rem;accent-color:var(--olive);flex:none}
+.ingr input:checked + span{color:var(--muted);text-decoration:line-through}
+.equip{margin-top:1rem;color:var(--muted);font-size:1rem}
+
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.step{display:grid;grid-template-columns:3.6rem 1fr;gap:0 1rem;padding:1rem 0;border-top:1px solid var(--line)}
+.num{
+  width:3.4rem;height:3.4rem;border-radius:50%;border:3px solid var(--saffron);background:#fff;
+  font:800 1.5rem/1 var(--display);color:var(--cobalt);cursor:pointer;position:relative;
+  display:grid;place-items:center;transition:background .15s,color .15s;
+}
+.num:hover{background:var(--saffron-soft)}
+.num[aria-expanded="true"]{background:var(--saffron);color:var(--cobalt-deep)}
+.num .play{position:absolute;right:-4px;bottom:-4px;width:1.35rem;height:1.35rem;border-radius:50%;background:var(--cobalt);display:grid;place-items:center}
+.num .play::after{content:"";border-left:7px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px}
+.num[disabled]{border-color:var(--line);cursor:default}
+.num[disabled] .play{display:none}
+.stext p{margin:.35rem 0 .4rem}
+.watch{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
+.watch button{background:none;border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem;font-size:.9rem;color:var(--cobalt);cursor:pointer}
+.watch button:hover,.watch button[aria-pressed="true"]{border-color:var(--cobalt);background:#fff}
+.check{background:var(--saffron-soft);border-left:4px solid var(--saffron);padding:.4rem .7rem;margin:.5rem 0 0;font-size:.95rem}
+.player{grid-column:1/-1;margin-top:.9rem}
+.player .frame{position:relative;padding-top:56.25%;background:#000;border-radius:8px;overflow:hidden}
+.player.short .frame{padding-top:0;height:min(70vh,640px);max-width:360px}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player figcaption{font-size:.9rem;color:var(--muted);margin-top:.4rem}
+.tips{margin-top:2rem;padding:1.1rem 1.25rem;background:#fff;border-left:5px solid var(--cobalt)}
+.tips h3{font:700 1.2rem/1.2 var(--display);margin:0 0 .4rem}
+.tips ul{margin:0;padding-left:1.1rem}
+
+.flip{display:flex;justify-content:space-between;gap:1rem;padding:1.5rem 0 3rem;border-top:1px solid var(--line)}
+.flip a{text-decoration:none;max-width:48%}
+.flip small{display:block;color:var(--muted)}
+.flip strong{font:700 1.2rem/1.2 var(--display)}
+.flip .next{text-align:right;margin-left:auto}
+footer{font-size:.9rem;color:var(--muted);padding:1.5rem 0 2.5rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.num .play,.watch,.top,.flip,.review{display:none}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const BOOK = /*BOOK*/null;
+const VIDEOS = /*VIDEOS*/{};
+const LABELS = /*LABELS*/{};
+const REVIEW = /*REVIEW*/true;
+
+const app = document.getElementById('app');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const R = BOOK.recipes;
+const order = ['Basics','Breakfast','Sauces','Rice & Curries','Mince','Weekend'];
+R.sort((a,b)=>order.indexOf(a.category)-order.indexOf(b.category));
+
+function reviewBar(){
+  if(!REVIEW) return '';
+  const n = R.reduce((a,r)=>a+r.steps.filter(s=>s.check).length+Object.keys(r.ingredientChecks||{}).length,0);
+  return `<div class="review"><div class="wrap"><p><strong>Draft for OG to check.</strong> ${n} bits I've filled in or changed are highlighted in yellow. Fix or approve them before this goes public.</p></div></div>`;
+}
+
+function cover(){
+  document.title = 'Cooking with OG';
+  const groups = order.map(c=>[c,R.filter(r=>r.category===c)]).filter(g=>g[1].length);
+  app.innerHTML = `${reviewBar()}<div class="tiles cover-tiles" aria-hidden="true"></div>
+  <main class="wrap cover">
+    <h1>Cooking with OG</h1>
+    <p class="lede">The family recipes, written the way OG actually cooks them. Tap any step number to watch how it's done.</p>
+    <nav class="contents" aria-label="Recipes">${groups.map(([c,rs])=>`
+      <section><h2>${esc(c)}</h2><ul>${rs.map(r=>`<li><a href="#/${r.id}">${esc(r.name)}<small>${esc(r.blurb)}</small></a></li>`).join('')}</ul></section>`).join('')}
+    </nav>
+  </main>
+  <div class="tiles strip" aria-hidden="true"></div>
+  <footer class="wrap">Cooking with OG · Videos belong to their creators and play from YouTube.</footer>`;
+  window.scrollTo(0,0);
+}
+
+function recipe(id){
+  const i = R.findIndex(r=>r.id===id); if(i<0) return cover();
+  const r = R[i], prev = R[i-1], next = R[i+1];
+  document.title = r.name + ' · Cooking with OG';
+  const ic = r.ingredientChecks || {};
+  app.innerHTML = `${reviewBar()}<div class="tiles strip" aria-hidden="true"></div>
+  <main class="wrap">
+    <div class="top"><a href="#/">Contents</a><span>${i+1} of ${R.length}</span></div>
+    <header class="rhead">
+      <p class="cat">${esc(r.category)}</p>
+      <h1>${esc(r.name)}</h1>
+      ${r.aka?`<p class="aka">${esc(r.aka)}</p>`:''}
+      <p class="blurb">${esc(r.blurb)}</p>
+      <dl class="meta">${[['Prep',r.prep],['Cook',r.cook],['Serves',r.serves]].filter(x=>x[1]).map(([k,v])=>`<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+      ${r.intro?`<p class="intro">${esc(r.intro)}</p>`:''}
+    </header>
+    <div class="body">
+      <section class="ingr" aria-labelledby="ih"><h2 id="ih">Ingredients</h2>
+        <ul>${r.ingredients.map((g,k)=>`<li><label><input type="checkbox"><span>${esc(g)}${REVIEW&&ic[g]?`<span class="check" style="display:block">OG to check: ${esc(ic[g])}</span>`:''}</span></label></li>`).join('')}</ul>
+        ${r.equipment?`<p class="equip">You'll need: ${esc(r.equipment.join(', '))}</p>`:''}
+      </section>
+      <section class="method" aria-labelledby="mh"><h2 id="mh">Method</h2>
+        <ol class="steps">${r.steps.map((s,k)=>{
+          const techs = s.tech.filter(t=>VIDEOS[t]&&VIDEOS[t].id);
+          const first = techs[0];
+          return `<li class="step" data-step="${k}">
+            <button class="num" ${first?`data-tech="${first}" aria-expanded="false" aria-label="Step ${k+1}: watch ${esc(LABELS[first]||first)}"`:`disabled aria-label="Step ${k+1}"`}>${k+1}<span class="play"></span></button>
+            <div class="stext"><p>${esc(s.text)}</p>
+              ${techs.length?`<ul class="watch">${techs.map(t=>`<li><button data-tech="${t}" aria-pressed="false">Watch: ${esc(LABELS[t]||t)}</button></li>`).join('')}</ul>`:''}
+              ${REVIEW&&s.check?`<p class="check">OG to check: ${esc(s.check)}</p>`:''}
+            </div></li>`}).join('')}
+        </ol>
+        ${r.tips&&r.tips.length?`<aside class="tips"><h3>OG's tips</h3><ul>${r.tips.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></aside>`:''}
+      </section>
+    </div>
+    <nav class="flip" aria-label="Turn the page">
+      ${prev?`<a href="#/${prev.id}"><small>Previous</small><strong>${esc(prev.name)}</strong></a>`:'<a href="#/"><small>Back to</small><strong>Contents</strong></a>'}
+      ${next?`<a class="next" href="#/${next.id}"><small>Next</small><strong>${esc(next.name)}</strong></a>`:''}
+    </nav>
+  </main>
+  <footer class="wrap">Videos belong to their creators and play from YouTube.</footer>`;
+  window.scrollTo(0,0);
+}
+
+function closePlayer(li){
+  li.querySelector('.player')?.remove();
+  li.querySelectorAll('[data-tech]').forEach(b=>{ if(b.classList.contains('num')) b.setAttribute('aria-expanded','false'); else b.setAttribute('aria-pressed','false'); });
+}
+app.addEventListener('click', e=>{
+  const b = e.target.closest('button[data-tech]'); if(!b) return;
+  const li = b.closest('.step'), t = b.dataset.tech, v = VIDEOS[t];
+  const open = li.querySelector('.player');
+  const same = open && open.dataset.tech===t;
+  document.querySelectorAll('.step').forEach(closePlayer);
+  if(same) return;
+  const fig = document.createElement('figure');
+  fig.className = 'player' + (v.short?' short':''); fig.dataset.tech = t;
+  const src = `https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0&playsinline=1${v.start?`&start=${v.start}`:''}`;
+  fig.innerHTML = `<div class="frame"><iframe src="${src}" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <figcaption>${esc(v.title)}, from ${esc(v.channel)} on YouTube. <a href="https://www.youtube.com/watch?v=${v.id}${v.start?`&t=${v.start}s`:''}" target="_blank" rel="noopener">Open on YouTube</a></figcaption>`;
+  fig.style.margin = '.9rem 0 0';
+  li.appendChild(fig);
+  li.querySelectorAll(`[data-tech="${t}"]`).forEach(x=>{ if(x.classList.contains('num')) x.setAttribute('aria-expanded','true'); else x.setAttribute('aria-pressed','true'); });
+  const n = li.querySelector('.num'); if(n.dataset.tech===t) n.setAttribute('aria-expanded','true');
+});
+
+document.addEventListener('keydown', e=>{
+  if(e.target.closest('input,textarea')) return;
+  const a = document.querySelector(e.key==='ArrowRight'?'.flip .next':e.key==='ArrowLeft'?'.flip a:not(.next)':null);
+  if(a) location.hash = a.getAttribute('href');
+});
+function route(){
+  const [id, step] = location.hash.replace(/^#\/?/,'').split('/');
+  if(!id) return cover();
+  recipe(id);
+  // QR codes in the printed book land on #/recipe/stepNumber: jump to that step and open its video
+  const li = step && document.querySelector(`.step[data-step="${parseInt(step,10)-1}"]`);
+  if(li){
+    li.querySelector('.num:not([disabled])')?.click();
+    // re-scroll once fonts and the player have settled, so the page doesn't drift past the step
+    const go = () => li.scrollIntoView({block:'start'});
+    go(); document.fonts && document.fonts.ready.then(go); setTimeout(go, 700); setTimeout(go, 1500);
+  }
+}
+addEventListener('hashchange', route); route();
+</script>
+</body>
+</html>
