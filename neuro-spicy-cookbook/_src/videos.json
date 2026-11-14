@@ -566,5 +566,29 @@
   "channel": "Chef Vic Cuisine",
   "short": false,
   "note": "Cooking the diced onion, carrot and celery base gently in oil"
+ },
+ "make-roux": {
+  "id": "3Idqxn8VYFQ",
+  "start": 0,
+  "title": "How to make a roux",
+  "channel": "atelierdeschefsuk",
+  "short": false,
+  "note": "Butter and flour roux as the base of a béchamel; UK channel"
+ },
+ "bechamel-milk": {
+  "id": "naONPKHbp50",
+  "start": 157,
+  "title": "This One Sauce Makes Better Lasagna, Mac and Cheese, Everything",
+  "channel": "Let's Celebrate TV",
+  "short": false,
+  "note": "Starts at the chapter 'Add Milk and Simmer' (02:37) from the video's chapter list"
+ },
+ "layer-lasagne": {
+  "id": "YLxHoFOCOyc",
+  "start": 0,
+  "title": "How to layer lasagne",
+  "channel": "Kidspot",
+  "short": false,
+  "note": "Layering meat sauce, white sauce and sheets"
  }
 }

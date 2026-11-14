@@ -258,6 +258,64 @@
       "imageAlt": "Peanut satay sauce topped with chopped peanuts and spring onion in a blue and white bowl"
     },
     {
+      "id": "bechamel",
+      "name": "OG Béchamel",
+      "category": "Sauces",
+      "blurb": "The white sauce for lasagne, and the start of a cheese sauce for anything else.",
+      "prep": "2 mins",
+      "cook": "10–15 mins",
+      "serves": "Enough for 1 lasagne",
+      "ingredients": [
+        "50g butter",
+        "50g plain flour",
+        "600ml milk",
+        "Pinch of nutmeg",
+        "Salt and pepper"
+      ],
+      "steps": [
+        {
+          "text": "Melt the butter in a saucepan on a low to medium heat.",
+          "tech": [
+            "make-roux"
+          ]
+        },
+        {
+          "text": "Add the flour and stir for 1–2 mins into a smooth paste. Keep it pale; don't let it brown.",
+          "tech": [
+            "make-roux"
+          ]
+        },
+        {
+          "text": "Take off the heat and add a splash of the milk, whisking until it's smooth.",
+          "tech": [
+            "bechamel-milk"
+          ]
+        },
+        {
+          "text": "Keep adding the milk a bit at a time, whisking out any lumps before the next splash goes in.",
+          "tech": [
+            "bechamel-milk"
+          ]
+        },
+        {
+          "text": "Put back on a medium heat and keep stirring for 5–8 mins until it thickens and coats the back of a spoon.",
+          "tech": [
+            "bechamel-milk"
+          ]
+        },
+        {
+          "text": "Season with salt, pepper and a pinch of nutmeg.",
+          "tech": [
+            "season"
+          ]
+        }
+      ],
+      "tips": [
+        "Lumpy? Take it off the heat and give it a hard whisk.",
+        "For a cheese sauce, stir in a handful of grated mature cheddar off the heat."
+      ]
+    },
+    {
       "id": "nasi-goreng",
       "name": "Nasi Goreng",
       "category": "Rice & Curries",
@@ -793,6 +851,75 @@
       "tips": [],
       "image": "images/bolognesa.jpg",
       "imageAlt": "Spaghetti bolognese topped with grated parmesan and parsley"
+    },
+    {
+      "id": "lasagne",
+      "name": "OG Lasagne",
+      "category": "Mince",
+      "blurb": "Bolognesa di OG and OG Béchamel, layered up with pasta sheets and baked until it bubbles.",
+      "prep": "15 mins (plus the two sauces)",
+      "cook": "35–40 mins",
+      "serves": "4–6",
+      "ingredients": [
+        "1 batch Bolognesa di OG",
+        "1 batch OG Béchamel",
+        "9–12 dried lasagne sheets",
+        "Grated mature cheddar for the top"
+      ],
+      "equipment": [
+        "Ovenproof dish, about 20 × 30cm"
+      ],
+      "steps": [
+        {
+          "text": "Make a batch of Bolognesa di OG.",
+          "tech": [],
+          "see": "bolognesa"
+        },
+        {
+          "text": "Make a batch of OG Béchamel.",
+          "tech": [],
+          "see": "bechamel"
+        },
+        {
+          "text": "Heat the oven to 180°C fan.",
+          "tech": []
+        },
+        {
+          "text": "Spread a thin layer of bolognese over the bottom of the dish.",
+          "tech": [
+            "layer-lasagne"
+          ]
+        },
+        {
+          "text": "Cover with a layer of lasagne sheets, snapping them to fit.",
+          "tech": [
+            "layer-lasagne"
+          ]
+        },
+        {
+          "text": "Add a layer of bolognese, then a layer of béchamel. Repeat sheets, bolognese and béchamel until the bolognese is used up, finishing with a layer of sheets.",
+          "tech": [
+            "layer-lasagne"
+          ]
+        },
+        {
+          "text": "Spread the rest of the béchamel over the top sheets and cover with grated cheese.",
+          "tech": [
+            "grate-cheese"
+          ]
+        },
+        {
+          "text": "Bake for 35–40 mins until it's bubbling and golden on top.",
+          "tech": []
+        },
+        {
+          "text": "Leave it to stand for 10 mins before cutting, so it holds together.",
+          "tech": []
+        }
+      ],
+      "tips": [
+        "Make the bolognese the day before and it's even better."
+      ]
     },
     {
       "id": "pizza",

@@ -73,7 +73,10 @@ for r in R:
     steps = ''
     for k, s in enumerate(r['steps'], 1):
         chk = f'<span class="chk">OG to check: {e(s["check"])}</span>' if review and s.get('check') else ''
-        steps += f'<li class="st"><span class="n">{k}</span><p>{e(s["text"])}{chk}</p><span class="q">{qr(f"{BASE}#/{r["id"]}/{k}")}</span></li>'
+        seename = next((x['name'] for x in R if x['id'] == s.get('see')), None)
+        see = f' <b>See {e(seename)} in this book; the code opens it.</b>' if seename else ''
+        target = f"{BASE}#/{s['see']}" if seename else f"{BASE}#/{r['id']}/{k}"
+        steps += f'<li class="st"><span class="n">{k}</span><p>{e(s["text"])}{see}{chk}</p><span class="q">{qr(target)}</span></li>'
     meta = ''.join(f'<span>{k} <b>{e(r[f])}</b></span>' for k, f in [('Prep','prep'),('Cook','cook'),('Serves','serves')] if r.get(f))
     tips = f'<div class="tips"><b>OG\'s tips</b><br>' + '<br>'.join(e(t) for t in r['tips']) + '</div>' if r.get('tips') else ''
     equip = f'<p style="font-size:8.5pt;color:#5B6170;margin:1.5mm 0 0">You\'ll need: {e(", ".join(r["equipment"]))}</p>' if r.get('equipment') else ''

@@ -105,6 +105,7 @@ button{font:inherit;color:inherit}
 .watch{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
 .watch button{background:none;border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem;font-size:.9rem;color:var(--cobalt);cursor:pointer}
 .watch button:hover,.watch button[aria-pressed="true"]{border-color:var(--cobalt);background:#fff}
+.see{margin:.2rem 0 0;font-weight:600}
 .check{background:var(--saffron-soft);border-left:4px solid var(--saffron);padding:.4rem .7rem;margin:.5rem 0 0;font-size:.95rem}
 .player{grid-column:1/-1;margin-top:.9rem}
 .player .frame{position:relative;padding-top:56.25%;background:#000;border-radius:8px;overflow:hidden}
@@ -190,6 +191,7 @@ function recipe(id){
           return `<li class="step" data-step="${k}">
             <button class="num" ${first?`data-tech="${first}" aria-expanded="false" aria-label="Step ${k+1}: watch ${esc(LABELS[first]||first)}"`:`disabled aria-label="Step ${k+1}"`}>${k+1}<span class="play"></span></button>
             <div class="stext"><p>${esc(s.text)}</p>
+              ${s.see&&R.find(x=>x.id===s.see)?`<p class="see"><a href="#/${s.see}">Open the ${esc(R.find(x=>x.id===s.see).name)} recipe</a></p>`:''}
               ${techs.length?`<ul class="watch">${techs.map(t=>`<li><button data-tech="${t}" aria-pressed="false">Watch: ${esc(LABELS[t]||t)}</button></li>`).join('')}</ul>`:''}
               ${REVIEW&&s.check?`<p class="check">OG to check: ${esc(s.check)}</p>`:''}
             </div></li>`}).join('')}
