@@ -60,7 +60,9 @@
       ],
       "tips": [
         "The air holes on top of the rice tell you the water has gone."
-      ]
+      ],
+      "image": "images/arroz-de-og.jpg",
+      "imageAlt": "A steaming bowl of fluffy white rice in a blue and white bowl"
     },
     {
       "id": "boiled-eggs",
@@ -343,7 +345,9 @@
       ],
       "tips": [
         "Cold, day-old rice fries best."
-      ]
+      ],
+      "image": "images/nasi-goreng.jpg",
+      "imageAlt": "Nasi goreng with chicken, a crispy fried egg, cucumber and prawn crackers in a blue and white bowl"
     },
     {
       "id": "og-curry",
