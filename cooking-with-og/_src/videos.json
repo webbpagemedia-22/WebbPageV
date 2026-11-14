@@ -550,5 +550,21 @@
   "channel": "loveFOOD",
   "short": false,
   "note": "Weak match: UK loveFOOD clip on quick Yorkshire puddings in a hot oven; no clear video of shop-bought/frozen Yorkies in a conventional oven was found."
+ },
+ "fine-dice-frito": {
+  "id": "4STDh5SrClA",
+  "start": 0,
+  "title": "How to Fine Dice Carrot Celery Onion \"Brunoise\"",
+  "channel": "Cook Boy",
+  "short": true,
+  "note": "Fine dicing exactly the carrot, celery and onion trio"
+ },
+ "cook-frito": {
+  "id": "x7zaphLNVFY",
+  "start": 0,
+  "title": "How to Make Soffritto!",
+  "channel": "Chef Vic Cuisine",
+  "short": false,
+  "note": "Cooking the diced onion, carrot and celery base gently in oil"
  }
 }

@@ -7,29 +7,86 @@
       "aka": "a.k.a. Arroz de Dave",
       "category": "Basics",
       "blurb": "The rice that goes with nearly everything in this book. No scales, no measuring jug, just your little finger.",
-      "prep": "3–4 mins", "cook": "13–15 mins", "serves": "2",
-      "ingredients": ["1 cup of white rice (brown rice is bad for you)", "Cold water"],
-      "steps": [
-        {"text": "Add one cup of white rice to a small saucepan.", "tech": ["rinse-rice"]},
-        {"text": "Wash with cold water. Rinse it through at least 6 times, until the water runs clear.", "tech": ["rinse-rice"]},
-        {"text": "Add water up to the first crease on your little finger, with your fingertip resting on top of the rice.", "tech": ["finger-rice-water"]},
-        {"text": "Bring to the boil and put the lid on.", "tech": ["absorption-rice"]},
-        {"text": "Turn down to a simmer and cook for 11 mins. Check whether the water has gone, and keep it on the heat until it has.", "tech": ["absorption-rice"]},
-        {"text": "When you can see little air holes in the rice, put the lid back on, give it 1 min on the lowest heat, then turn the heat off.", "tech": ["absorption-rice"]},
-        {"text": "Leave the lid on for another 2 mins before serving.", "tech": ["rest-rice"]}
+      "prep": "3–4 mins",
+      "cook": "13–15 mins",
+      "serves": "2",
+      "ingredients": [
+        "1 cup of white rice (brown rice is bad for you)",
+        "Cold water"
       ],
-      "tips": ["The air holes on top of the rice tell you the water has gone."]
+      "steps": [
+        {
+          "text": "Add one cup of white rice to a small saucepan.",
+          "tech": [
+            "rinse-rice"
+          ]
+        },
+        {
+          "text": "Wash with cold water. Rinse it through at least 6 times, until the water runs clear.",
+          "tech": [
+            "rinse-rice"
+          ]
+        },
+        {
+          "text": "Add water up to the first crease on your little finger, with your fingertip resting on top of the rice.",
+          "tech": [
+            "finger-rice-water"
+          ]
+        },
+        {
+          "text": "Bring to the boil and put the lid on.",
+          "tech": [
+            "absorption-rice"
+          ]
+        },
+        {
+          "text": "Turn down to a simmer and cook for 11 mins. Check whether the water has gone, and keep it on the heat until it has.",
+          "tech": [
+            "absorption-rice"
+          ]
+        },
+        {
+          "text": "When you can see little air holes in the rice, put the lid back on, give it 1 min on the lowest heat, then turn the heat off.",
+          "tech": [
+            "absorption-rice"
+          ]
+        },
+        {
+          "text": "Leave the lid on for another 2 mins before serving.",
+          "tech": [
+            "rest-rice"
+          ]
+        }
+      ],
+      "tips": [
+        "The air holes on top of the rice tell you the water has gone."
+      ]
     },
     {
       "id": "boiled-eggs",
       "name": "OG Boiled Eggs",
       "category": "Basics",
       "blurb": "Gloriously simple. Dippy eggs done right.",
-      "prep": "1 min", "cook": "6–8 mins", "serves": "1+",
-      "ingredients": ["Eggs", "Cold water"],
+      "prep": "1 min",
+      "cook": "6–8 mins",
+      "serves": "1+",
+      "ingredients": [
+        "Eggs",
+        "Cold water"
+      ],
       "steps": [
-        {"text": "Put the eggs in a saucepan of cold water.", "tech": ["boil-eggs"]},
-        {"text": "Bring up to the boil, then leave for 3 mins.", "tech": ["boil-eggs"]}
+        {
+          "text": "Put the eggs in a saucepan of cold water.",
+          "tech": [
+            "boil-eggs"
+          ]
+        },
+        {
+          "text": "Bring up to the boil, then leave for 3 mins.",
+          "tech": [
+            "boil-eggs"
+          ]
+        }
       ],
       "tips": []
     },
@@ -38,179 +95,698 @@
       "name": "OG Scrambled Eggs",
       "category": "Breakfast",
       "blurb": "Garlicky, peppery scrambled eggs. Lovely with Ajo y champiñones.",
-      "prep": "2 mins", "cook": "3–5 mins", "serves": "1",
-      "ingredients": ["3 eggs minimum", "Garlic (grated or granules)", "Black pepper", "Salt", "Toast, to serve"],
-      "steps": [
-        {"text": "Crack at least 3 eggs into a bowl and add some garlic and pepper.", "tech": ["crack-eggs"]},
-        {"text": "Whisk until thoroughly mixed.", "tech": ["whisk-eggs"]},
-        {"text": "Pour into a frying pan that's already hot, on a medium heat.", "tech": ["scramble-eggs"]},
-        {"text": "Add salt and keep stirring, turning the heat down as you go.", "tech": ["scramble-eggs"]},
-        {"text": "Cook through until they're as soft or firm as you like them.", "tech": ["scramble-eggs"]}
+      "prep": "2 mins",
+      "cook": "3–5 mins",
+      "serves": "1",
+      "ingredients": [
+        "3 eggs minimum",
+        "Garlic (grated or granules)",
+        "Black pepper",
+        "Salt",
+        "Toast, to serve"
       ],
-      "tips": ["Serve with toast or Ajo y champiñones."]
+      "steps": [
+        {
+          "text": "Crack at least 3 eggs into a bowl and add some garlic and pepper.",
+          "tech": [
+            "crack-eggs"
+          ]
+        },
+        {
+          "text": "Whisk until thoroughly mixed.",
+          "tech": [
+            "whisk-eggs"
+          ]
+        },
+        {
+          "text": "Pour into a frying pan that's already hot, on a medium heat.",
+          "tech": [
+            "scramble-eggs"
+          ]
+        },
+        {
+          "text": "Add salt and keep stirring, turning the heat down as you go.",
+          "tech": [
+            "scramble-eggs"
+          ]
+        },
+        {
+          "text": "Cook through until they're as soft or firm as you like them.",
+          "tech": [
+            "scramble-eggs"
+          ]
+        }
+      ],
+      "tips": [
+        "Serve with toast or Ajo y champiñones."
+      ]
     },
     {
       "id": "ajo-y-champinones",
       "name": "Ajo y champiñones",
       "category": "Breakfast",
       "blurb": "Garlic mushrooms cooked low and slow in loads of butter.",
-      "prep": "5 mins", "cook": "10–15 mins", "serves": "2",
-      "ingredients": ["Half a pack of mushrooms", "4 cloves of garlic, grated (powder or granules only if you're desperate)", "100–150g butter, cut into squares"],
-      "steps": [
-        {"text": "Trim half a pack of mushrooms.", "tech": ["clean-mushrooms"]},
-        {"text": "Grate 4 cloves of garlic.", "tech": ["grate-garlic"]},
-        {"text": "Cut 100–150g of butter into squares.", "tech": ["cube-butter"]},
-        {"text": "Put a few squares of butter and half the garlic into a small saucepan on the lowest heat.", "tech": ["garlic-butter"]},
-        {"text": "Cut the mushrooms into quarters, crossways.", "tech": ["quarter-mushrooms"]},
-        {"text": "Add the mushrooms and the rest of the butter and garlic, and stir slowly until the butter has melted and every mushroom is coated.", "tech": ["garlic-mushrooms"]},
-        {"text": "Leave to cook for 5–10 mins, adding more butter and garlic if it needs it.", "tech": ["garlic-mushrooms"]}
+      "prep": "5 mins",
+      "cook": "10–15 mins",
+      "serves": "2",
+      "ingredients": [
+        "Half a pack of mushrooms",
+        "4 cloves of garlic, grated (powder or granules only if you're desperate)",
+        "100–150g butter, cut into squares"
       ],
-      "tips": ["Add to a breakfast, or have on toast with eggs."]
+      "steps": [
+        {
+          "text": "Trim half a pack of mushrooms.",
+          "tech": [
+            "clean-mushrooms"
+          ]
+        },
+        {
+          "text": "Grate 4 cloves of garlic.",
+          "tech": [
+            "grate-garlic"
+          ]
+        },
+        {
+          "text": "Cut 100–150g of butter into squares.",
+          "tech": [
+            "cube-butter"
+          ]
+        },
+        {
+          "text": "Put a few squares of butter and half the garlic into a small saucepan on the lowest heat.",
+          "tech": [
+            "garlic-butter"
+          ]
+        },
+        {
+          "text": "Cut the mushrooms into quarters, crossways.",
+          "tech": [
+            "quarter-mushrooms"
+          ]
+        },
+        {
+          "text": "Add the mushrooms and the rest of the butter and garlic, and stir slowly until the butter has melted and every mushroom is coated.",
+          "tech": [
+            "garlic-mushrooms"
+          ]
+        },
+        {
+          "text": "Leave to cook for 5–10 mins, adding more butter and garlic if it needs it.",
+          "tech": [
+            "garlic-mushrooms"
+          ]
+        }
+      ],
+      "tips": [
+        "Add to a breakfast, or have on toast with eggs."
+      ]
     },
     {
       "id": "satay-sauce",
       "name": "OG Satay Sauce",
       "category": "Sauces",
       "blurb": "Five-minute peanut sauce for stir fries, or ten minutes for satay chicken.",
-      "prep": "3 mins", "cook": "5–10 mins", "serves": "2–3",
-      "ingredients": ["1 tin coconut milk", "3 tbsp peanut butter", "Garlic", "Kecap manis (sweet soy sauce)", "Curry powder", "Fish sauce"],
-      "steps": [
-        {"text": "Put everything except the coconut milk into a bowl and mix into a paste.", "tech": ["satay-paste"]},
-        {"text": "Pour the coconut milk into a small saucepan.", "tech": ["satay-paste"]},
-        {"text": "Add the paste from the bowl and mix it into the coconut milk.", "tech": ["satay-paste"]},
-        {"text": "Heat slowly up to a simmer, then simmer for 5–10 mins until it's as thick as you want it.", "tech": ["reduce-sauce"]}
+      "prep": "3 mins",
+      "cook": "5–10 mins",
+      "serves": "2–3",
+      "ingredients": [
+        "1 tin coconut milk",
+        "3 tbsp peanut butter",
+        "Garlic",
+        "Kecap manis (sweet soy sauce)",
+        "Curry powder",
+        "Fish sauce"
       ],
-      "tips": ["5 mins for a stir-fry sauce.", "10 mins for a satay chicken sauce."]
+      "steps": [
+        {
+          "text": "Put everything except the coconut milk into a bowl and mix into a paste.",
+          "tech": [
+            "satay-paste"
+          ]
+        },
+        {
+          "text": "Pour the coconut milk into a small saucepan.",
+          "tech": [
+            "satay-paste"
+          ]
+        },
+        {
+          "text": "Add the paste from the bowl and mix it into the coconut milk.",
+          "tech": [
+            "satay-paste"
+          ]
+        },
+        {
+          "text": "Heat slowly up to a simmer, then simmer for 5–10 mins until it's as thick as you want it.",
+          "tech": [
+            "reduce-sauce"
+          ]
+        }
+      ],
+      "tips": [
+        "5 mins for a stir-fry sauce.",
+        "10 mins for a satay chicken sauce."
+      ]
     },
     {
       "id": "nasi-goreng",
       "name": "Nasi Goreng",
       "category": "Rice & Curries",
       "blurb": "It means fried rice. The best thing that can happen to yesterday's Arroz de OG.",
-      "prep": "10 mins", "cook": "10 mins", "serves": "2",
-      "ingredients": ["A portion of Arroz de OG", "1 onion or 4 shallots, chopped", "1 pointed or red pepper, cut into thin strips", "Chicken, thinly sliced", "Prawns", "Kecap manis (sweet soy sauce)", "Shrimp paste or fish sauce", "Spring onion, to garnish", "1 egg per person"],
-      "equipment": ["Wok or wide frying pan"],
-      "steps": [
-        {"text": "Chop the onion or shallots.", "tech": ["chop-onion"]},
-        {"text": "Cut the pepper into thin strips.", "tech": ["slice-pepper"]},
-        {"text": "Slice the chicken thinly.", "tech": ["slice-chicken"]},
-        {"text": "Fry the onion or shallots in the wok for 1 min.", "tech": ["stir-fry"]},
-        {"text": "Add the pepper and cook for 1 min.", "tech": ["stir-fry"]},
-        {"text": "Add the chicken and cook it through until it's white, then add 1 tbsp kecap manis and 1 tbsp shrimp paste (fish sauce works instead).", "tech": ["stir-fry"]},
-        {"text": "Add the prawns and stir through until they turn pink.", "tech": ["cook-prawns"], "check": "Your note lists prawns but doesn't say when they go in. I've put them in here."},
-        {"text": "Add the Arroz de OG and stir it through.", "tech": ["fried-rice"]},
-        {"text": "Add 2 tbsp kecap manis and keep it moving for 3 mins so the rice doesn't stick. Good chance to toss the rice!", "tech": ["wok-toss"]},
-        {"text": "Add the spring onion for garnish.", "tech": ["slice-spring-onion"]},
-        {"text": "Fry an egg (in the wok, if you're using one), put it on top and serve.", "tech": ["fry-egg"]}
+      "prep": "10 mins",
+      "cook": "10 mins",
+      "serves": "2",
+      "ingredients": [
+        "A portion of Arroz de OG",
+        "1 onion or 4 shallots, chopped",
+        "1 pointed or red pepper, cut into thin strips",
+        "Chicken, thinly sliced",
+        "Prawns",
+        "Kecap manis (sweet soy sauce)",
+        "Shrimp paste or fish sauce",
+        "Spring onion, to garnish",
+        "1 egg per person"
       ],
-      "tips": ["Cold, day-old rice fries best."]
+      "equipment": [
+        "Wok or wide frying pan"
+      ],
+      "steps": [
+        {
+          "text": "Chop the onion or shallots.",
+          "tech": [
+            "chop-onion"
+          ]
+        },
+        {
+          "text": "Cut the pepper into thin strips.",
+          "tech": [
+            "slice-pepper"
+          ]
+        },
+        {
+          "text": "Slice the chicken thinly.",
+          "tech": [
+            "slice-chicken"
+          ]
+        },
+        {
+          "text": "Fry the onion or shallots in the wok for 1 min.",
+          "tech": [
+            "stir-fry"
+          ]
+        },
+        {
+          "text": "Add the pepper and cook for 1 min.",
+          "tech": [
+            "stir-fry"
+          ]
+        },
+        {
+          "text": "Add the chicken and cook it through until it's white, then add 1 tbsp kecap manis and 1 tbsp shrimp paste (fish sauce works instead).",
+          "tech": [
+            "stir-fry"
+          ]
+        },
+        {
+          "text": "Add the prawns and stir through until they turn pink.",
+          "tech": [
+            "cook-prawns"
+          ],
+          "check": "Your note lists prawns but doesn't say when they go in. I've put them in here."
+        },
+        {
+          "text": "Add the Arroz de OG and stir it through.",
+          "tech": [
+            "fried-rice"
+          ]
+        },
+        {
+          "text": "Add 2 tbsp kecap manis and keep it moving for 3 mins so the rice doesn't stick. Good chance to toss the rice!",
+          "tech": [
+            "wok-toss"
+          ]
+        },
+        {
+          "text": "Add the spring onion for garnish.",
+          "tech": [
+            "slice-spring-onion"
+          ]
+        },
+        {
+          "text": "Fry an egg (in the wok, if you're using one), put it on top and serve.",
+          "tech": [
+            "fry-egg"
+          ]
+        }
+      ],
+      "tips": [
+        "Cold, day-old rice fries best."
+      ]
     },
     {
       "id": "og-curry",
       "name": "OG Curry",
       "category": "Rice & Curries",
       "blurb": "A creamy family curry. Mild for the little one or hot with lots of chilli, it works both ways.",
-      "prep": "10 mins", "cook": "30 mins", "serves": "3–4",
-      "ingredients": ["Pancetta", "Onions", "Chicken breast or thigh fillets", "50ml cream or Elmlea", "Chicken stock", "Tomato purée (or 250ml passata)", "Curry powder", "Cumin", "Turmeric", "Asafoetida", "Garam masala", "Chilli, to taste"],
-      "steps": [
-        {"text": "Fry the pancetta on a low heat.", "tech": ["fry-pancetta"]},
-        {"text": "Add the onions and soften them until they go translucent.", "tech": ["soften-onion"]},
-        {"text": "Chop the chicken into chunks and fry.", "tech": ["dice-chicken", "seal-chicken"]},
-        {"text": "Take off the heat and add the tomato purée and all the spices except the garam masala.", "tech": ["bloom-spices"]},
-        {"text": "Coat the chicken, then add the chicken stock.", "tech": ["make-stock"], "check": "Your ingredients say 400ml stock but the method says 250ml. I've left it as 'the stock'. Which is it?"},
-        {"text": "Add 50ml of cream or Elmlea.", "tech": ["cream-curry"]},
-        {"text": "Mix and put back on a medium heat.", "tech": ["simmer"]},
-        {"text": "Simmer for 20 mins until the chicken's cooked through and the sauce has thickened.", "tech": ["simmer"], "check": "Added. Your note doesn't give a cooking time."},
-        {"text": "Stir in the garam masala at the end and taste for salt and chilli.", "tech": ["garam-masala"], "check": "Added. Your note says to hold back the garam masala but doesn't say when it goes in."}
+      "prep": "10 mins",
+      "cook": "30 mins",
+      "serves": "3–4",
+      "ingredients": [
+        "Pancetta",
+        "Onions",
+        "Chicken breast or thigh fillets",
+        "50ml cream or Elmlea",
+        "Chicken stock",
+        "Tomato purée (or 250ml passata)",
+        "Curry powder",
+        "Cumin",
+        "Turmeric",
+        "Asafoetida",
+        "Garam masala",
+        "Chilli, to taste"
       ],
-      "tips": ["Goes with naans, chapatis or Arroz de OG."]
+      "steps": [
+        {
+          "text": "Fry the pancetta on a low heat.",
+          "tech": [
+            "fry-pancetta"
+          ]
+        },
+        {
+          "text": "Add the onions and soften them until they go translucent.",
+          "tech": [
+            "soften-onion"
+          ]
+        },
+        {
+          "text": "Chop the chicken into chunks and fry.",
+          "tech": [
+            "dice-chicken",
+            "seal-chicken"
+          ]
+        },
+        {
+          "text": "Take off the heat and add the tomato purée and all the spices except the garam masala.",
+          "tech": [
+            "bloom-spices"
+          ]
+        },
+        {
+          "text": "Coat the chicken, then add the chicken stock.",
+          "tech": [
+            "make-stock"
+          ],
+          "check": "Your ingredients say 400ml stock but the method says 250ml. I've left it as 'the stock'. Which is it?"
+        },
+        {
+          "text": "Add 50ml of cream or Elmlea.",
+          "tech": [
+            "cream-curry"
+          ]
+        },
+        {
+          "text": "Mix and put back on a medium heat.",
+          "tech": [
+            "simmer"
+          ]
+        },
+        {
+          "text": "Simmer for 20 mins until the chicken's cooked through and the sauce has thickened.",
+          "tech": [
+            "simmer"
+          ],
+          "check": "Added. Your note doesn't give a cooking time."
+        },
+        {
+          "text": "Stir in the garam masala at the end and taste for salt and chilli.",
+          "tech": [
+            "garam-masala"
+          ],
+          "check": "Added. Your note says to hold back the garam masala but doesn't say when it goes in."
+        }
+      ],
+      "tips": [
+        "Goes with naans, chapatis or Arroz de OG."
+      ]
     },
     {
       "id": "thai-curry",
       "name": "Thai Curry",
       "category": "Rice & Curries",
       "blurb": "Red or green, whichever paste is in the cupboard.",
-      "prep": "10 mins", "cook": "25 mins", "serves": "3–4",
-      "ingredients": ["Onions", "Chicken breast or thigh fillets", "400ml coconut milk", "100ml chicken stock", "2 tbsp Thai red or green curry paste", "Tin of bamboo shoots", "Chilli, to taste"],
-      "ingredientChecks": {"400ml coconut milk": "Your note says coconut OIL. I've assumed you meant milk."},
-      "steps": [
-        {"text": "Fry the onions on a medium heat and soften them until they go translucent.", "tech": ["soften-onion"]},
-        {"text": "Cut the chicken into thin slices and fry.", "tech": ["slice-chicken", "seal-chicken"]},
-        {"text": "Add the red or green curry paste.", "tech": ["fry-curry-paste"]},
-        {"text": "Coat the chicken, then add the chicken stock and the coconut milk.", "tech": ["thai-curry"]},
-        {"text": "Drain the bamboo shoots and add them.", "tech": ["drain-tin"], "check": "Your note lists bamboo shoots but doesn't say when they go in. I've put them in here."},
-        {"text": "Mix, bring to a simmer and cook for 20 mins.", "tech": ["simmer"]}
+      "prep": "10 mins",
+      "cook": "25 mins",
+      "serves": "3–4",
+      "ingredients": [
+        "Onions",
+        "Chicken breast or thigh fillets",
+        "400ml coconut milk",
+        "100ml chicken stock",
+        "2 tbsp Thai red or green curry paste",
+        "Tin of bamboo shoots",
+        "Chilli, to taste"
       ],
-      "tips": ["Goes well with Arroz de OG."]
+      "ingredientChecks": {
+        "400ml coconut milk": "Your note says coconut OIL. I've assumed you meant milk."
+      },
+      "steps": [
+        {
+          "text": "Fry the onions on a medium heat and soften them until they go translucent.",
+          "tech": [
+            "soften-onion"
+          ]
+        },
+        {
+          "text": "Cut the chicken into thin slices and fry.",
+          "tech": [
+            "slice-chicken",
+            "seal-chicken"
+          ]
+        },
+        {
+          "text": "Add the red or green curry paste.",
+          "tech": [
+            "fry-curry-paste"
+          ]
+        },
+        {
+          "text": "Coat the chicken, then add the chicken stock and the coconut milk.",
+          "tech": [
+            "thai-curry"
+          ]
+        },
+        {
+          "text": "Drain the bamboo shoots and add them.",
+          "tech": [
+            "drain-tin"
+          ],
+          "check": "Your note lists bamboo shoots but doesn't say when they go in. I've put them in here."
+        },
+        {
+          "text": "Mix, bring to a simmer and cook for 20 mins.",
+          "tech": [
+            "simmer"
+          ]
+        }
+      ],
+      "tips": [
+        "Goes well with Arroz de OG."
+      ]
     },
     {
       "id": "arroz-con-chorizo",
       "name": "Arroz con chorizo, pimiento y pollo",
       "category": "Rice & Curries",
       "blurb": "OG's paella-style rice: chorizo, peppers and chicken, cooked slowly until the rice starts to pop.",
-      "prep": "15 mins", "cook": "30–60 mins", "serves": "3–4",
-      "ingredients": ["Chorizo", "Chicken breast or thigh fillets", "1 large onion", "2 red peppers", "1 litre chicken stock", "Valenciana paella seasoning sachet", "1 cup paella rice"],
-      "steps": [
-        {"text": "Fry the chorizo on a low heat to let the oil out of it.", "tech": ["fry-chorizo"]},
-        {"text": "Add the onion and soften it until it goes translucent.", "tech": ["soften-onion"]},
-        {"text": "Add the chicken and fry on a medium heat until it's white on all sides.", "tech": ["seal-chicken"]},
-        {"text": "Add the peppers and fry them lightly.", "tech": ["slice-pepper"]},
-        {"text": "Take off the heat, add the Valenciana sachet and coat everything in the pan, then add a cup of paella rice.", "tech": ["paella-rice"]},
-        {"text": "Make a litre of stock and add it to the meat, veg and rice.", "tech": ["make-stock"]},
-        {"text": "Put back on the heat, bring to a simmer and cook slowly until all the stock is used up. Around 30 mins.", "tech": ["paella-rice"]},
-        {"text": "When the liquid has gone from the pan and you can hear the rice popping, take it off the heat and cover with foil.", "tech": ["socarrat"]},
-        {"text": "Leave for at least 10 mins, then serve.", "tech": ["rest-foil"]}
+      "prep": "15 mins",
+      "cook": "30–60 mins",
+      "serves": "3–4",
+      "ingredients": [
+        "Chorizo",
+        "Chicken breast or thigh fillets",
+        "1 large onion",
+        "2 red peppers",
+        "1 litre chicken stock",
+        "Valenciana paella seasoning sachet",
+        "1 cup paella rice"
       ],
-      "tips": ["You can do it quicker on a higher heat, but OG's best ones are made with more stock and cooked for longer, up to an hour of adding stock."]
+      "steps": [
+        {
+          "text": "Fry the chorizo on a low heat to let the oil out of it.",
+          "tech": [
+            "fry-chorizo"
+          ]
+        },
+        {
+          "text": "Add the onion and soften it until it goes translucent.",
+          "tech": [
+            "soften-onion"
+          ]
+        },
+        {
+          "text": "Add the chicken and fry on a medium heat until it's white on all sides.",
+          "tech": [
+            "seal-chicken"
+          ]
+        },
+        {
+          "text": "Add the peppers and fry them lightly.",
+          "tech": [
+            "slice-pepper"
+          ]
+        },
+        {
+          "text": "Take off the heat, add the Valenciana sachet and coat everything in the pan, then add a cup of paella rice.",
+          "tech": [
+            "paella-rice"
+          ]
+        },
+        {
+          "text": "Make a litre of stock and add it to the meat, veg and rice.",
+          "tech": [
+            "make-stock"
+          ]
+        },
+        {
+          "text": "Put back on the heat, bring to a simmer and cook slowly until all the stock is used up. Around 30 mins.",
+          "tech": [
+            "paella-rice"
+          ]
+        },
+        {
+          "text": "When the liquid has gone from the pan and you can hear the rice popping, take it off the heat and cover with foil.",
+          "tech": [
+            "socarrat"
+          ]
+        },
+        {
+          "text": "Leave for at least 10 mins, then serve.",
+          "tech": [
+            "rest-foil"
+          ]
+        }
+      ],
+      "tips": [
+        "You can do it quicker on a higher heat, but OG's best ones are made with more stock and cooked for longer, up to an hour of adding stock."
+      ]
     },
     {
       "id": "chilli",
       "name": "Chilli con frijoles y carne",
       "category": "Mince",
       "blurb": "Smoky beef and bean chilli with OG's secret weapon: a square of dark chocolate.",
-      "prep": "15 mins", "cook": "30 mins", "serves": "4",
-      "ingredients": ["500g beef mince", "400ml passata", "1 tbsp tomato purée", "4–5 cloves garlic", "1 onion", "Mushrooms", "Tin of kidney beans", "Tin of black-eyed beans", "3 tsp cumin", "1 tsp cayenne pepper or dried chilli", "Beef stock cube", "250g pancetta", "Mole, or a square of dark chocolate"],
-      "ingredientChecks": {"400ml passata": "Your ingredients say 250ml but the method says 400ml. I've gone with 400ml.", "1 tbsp tomato purée": "Used in your method but missing from the ingredients. I've added it."},
-      "steps": [
-        {"text": "Chop the onion and garlic finely (grated garlic, granules or powder will do too).", "tech": ["chop-onion", "chop-garlic"]},
-        {"text": "Open and drain the kidney beans.", "tech": ["drain-tin"]},
-        {"text": "Make up the Oxo or beef stock.", "tech": ["make-stock"]},
-        {"text": "Put the pan on a low heat with a drizzle of oil. When the oil's hot, add the pancetta and stir gently until one side goes brown.", "tech": ["fry-pancetta"]},
-        {"text": "Add the onion and garlic and keep stirring gently until they go a bit see-through or slightly brown.", "tech": ["soften-onion"]},
-        {"text": "Add the mince, season it and brown it.", "tech": ["brown-mince"]},
-        {"text": "Once it's browned, take it off the heat and add the tomato purée, cumin and chilli, and crumble in the stock cube.", "tech": ["bloom-spices"]},
-        {"text": "Add 400ml of passata and the kidney beans, and season with salt and pepper.", "tech": ["season"]},
-        {"text": "Stir until it's all mixed in and put back on a medium heat. Add any black-eyed beans, chickpeas, mushrooms or veg you fancy.", "tech": ["simmer"]},
-        {"text": "Put the lid on and cook on a medium heat for 15 mins.", "tech": ["simmer"]},
-        {"text": "Take off the heat, stir the dark chocolate through, then taste.", "tech": ["chocolate-chilli"]},
-        {"text": "Add salt, pepper or chilli to taste if it needs it.", "tech": ["season"]},
-        {"text": "Put the lid back on and leave it to sit.", "tech": ["rest-sauce"]}
+      "prep": "15 mins",
+      "cook": "30 mins",
+      "serves": "4",
+      "ingredients": [
+        "500g beef mince",
+        "400ml passata",
+        "1 tbsp tomato purée",
+        "4–5 cloves garlic",
+        "1 onion",
+        "Mushrooms",
+        "Tin of kidney beans",
+        "Tin of black-eyed beans",
+        "3 tsp cumin",
+        "1 tsp cayenne pepper or dried chilli",
+        "Beef stock cube",
+        "250g pancetta",
+        "Mole, or a square of dark chocolate"
       ],
-      "tips": ["Great with Arroz de OG, tortillas and guacamole."]
+      "ingredientChecks": {
+        "400ml passata": "Your ingredients say 250ml but the method says 400ml. I've gone with 400ml.",
+        "1 tbsp tomato purée": "Used in your method but missing from the ingredients. I've added it."
+      },
+      "steps": [
+        {
+          "text": "Chop the onion and garlic finely (grated garlic, granules or powder will do too).",
+          "tech": [
+            "chop-onion",
+            "chop-garlic"
+          ]
+        },
+        {
+          "text": "Open and drain the kidney beans.",
+          "tech": [
+            "drain-tin"
+          ]
+        },
+        {
+          "text": "Make up the Oxo or beef stock.",
+          "tech": [
+            "make-stock"
+          ]
+        },
+        {
+          "text": "Put the pan on a low heat with a drizzle of oil. When the oil's hot, add the pancetta and stir gently until one side goes brown.",
+          "tech": [
+            "fry-pancetta"
+          ]
+        },
+        {
+          "text": "Add the onion and garlic and keep stirring gently until they go a bit see-through or slightly brown.",
+          "tech": [
+            "soften-onion"
+          ]
+        },
+        {
+          "text": "Add the mince, season it and brown it.",
+          "tech": [
+            "brown-mince"
+          ]
+        },
+        {
+          "text": "Once it's browned, take it off the heat and add the tomato purée, cumin and chilli, and crumble in the stock cube.",
+          "tech": [
+            "bloom-spices"
+          ]
+        },
+        {
+          "text": "Add 400ml of passata and the kidney beans, and season with salt and pepper.",
+          "tech": [
+            "season"
+          ]
+        },
+        {
+          "text": "Stir until it's all mixed in and put back on a medium heat. Add any black-eyed beans, chickpeas, mushrooms or veg you fancy.",
+          "tech": [
+            "simmer"
+          ]
+        },
+        {
+          "text": "Put the lid on and cook on a medium heat for 15 mins.",
+          "tech": [
+            "simmer"
+          ]
+        },
+        {
+          "text": "Take off the heat, stir the dark chocolate through, then taste.",
+          "tech": [
+            "chocolate-chilli"
+          ]
+        },
+        {
+          "text": "Add salt, pepper or chilli to taste if it needs it.",
+          "tech": [
+            "season"
+          ]
+        },
+        {
+          "text": "Put the lid back on and leave it to sit.",
+          "tech": [
+            "rest-sauce"
+          ]
+        }
+      ],
+      "tips": [
+        "Great with Arroz de OG, tortillas and guacamole."
+      ]
     },
     {
       "id": "bolognesa",
       "name": "Bolognesa di OG",
       "category": "Mince",
-      "blurb": "The family bolognese, made with pancetta, a carrot and a proper taste test.",
-      "prep": "15 mins", "cook": "30 mins", "serves": "4",
-      "ingredients": ["500g beef mince, or a mix of beef and lamb", "250ml passata", "1 tbsp tomato purée", "4–5 cloves garlic", "1 carrot", "1 onion", "Mushrooms", "Basil", "Pinch of nutmeg", "Beef stock", "250g pancetta"],
-      "ingredientChecks": {"1 tbsp tomato purée": "Used in your method but missing from the ingredients. I've added it.", "Pinch of nutmeg": "Used in your method but missing from the ingredients. I've added it."},
+      "blurb": "The family bolognese, built on pancetta, a proper frito mix and a taste test.",
+      "prep": "15 mins",
+      "cook": "30 mins",
+      "serves": "4",
+      "ingredients": [
+        "500g beef mince, or a mix of beef and lamb",
+        "250ml passata",
+        "1 tbsp tomato purée",
+        "4–5 cloves garlic",
+        "1 carrot",
+        "1 onion",
+        "1 stick of celery",
+        "Basil",
+        "Pinch of nutmeg",
+        "Beef stock",
+        "250g pancetta"
+      ],
+      "ingredientChecks": {
+        "1 tbsp tomato purée": "Used in your method but missing from the ingredients. I've added it.",
+        "Pinch of nutmeg": "Used in your method but missing from the ingredients. I've added it."
+      },
       "steps": [
-        {"text": "Chop the onion and garlic finely.", "tech": ["chop-onion", "chop-garlic"]},
-        {"text": "Make up the Oxo or beef stock.", "tech": ["make-stock"]},
-        {"text": "Put the pan on a low heat with a drizzle of oil. When the oil's hot, add the pancetta and stir a little until one side goes brown.", "tech": ["fry-pancetta"]},
-        {"text": "Add the onion and garlic and stir gently until they go a bit see-through or slightly brown.", "tech": ["soften-onion"]},
-        {"text": "Dice the carrot, add it and brown it.", "tech": ["dice-carrot"]},
-        {"text": "Slice the mushrooms and add them.", "tech": ["slice-mushrooms"], "check": "Your note lists mushrooms but doesn't say when they go in. I've put them in here."},
-        {"text": "Add the mince, season with salt and pepper, and brown it.", "tech": ["brown-mince"]},
-        {"text": "Once it's browned, take it off the heat and add the tomato purée, basil and nutmeg.", "tech": ["bloom-spices"]},
-        {"text": "Stir until it's all mixed in and put back on a medium heat.", "tech": ["simmer"]},
-        {"text": "Add the passata and season with salt and pepper.", "tech": ["season"]},
-        {"text": "Add the beef stock to the pan.", "tech": ["simmer"]},
-        {"text": "Put the lid on and cook on a medium heat for 15 mins.", "tech": ["simmer"]},
-        {"text": "Take off the heat and taste. Add salt, pepper or garlic if it needs it.", "tech": ["season"]},
-        {"text": "Put the lid back on and leave it to sit.", "tech": ["rest-sauce"]}
+        {
+          "text": "Dice the carrot, onion and celery finely into a frito mix.",
+          "tech": [
+            "fine-dice-frito"
+          ]
+        },
+        {
+          "text": "Chop the garlic finely.",
+          "tech": [
+            "chop-garlic"
+          ]
+        },
+        {
+          "text": "Make up the Oxo or beef stock.",
+          "tech": [
+            "make-stock"
+          ]
+        },
+        {
+          "text": "Put the pan on a low heat with a drizzle of oil. When the oil's hot, add the pancetta and stir a little until one side goes brown.",
+          "tech": [
+            "fry-pancetta"
+          ]
+        },
+        {
+          "text": "Add the frito mix and garlic and stir gently until it's soft and slightly brown.",
+          "tech": [
+            "cook-frito"
+          ]
+        },
+        {
+          "text": "Add the mince, season with salt and pepper, and brown it.",
+          "tech": [
+            "brown-mince"
+          ]
+        },
+        {
+          "text": "Once it's browned, take it off the heat and add the tomato purée, basil and nutmeg.",
+          "tech": [
+            "bloom-spices"
+          ]
+        },
+        {
+          "text": "Stir until it's all mixed in and put back on a medium heat.",
+          "tech": [
+            "simmer"
+          ]
+        },
+        {
+          "text": "Add the passata and season with salt and pepper.",
+          "tech": [
+            "season"
+          ]
+        },
+        {
+          "text": "Add the beef stock to the pan.",
+          "tech": [
+            "simmer"
+          ]
+        },
+        {
+          "text": "Put the lid on and cook on a medium heat for 15 mins.",
+          "tech": [
+            "simmer"
+          ]
+        },
+        {
+          "text": "Take off the heat and taste. Add salt, pepper or garlic if it needs it.",
+          "tech": [
+            "season"
+          ]
+        },
+        {
+          "text": "Put the lid back on and leave it to sit.",
+          "tech": [
+            "rest-sauce"
+          ]
+        }
       ],
       "tips": []
     },
@@ -219,19 +795,89 @@
       "name": "OG Pizza",
       "category": "Weekend",
       "blurb": "No yeast, no waiting. Baking-powder dough means pizza on the table in about half an hour.",
-      "prep": "15 mins", "cook": "12–15 mins", "serves": "2 bases",
-      "ingredients": ["350g plain flour", "1 tsp salt", "1.5 tsp baking powder", "25ml olive oil", "200ml water", "Sauce: 50ml passata, salt, pepper, garlic granules or grated garlic", "Toppings: salami, chorizo, mushrooms", "Grated mature cheddar"],
+      "prep": "15 mins",
+      "cook": "12–15 mins",
+      "serves": "2 bases",
+      "ingredients": [
+        "350g plain flour",
+        "1 tsp salt",
+        "1.5 tsp baking powder",
+        "25ml olive oil",
+        "200ml water",
+        "Sauce: 50ml passata, salt, pepper, garlic granules or grated garlic",
+        "Toppings: salami, chorizo, mushrooms",
+        "Grated mature cheddar"
+      ],
       "steps": [
-        {"text": "Heat the oven as hot as it goes (around 220°C fan) with a baking tray inside.", "tech": ["preheat-tray"], "check": "Your note has the ingredients only. Every step of this method is mine, so please check them."},
-        {"text": "Mix the flour, salt and baking powder in a bowl.", "tech": ["no-yeast-dough"], "check": "Added."},
-        {"text": "Add the olive oil and water and mix into a soft dough.", "tech": ["no-yeast-dough"], "check": "Added."},
-        {"text": "Knead on a floured worktop for 2–3 mins until it's smooth.", "tech": ["knead-dough"], "check": "Added."},
-        {"text": "Split it in two and roll each half out thin.", "tech": ["roll-pizza"], "check": "Added."},
-        {"text": "Mix the passata with salt, pepper and garlic.", "tech": ["pizza-sauce"]},
-        {"text": "Spread the sauce over the bases.", "tech": ["pizza-sauce"], "check": "Added."},
-        {"text": "Add the salami, chorizo and mushrooms.", "tech": ["pizza-toppings"], "check": "Added."},
-        {"text": "Cover with grated mature cheddar.", "tech": ["grate-cheese"], "check": "Added."},
-        {"text": "Bake on the hot tray for 12–15 mins until the base is crisp and the cheese is bubbling.", "tech": ["bake-pizza"], "check": "Added."}
+        {
+          "text": "Heat the oven as hot as it goes (around 220°C fan) with a baking tray inside.",
+          "tech": [
+            "preheat-tray"
+          ],
+          "check": "Your note has the ingredients only. Every step of this method is mine, so please check them."
+        },
+        {
+          "text": "Mix the flour, salt and baking powder in a bowl.",
+          "tech": [
+            "no-yeast-dough"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Add the olive oil and water and mix into a soft dough.",
+          "tech": [
+            "no-yeast-dough"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Knead on a floured worktop for 2–3 mins until it's smooth.",
+          "tech": [
+            "knead-dough"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Split it in two and roll each half out thin.",
+          "tech": [
+            "roll-pizza"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Mix the passata with salt, pepper and garlic.",
+          "tech": [
+            "pizza-sauce"
+          ]
+        },
+        {
+          "text": "Spread the sauce over the bases.",
+          "tech": [
+            "pizza-sauce"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Add the salami, chorizo and mushrooms.",
+          "tech": [
+            "pizza-toppings"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Cover with grated mature cheddar.",
+          "tech": [
+            "grate-cheese"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Bake on the hot tray for 12–15 mins until the base is crisp and the cheese is bubbling.",
+          "tech": [
+            "bake-pizza"
+          ],
+          "check": "Added."
+        }
       ],
       "tips": []
     },
@@ -241,24 +887,117 @@
       "category": "Weekend",
       "blurb": "The Sunday roast, OG's way.",
       "intro": "The trick to a roast dinner is understanding that roast meat keeps cooking after it comes out of the oven. Yorkshires can go in at any time, everything tastes better with garlic, parboiling the potatoes and parsnips cuts their cooking time right down, and Bisto gravy is perfect.",
-      "prep": "20 mins", "cook": "1 hr 30 mins (depends on the bird)", "serves": "4",
-      "ingredients": ["1 whole chicken", "Half a lemon", "Butter", "Potatoes", "Parsnips", "Oil", "Garlic cloves", "Yorkshire puddings", "Bisto gravy granules"],
+      "prep": "20 mins",
+      "cook": "1 hr 30 mins (depends on the bird)",
+      "serves": "4",
+      "ingredients": [
+        "1 whole chicken",
+        "Half a lemon",
+        "Butter",
+        "Potatoes",
+        "Parsnips",
+        "Oil",
+        "Garlic cloves",
+        "Yorkshire puddings",
+        "Bisto gravy granules"
+      ],
       "steps": [
-        {"text": "Push half a lemon upside down into the chicken's bum, and work some butter under the skin over the breast.", "tech": ["prep-roast-chicken"]},
-        {"text": "Roast in the centre of the oven until the juices run clear. Most chickens give a cooking time by weight, so use that. Cover with foil once it's brown enough, but leave it in until the time's up.", "tech": ["roast-chicken"]},
-        {"text": "Peel the potatoes and put them in a pan of cold water. Bring to the boil on a medium heat.", "tech": ["peel-potatoes"]},
-        {"text": "Cook for 15 mins.", "tech": ["parboil-potatoes"]},
-        {"text": "Peel the parsnips and cut them in half or quarters lengthways.", "tech": ["prep-parsnips"]},
-        {"text": "Boil them in a pan of water, or steam them over the spuds, for 6–8 mins.", "tech": ["parboil-potatoes"]},
-        {"text": "Drain the spuds and parsnips, and put the parsnips to one side.", "tech": ["parboil-potatoes"]},
-        {"text": "Put the lid on the potato pan and give the spuds a good bash about inside.", "tech": ["rough-up-potatoes"]},
-        {"text": "Put an oven tray in with a little oil. When it's hot, tip the spuds into the tray and put it at the bottom of the oven.", "tech": ["roast-potatoes"]},
-        {"text": "After 20 mins, add the parsnips and a few bashed garlic cloves to the tray, turn everything in the oil and put back in.", "tech": ["roast-parsnips"], "check": "Your note stops here. Everything from this step on is mine, so please check it."},
-        {"text": "Check the chicken is cooked: the juices should run clear when you push a skewer into the thickest part of the thigh.", "tech": ["check-chicken"], "check": "Added."},
-        {"text": "Take the chicken out, cover with foil and rest it for 15–20 mins. It'll carry on cooking.", "tech": ["rest-meat"], "check": "Added."},
-        {"text": "While it rests, turn the oven up to about 220°C fan to crisp the spuds and parsnips, and put the Yorkshires in.", "tech": ["yorkshires"], "check": "Added."},
-        {"text": "Make the Bisto gravy with boiling water, and stir in the juices from the chicken tray.", "tech": ["gravy"], "check": "Added."},
-        {"text": "Carve the chicken and serve it all up.", "tech": ["carve-chicken"], "check": "Added."}
+        {
+          "text": "Push half a lemon upside down into the chicken's bum, and work some butter under the skin over the breast.",
+          "tech": [
+            "prep-roast-chicken"
+          ]
+        },
+        {
+          "text": "Roast in the centre of the oven until the juices run clear. Most chickens give a cooking time by weight, so use that. Cover with foil once it's brown enough, but leave it in until the time's up.",
+          "tech": [
+            "roast-chicken"
+          ]
+        },
+        {
+          "text": "Peel the potatoes and put them in a pan of cold water. Bring to the boil on a medium heat.",
+          "tech": [
+            "peel-potatoes"
+          ]
+        },
+        {
+          "text": "Cook for 15 mins.",
+          "tech": [
+            "parboil-potatoes"
+          ]
+        },
+        {
+          "text": "Peel the parsnips and cut them in half or quarters lengthways.",
+          "tech": [
+            "prep-parsnips"
+          ]
+        },
+        {
+          "text": "Boil them in a pan of water, or steam them over the spuds, for 6–8 mins.",
+          "tech": [
+            "parboil-potatoes"
+          ]
+        },
+        {
+          "text": "Drain the spuds and parsnips, and put the parsnips to one side.",
+          "tech": [
+            "parboil-potatoes"
+          ]
+        },
+        {
+          "text": "Put the lid on the potato pan and give the spuds a good bash about inside.",
+          "tech": [
+            "rough-up-potatoes"
+          ]
+        },
+        {
+          "text": "Put an oven tray in with a little oil. When it's hot, tip the spuds into the tray and put it at the bottom of the oven.",
+          "tech": [
+            "roast-potatoes"
+          ]
+        },
+        {
+          "text": "After 20 mins, add the parsnips and a few bashed garlic cloves to the tray, turn everything in the oil and put back in.",
+          "tech": [
+            "roast-parsnips"
+          ],
+          "check": "Your note stops here. Everything from this step on is mine, so please check it."
+        },
+        {
+          "text": "Check the chicken is cooked: the juices should run clear when you push a skewer into the thickest part of the thigh.",
+          "tech": [
+            "check-chicken"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Take the chicken out, cover with foil and rest it for 15–20 mins. It'll carry on cooking.",
+          "tech": [
+            "rest-meat"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "While it rests, turn the oven up to about 220°C fan to crisp the spuds and parsnips, and put the Yorkshires in.",
+          "tech": [
+            "yorkshires"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Make the Bisto gravy with boiling water, and stir in the juices from the chicken tray.",
+          "tech": [
+            "gravy"
+          ],
+          "check": "Added."
+        },
+        {
+          "text": "Carve the chicken and serve it all up.",
+          "tech": [
+            "carve-chicken"
+          ],
+          "check": "Added."
+        }
       ],
       "tips": []
     }
