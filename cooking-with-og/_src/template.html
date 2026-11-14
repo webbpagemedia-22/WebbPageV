@@ -13,7 +13,7 @@
 </script>
 <!--ROBOTS-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cooking with OG</title>
+<title>The Neuro Spicy Cookbook</title>
 <meta name="description" content="OG's family recipes, from Arroz de OG to the Sunday roast. Tap any step to watch how it's done.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -146,25 +146,25 @@ function reviewBar(){
 }
 
 function cover(){
-  document.title = 'Cooking with OG';
+  document.title = 'The Neuro Spicy Cookbook';
   const groups = order.map(c=>[c,R.filter(r=>r.category===c)]).filter(g=>g[1].length);
   app.innerHTML = `${reviewBar()}<div class="tiles cover-tiles" aria-hidden="true"></div>
   <main class="wrap cover">
-    <h1>Cooking with OG</h1>
+    <h1>The Neuro Spicy Cookbook</h1>
     <p class="lede">The family recipes, written the way OG actually cooks them. Tap any step number to watch how it's done.</p>
     <nav class="contents" aria-label="Recipes">${groups.map(([c,rs])=>`
       <section><h2>${esc(c)}</h2><ul>${rs.map(r=>`<li><a href="#/${r.id}">${esc(r.name)}<small>${esc(r.blurb)}</small></a></li>`).join('')}</ul></section>`).join('')}
     </nav>
   </main>
   <div class="tiles strip" aria-hidden="true"></div>
-  <footer class="wrap"><a href="cooking-with-og.pdf">Download the printable book (PDF)</a>. Every step has a QR code that opens its video here. Videos belong to their creators and play from YouTube.</footer>`;
+  <footer class="wrap"><a href="the-neuro-spicy-cookbook.pdf">Download the printable book (PDF)</a>. Every step has a QR code that opens its video here. Videos belong to their creators and play from YouTube.</footer>`;
   window.scrollTo(0,0);
 }
 
 function recipe(id){
   const i = R.findIndex(r=>r.id===id); if(i<0) return cover();
   const r = R[i], prev = R[i-1], next = R[i+1];
-  document.title = r.name + ' · Cooking with OG';
+  document.title = r.name + ' · The Neuro Spicy Cookbook';
   const ic = r.ingredientChecks || {};
   app.innerHTML = `${reviewBar()}<div class="tiles strip" aria-hidden="true"></div>
   <main class="wrap">

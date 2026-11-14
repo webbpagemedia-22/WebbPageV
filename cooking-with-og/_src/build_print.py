@@ -55,7 +55,7 @@ h3{font:700 12pt 'Bricolage Grotesque';margin:3mm 0 1.5mm}
 
 pages = []
 pages.append(f"""<section class="page cover"><div class="tiles"></div><div class="t">
-<h1>Cooking<br>with OG</h1><p>The family recipes, written the way OG actually cooks them. Every step has a code: scan it with your phone camera and the video for that step plays.</p></div>
+<h1>The Neuro<br>Spicy<br>Cookbook</h1><p>The family recipes, written the way OG actually cooks them. Every step has a code: scan it with your phone camera and the video for that step plays.</p></div>
 <div class="foot">webbpageventura.co.uk/cooking-with-og</div></section>""")
 
 toc = []
@@ -64,7 +64,7 @@ for c in order:
     if rs:
         toc.append(f'<p class="cat">{e(c)}</p><ul class="tocl">' + ''.join(f'<li><span>{e(r["name"])}</span></li>' for r in rs) + '</ul>')
 pages.append(f"""<section class="page"><h2 class="toc">What's cooking</h2>
-<p class="howto"><b>How the codes work.</b> Point your phone camera at the square next to any step. It opens that step on the Cooking with OG website and plays a short video showing how it's done.</p>
+<p class="howto"><b>How the codes work.</b> Point your phone camera at the square next to any step. It opens that step on the The Neuro Spicy Cookbook website and plays a short video showing how it's done.</p>
 {''.join(toc)}</section>""")
 
 for r in R:
@@ -93,7 +93,7 @@ async def pdf():
     async with async_playwright() as p:
         b = await p.chromium.launch(); pg = await b.new_page()
         await pg.goto('file://'+os.path.abspath('print.html')); await pg.wait_for_timeout(2500)
-        out = '../cooking-with-og' + ('-draft' if review else '') + '.pdf'
+        out = '../the-neuro-spicy-cookbook' + ('-draft' if review else '') + '.pdf'
         await pg.pdf(path=out, width='148mm', height='210mm', print_background=True, prefer_css_page_size=True)
         await b.close(); print(out)
 asyncio.run(pdf())
