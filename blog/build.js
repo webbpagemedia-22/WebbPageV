@@ -388,7 +388,10 @@ const marker = /<!-- ned:latest:start[\s\S]*?<!-- ned:latest:end -->/;
 if (!marker.test(home)) fail("index.html is missing the ned:latest markers");
 fs.writeFileSync(HOME, home.replace(marker, homeBlock(posts)));
 
-const sitemapUrls = SITEMAP_PAGES.map((u) => ({ loc: SITE + u }))
+// The home page carries the latest post (the ned:latest block), so it changes
+// whenever a post is added: give it the newest post's date. The other main
+// pages have no reliable date, so they get no lastmod rather than a wrong one.
+const sitemapUrls = SITEMAP_PAGES.map((u) => (u === "/" ? { loc: SITE + u, lastmod: posts[0].date } : { loc: SITE + u }))
   .concat({ loc: `${SITE}/blog/`, lastmod: posts[0].date })
   .concat(posts.map((p) => ({ loc: SITE + p.url, lastmod: p.date })));
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
