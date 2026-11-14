@@ -206,7 +206,9 @@
       ],
       "tips": [
         "Add to a breakfast, or have on toast with eggs."
-      ]
+      ],
+      "image": "images/ajo-y-champinones.jpg",
+      "imageAlt": "Garlic butter mushrooms with parsley in a terracotta dish, with crusty bread"
     },
     {
       "id": "satay-sauce",
