@@ -139,7 +139,9 @@
       ],
       "tips": [
         "Serve with toast or Ajo y champiñones."
-      ]
+      ],
+      "image": "images/scrambled-eggs.jpg",
+      "imageAlt": "Creamy scrambled eggs with black pepper on a slice of thick toast"
     },
     {
       "id": "ajo-y-champinones",
@@ -424,7 +426,9 @@
       ],
       "tips": [
         "Goes with naans, chapatis or Arroz de OG."
-      ]
+      ],
+      "image": "images/og-curry.jpg",
+      "imageAlt": "Chicken curry in a creamy orange sauce with white rice and coriander"
     },
     {
       "id": "thai-curry",
@@ -772,7 +776,9 @@
           ]
         }
       ],
-      "tips": []
+      "tips": [],
+      "image": "images/bolognesa.jpg",
+      "imageAlt": "Spaghetti bolognese topped with grated parmesan and parsley"
     },
     {
       "id": "pizza",

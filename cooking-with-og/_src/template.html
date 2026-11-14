@@ -75,6 +75,7 @@ button{font:inherit;color:inherit}
 .meta div{display:flex;gap:.4rem;align-items:baseline}
 .meta dt{color:var(--muted);font-size:.95rem}
 .meta dd{margin:0;font-weight:700}
+.hero{display:block;width:100%;max-height:30rem;aspect-ratio:3/2;object-fit:cover;border-radius:10px;margin:1.5rem 0 0;background:var(--line)}
 .intro{background:#fff;border-left:5px solid var(--olive);padding:1rem 1.25rem;margin:1.5rem 0 0;max-width:46rem}
 
 .body{display:grid;gap:2.5rem;padding:2rem 0 3rem}
@@ -175,6 +176,7 @@ function recipe(id){
       <p class="blurb">${esc(r.blurb)}</p>
       <dl class="meta">${[['Prep',r.prep],['Cook',r.cook],['Serves',r.serves]].filter(x=>x[1]).map(([k,v])=>`<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
       ${r.intro?`<p class="intro">${esc(r.intro)}</p>`:''}
+      ${r.image?`<img class="hero" src="${esc(r.image)}" alt="${esc(r.imageAlt||r.name)}" width="1400" height="933">`:''}
     </header>
     <div class="body">
       <section class="ingr" aria-labelledby="ih"><h2 id="ih">Ingredients</h2>

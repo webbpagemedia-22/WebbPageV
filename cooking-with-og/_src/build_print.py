@@ -36,6 +36,7 @@ h1.rn{font:800 24pt/1 'Bricolage Grotesque';letter-spacing:-.02em;color:#1C3F94;
 .blurb{margin:0 0 2.5mm;font-size:10pt}
 .meta{display:flex;gap:6mm;font-size:8.5pt;color:#5B6170;margin-bottom:3mm}
 .meta b{color:#232836}
+.hero{display:block;width:100%;height:62mm;object-fit:cover;border-radius:2mm;margin:0 0 3mm}
 .intro{background:#fff;border-left:3pt solid #5E6B2A;padding:2.5mm 3.5mm;margin:0 0 3mm;font-size:9pt}
 h3{font:700 12pt 'Bricolage Grotesque';margin:3mm 0 1.5mm}
 .ing{columns:2;column-gap:6mm;margin:0;padding:0;list-style:none;font-size:9pt}
@@ -78,7 +79,7 @@ for r in R:
     equip = f'<p style="font-size:8.5pt;color:#5B6170;margin:1.5mm 0 0">You\'ll need: {e(", ".join(r["equipment"]))}</p>' if r.get('equipment') else ''
     pages.append(f"""<section class="page" style="min-height:auto"><div class="tiles strip"></div>
 <p class="rc">{e(r['category'])}</p><h1 class="rn">{e(r['name'])}</h1>{f'<p class="aka">{e(r["aka"])}</p>' if r.get('aka') else ''}
-<p class="blurb">{e(r['blurb'])}</p><div class="meta">{meta}</div>{f'<p class="intro">{e(r["intro"])}</p>' if r.get('intro') else ''}
+<p class="blurb">{e(r['blurb'])}</p>{f'<img class="hero" src="../{e(r["image"])}" alt="">' if r.get('image') else ''}<div class="meta">{meta}</div>{f'<p class="intro">{e(r["intro"])}</p>' if r.get('intro') else ''}
 <h3>Ingredients</h3><ul class="ing">{ing}</ul>{equip}
 <h3>Method</h3><ol class="steps">{steps}</ol>{tips}</section>""")
 
