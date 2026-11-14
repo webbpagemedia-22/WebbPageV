@@ -1,4 +1,7 @@
 # The recipe book moved from /cooking-with-og/ to /neuro-spicy-cookbook/ (14 Nov 2026).
 /cooking-with-og /neuro-spicy-cookbook/ 301
 /cooking-with-og/ /neuro-spicy-cookbook/ 301
+/cooking-with-og/cooking-with-og.pdf /neuro-spicy-cookbook/the-neuro-spicy-cookbook.pdf 301
+/cooking-with-og/cooking-with-og-draft.pdf /neuro-spicy-cookbook/the-neuro-spicy-cookbook.pdf 301
+/cooking-with-og/the-neuro-spicy-cookbook.pdf /neuro-spicy-cookbook/the-neuro-spicy-cookbook.pdf 301
 /cooking-with-og/* /neuro-spicy-cookbook/:splat 301
