@@ -488,7 +488,9 @@
       ],
       "tips": [
         "Goes well with Arroz de OG."
-      ]
+      ],
+      "image": "images/thai-curry.jpg",
+      "imageAlt": "Thai green chicken curry with bamboo shoots, red pepper, basil and lime, with rice on the side"
     },
     {
       "id": "arroz-con-chorizo",
@@ -565,7 +567,9 @@
       ],
       "tips": [
         "You can do it quicker on a higher heat, but OG's best ones are made with more stock and cooked for longer, up to an hour of adding stock."
-      ]
+      ],
+      "image": "images/arroz-con-chorizo.jpg",
+      "imageAlt": "Paella-style rice with chicken thighs, sliced chorizo, red peppers and lemon wedges in a pan"
     },
     {
       "id": "chilli",
@@ -673,7 +677,9 @@
       ],
       "tips": [
         "Great with Arroz de OG, tortillas and guacamole."
-      ]
+      ],
+      "image": "images/chilli.jpg",
+      "imageAlt": "A steaming bowl of beef and kidney bean chilli topped with coriander"
     },
     {
       "id": "bolognesa",
