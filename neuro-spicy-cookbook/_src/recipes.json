@@ -428,7 +428,7 @@
         "Onions",
         "Chicken breast or thigh fillets",
         "50ml cream or Elmlea",
-        "Chicken stock",
+        "250ml chicken stock",
         "Tomato purée (or 250ml passata)",
         "Curry powder",
         "Cumin",
@@ -464,7 +464,7 @@
           ]
         },
         {
-          "text": "Coat the chicken, then add the chicken stock.",
+          "text": "Coat the chicken, then add 250ml chicken stock.",
           "tech": [
             "make-stock"
           ]
