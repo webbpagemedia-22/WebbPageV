@@ -315,7 +315,9 @@
       "tips": [
         "Lumpy? Take it off the heat and give it a hard whisk.",
         "For a cheese sauce, stir in a handful of grated mature cheddar off the heat."
-      ]
+      ],
+      "image": "images/bechamel.jpg",
+      "imageAlt": "Smooth béchamel sauce being whisked in a steel saucepan, with butter and nutmeg beside it"
     },
     {
       "id": "nasi-goreng",
@@ -921,7 +923,9 @@
       ],
       "tips": [
         "Make the bolognese the day before and it's even better."
-      ]
+      ],
+      "image": "images/lasagne.jpg",
+      "imageAlt": "A baked lasagne with a golden cheese top in a tray, one portion cut out to show the layers"
     },
     {
       "id": "pizza",
