@@ -984,7 +984,9 @@
           ]
         }
       ],
-      "tips": []
+      "tips": [],
+      "image": "images/roast-chicken.jpg",
+      "imageAlt": "Roast chicken dinner with sliced chicken, roast potatoes, parsnips, a Yorkshire pudding, stuffing, broccoli and gravy"
     }
   ]
 }
