@@ -5,6 +5,9 @@ summary: OpenAI has launched Wallet, which lets ChatGPT's AI agents pick product
 source: https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/
 source_name: TechCrunch, 13 November 2026
 type: AI news
+image: /images/blog/2026-11-15-chatgpt-wallet-ai-agents-shop-for-you.jpg
+image_alt: An illustrated robot shopping assistant pointing at product cards, with a digital wallet beside them
+image_credit: Webb Page Ventura (AI-generated illustration)
 ---
 
 OpenAI has added a payment feature to ChatGPT called Wallet. It lets the app's AI agents, which OpenAI calls dots, help you choose something to buy and then complete the checkout for you.
