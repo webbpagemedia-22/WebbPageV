@@ -157,12 +157,14 @@ def cover_html(pages):
 .back h2{{font:800 17pt/1.1 'Bricolage Grotesque';color:#1C3F94;margin:0 0 3mm}}
 .back p{{font-size:9.4pt;line-height:1.5;margin:0 0 2.6mm}}
 .ph{{display:flex;gap:4.5mm;margin-top:3mm}}
-.url{{position:absolute;left:{B + 14}mm;top:{B + H - 17}mm;font-size:8.5pt;color:#5B6170;max-width:70mm;white-space:nowrap}}
+.url{{position:absolute;left:{B + 14}mm;top:{B + H - 21}mm;font-size:8.5pt;color:#5B6170;line-height:1.4;max-width:60mm}}
+/* KDP prints the barcode bottom-right of the back cover: 50.8 x 30.5 mm, 6.35 mm in from the spine fold and the bottom trim. Keep a plain white box there (3 mm bigger all round) with nothing on it. */
+.barcode{{position:absolute;left:{B + W - 6.35 - 50.8 - 3:.2f}mm;top:{B + H - 6.35 - 30.5 - 3:.2f}mm;width:56.8mm;height:36.5mm;background:#fff}}
 </style></head><body><div class="wrap"><div class="band"></div>
 <div class="back"><h2>A recipe book for anyone who was never shown how.</h2>
 <p>Fifteen family recipes, written the way they're actually cooked at home. Every step has a code. Scan it with your phone and a short video shows you exactly how that step is done.</p>
 <p>Inside: {e(names)}.</p><div class="ph">{ph}</div></div>
-<div class="url">{SITE}</div>
+<div class="url">{SITE.replace("/", "/<br>", 1)}</div><div class="barcode"></div>
 <div class="front"><h1>The Neuro<br>Spicy<br>Cookbook</h1><p>Family recipes with a video for every step.</p></div>
 <div class="by">{e(AUTHOR)}</div></div></body></html>"""
     return doc, full_w, full_h, spine
