@@ -329,6 +329,17 @@ function indexPage(posts) {
     description: "One useful bit of AI news or a practical AI tip each day, written in plain English for UK small businesses.",
     canonical: "/blog/",
     current: true,
+    // Home > Blog, matching the breadcrumbs on the posts and main pages.
+    extraHead: `<script type="application/ld+json">
+${JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: SITE + "/blog/" },
+  ],
+}, null, 2)}
+</script>`,
     main: `
   <section class="page-head stack">
     <p class="eyebrow">Blog</p>
