@@ -21,6 +21,8 @@ labels = json.load(open('labels.json'))
 TITLE = book['title']
 order = ['Basics', 'Breakfast', 'Sauces', 'Rice & Curries', 'Mince', 'Weekend']
 R = sorted(book['recipes'], key=lambda r: order.index(r['category']))
+_W = 'zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty'.split()
+NUM_WORD = (_W[len(R)] if len(R) < len(_W) else str(len(R))).capitalize()
 e = html.escape
 IMG = os.path.abspath('..')
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap" rel="stylesheet">'
@@ -162,7 +164,7 @@ def cover_html(pages):
 .barcode{{position:absolute;left:{B + W - 6.35 - 50.8 - 3:.2f}mm;top:{B + H - 6.35 - 30.5 - 3:.2f}mm;width:56.8mm;height:36.5mm;background:#fff}}
 </style></head><body><div class="wrap"><div class="band"></div>
 <div class="back"><h2>A recipe book for anyone who was never shown how.</h2>
-<p>Fifteen family recipes, written the way they're actually cooked at home. Every step has a code. Scan it with your phone and a short video shows you exactly how that step is done.</p>
+<p>{NUM_WORD} family recipes, written the way they're actually cooked at home. Every step has a code. Scan it with your phone and a short video shows you exactly how that step is done.</p>
 <p>Inside: {e(names)}.</p><div class="ph">{ph}</div></div>
 <div class="url">{SITE.replace("/", "/<br>", 1)}</div><div class="barcode"></div>
 <div class="front"><h1>The Neuro<br>Spicy<br>Cookbook</h1><p>Family recipes with a video for every step.</p></div>

@@ -19,7 +19,7 @@
       "cook": "13–15 mins",
       "serves": "2",
       "ingredients": [
-        "1 cup of white rice (brown rice is bad for you)",
+        "1 cup of white rice",
         "Cold water"
       ],
       "steps": [
@@ -73,12 +73,65 @@
       "imageAlt": "A steaming bowl of fluffy white rice in a blue and white bowl"
     },
     {
+      "id": "pasta",
+      "name": "Pasta the OG way",
+      "category": "Basics",
+      "blurb": "Any pasta, cooked so it still has a bit of bite. Read the packet, then knock a minute off.",
+      "prep": "1 min",
+      "cook": "Depends on the pasta",
+      "serves": "As many as you're feeding",
+      "ingredients": [
+        "Pasta, any shape",
+        "Cold water",
+        "Salt, plenty of it"
+      ],
+      "equipment": [
+        "Large pan"
+      ],
+      "steps": [
+        {
+          "text": "Fill a large pan with cold water and salt it heavily.",
+          "tech": [
+            "boil-pasta"
+          ]
+        },
+        {
+          "text": "Bring to the boil on a medium heat, then add the pasta. Any pasta.",
+          "tech": [
+            "boil-pasta"
+          ]
+        },
+        {
+          "text": "Find the cooking time on the packet, take the lowest number and knock 1 minute off. Fusilli says 8–10 mins, so boil it for 7.",
+          "tech": [
+            "boil-pasta"
+          ]
+        },
+        {
+          "text": "Take the pasta out and let it rest for a minute.",
+          "tech": [
+            "boil-pasta"
+          ]
+        },
+        {
+          "text": "Serve with your sauce.",
+          "tech": [
+            "boil-pasta"
+          ]
+        }
+      ],
+      "tips": [
+        "Save a cup of the pasta water to thicken your sauce.",
+        "Forgot the timer and boiled it a bit too long? Take the pasta out and run cold water through it to stop it cooking. When you're ready, pour boiling water over it to heat it back up without cooking it any further."
+      ]
+    },
+    {
       "id": "boiled-eggs",
       "name": "OG Boiled Eggs",
       "category": "Basics",
       "blurb": "Gloriously simple. Cold water, bring to the boil, three minutes.",
       "prep": "1 min",
-      "cook": "6–8 mins",
+      "cook": "6–13 mins",
       "serves": "1+",
       "ingredients": [
         "Eggs",
@@ -92,7 +145,13 @@
           ]
         },
         {
-          "text": "Bring up to the boil, then leave for 3 mins.",
+          "text": "Bring up to the boil. For a runny yolk, leave for 3 mins.",
+          "tech": [
+            "boil-eggs"
+          ]
+        },
+        {
+          "text": "For hard-boiled eggs, leave for 8 mins.",
           "tech": [
             "boil-eggs"
           ]
@@ -232,7 +291,8 @@
         "Garlic",
         "Kecap manis (sweet soy sauce)",
         "Curry powder",
-        "Fish sauce"
+        "Fish sauce",
+        "MSG (optional)"
       ],
       "steps": [
         {
@@ -262,7 +322,8 @@
       ],
       "tips": [
         "5 mins for a stir-fry sauce.",
-        "10 mins for a satay chicken sauce."
+        "10 mins for a satay chicken sauce.",
+        "Add MSG to make it sing."
       ],
       "image": "images/satay-sauce.jpg",
       "imageAlt": "Peanut satay sauce topped with chopped peanuts and spring onion in a blue and white bowl"
@@ -279,6 +340,7 @@
         "50g butter",
         "50g plain flour",
         "600ml milk",
+        "1 tsp English mustard",
         "Pinch of nutmeg",
         "Salt and pepper"
       ],
@@ -314,7 +376,7 @@
           ]
         },
         {
-          "text": "Season with salt, pepper and a pinch of nutmeg.",
+          "text": "Season with salt, pepper, a pinch of nutmeg and the teaspoon of English mustard, and stir it through.",
           "tech": [
             "season"
           ]
@@ -343,6 +405,7 @@
         "Prawns",
         "Kecap manis (sweet soy sauce)",
         "Shrimp paste or fish sauce",
+        "MSG, a sprinkle",
         "Spring onion, to garnish",
         "1 egg per person"
       ],
@@ -405,6 +468,12 @@
           ]
         },
         {
+          "text": "Add a sprinkle of MSG to get that umami flavour.",
+          "tech": [
+            "season"
+          ]
+        },
+        {
           "text": "Add the spring onion for garnish.",
           "tech": [
             "slice-spring-onion"
@@ -434,6 +503,7 @@
       "ingredients": [
         "Pancetta",
         "Onions",
+        "Garlic",
         "Chicken breast or thigh fillets",
         "50ml cream or Elmlea",
         "250ml chicken stock",
@@ -453,7 +523,7 @@
           ]
         },
         {
-          "text": "Add the onions and soften them until they go translucent.",
+          "text": "Add the onions and garlic and soften them until the onions go translucent.",
           "tech": [
             "soften-onion"
           ]
@@ -518,6 +588,7 @@
       "serves": "3–4",
       "ingredients": [
         "Onions",
+        "Garlic",
         "Chicken breast or thigh fillets",
         "400ml coconut milk",
         "100ml chicken stock",
@@ -537,6 +608,12 @@
           "tech": [
             "slice-chicken",
             "seal-chicken"
+          ]
+        },
+        {
+          "text": "Add the garlic and stir it through for a minute.",
+          "tech": [
+            "chop-garlic"
           ]
         },
         {
@@ -582,6 +659,7 @@
         "Chorizo",
         "Chicken breast or thigh fillets",
         "1 large onion",
+        "Garlic",
         "2 red peppers",
         "1 litre chicken stock",
         "Valenciana paella seasoning sachet",
@@ -595,7 +673,7 @@
           ]
         },
         {
-          "text": "Add the onion and soften it until it goes translucent.",
+          "text": "Add the onion and garlic and soften them until the onion goes translucent.",
           "tech": [
             "soften-onion"
           ]
@@ -860,7 +938,10 @@
           ]
         }
       ],
-      "tips": [],
+      "tips": [
+        "Serve with Pasta the OG way.",
+        "The longer this sits, the better it tastes. Heat it back up when you're ready to start the pasta."
+      ],
       "image": "images/bolognesa.jpg",
       "imageAlt": "Spaghetti bolognese topped with grated parmesan and parsley"
     },
@@ -1131,7 +1212,9 @@
           ]
         }
       ],
-      "tips": [],
+      "tips": [
+        "Boil the potatoes and let them cool before roasting for super fluffy insides and crispy outsides."
+      ],
       "image": "images/roast-chicken.jpg",
       "imageAlt": "Roast chicken dinner with sliced chicken, roast potatoes, parsnips, a Yorkshire pudding, stuffing, broccoli and gravy"
     }
