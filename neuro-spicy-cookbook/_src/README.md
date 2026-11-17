@@ -10,8 +10,8 @@ Never edit `../index.html` or the PDF by hand; edit here and rebuild.
 - `labels.json`: plain names for each technique ("chopping an onion").
 
 Build (from this folder):
-- `python3 build.py` builds the DRAFT: yellow "OG to check" notes, noindex. This is what's live now.
-- `python3 build.py --public` builds the final version, once OG has approved every check note.
+- `python3 build.py` builds the DRAFT: yellow "OG to check" notes, noindex.
+- `python3 build.py --public` builds the final version (canonical, no noindex). This is what's live now.
 - `python3 build_print.py --public` builds the print PDF, ../the-neuro-spicy-cookbook.pdf (needs `pip install segno playwright`).
   QR codes point at `/neuro-spicy-cookbook/#/<recipe-id>/<step>`, so swapping a video never needs a reprint.
 
