@@ -19,3 +19,8 @@ https://:worker.:subdomain.workers.dev/*
 # allow up to a week for returning visitors to see the new one.
 /images/*
   Cache-Control: public, max-age=604800
+
+# Same for the recipe book's photos, which live outside /images/ (about 4.5 MB
+# across 16 photos). Same rule: rename a photo if it's ever replaced.
+/neuro-spicy-cookbook/images/*
+  Cache-Control: public, max-age=604800
