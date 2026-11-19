@@ -324,9 +324,28 @@ function indexPage(posts) {
         <p>${esc(p.summary)}</p>
         </div>
       </li>`).join("\n");
+  const title = "AI News and Tips for Small Businesses";
+  const description = "One useful bit of AI news or a practical AI tip each day, written in plain English for UK small businesses.";
+  // Tells search engines this page is a blog and which posts belong to it,
+  // using only what is already on the page (headlines, links and dates).
+  const blogLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: title,
+    description,
+    url: SITE + "/blog/",
+    inLanguage: "en-GB",
+    publisher: { "@type": "Organization", name: "Webb Page Ventura", url: SITE + "/" },
+    blogPost: posts.map((p) => ({
+      "@type": "BlogPosting",
+      headline: p.title,
+      url: SITE + p.url,
+      datePublished: p.date,
+    })),
+  };
   return page({
-    title: "AI News and Tips for Small Businesses",
-    description: "One useful bit of AI news or a practical AI tip each day, written in plain English for UK small businesses.",
+    title,
+    description,
     canonical: "/blog/",
     current: true,
     // Home > Blog, matching the breadcrumbs on the posts and main pages.
@@ -339,6 +358,9 @@ ${JSON.stringify({
     { "@type": "ListItem", position: 2, name: "Blog", item: SITE + "/blog/" },
   ],
 }, null, 2)}
+</script>
+<script type="application/ld+json">
+${JSON.stringify(blogLd, null, 2).replace(/</g, "\\u003c")}
 </script>`,
     main: `
   <section class="page-head stack">
