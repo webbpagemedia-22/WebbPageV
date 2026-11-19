@@ -1218,6 +1218,92 @@
       ],
       "image": "images/roast-chicken.jpg",
       "imageAlt": "Roast chicken dinner with sliced chicken, roast potatoes, parsnips, a Yorkshire pudding, stuffing, broccoli and gravy"
+    },
+    {
+      "id": "bubble-and-squeak",
+      "name": "Bubble and Squeak",
+      "category": "Breakfast",
+      "blurb": "Sunday's leftovers, Monday's best breakfast, with a little kick of n'duja or sobrasada.",
+      "intro": "Bubble and squeak is what you make with the leftovers from a roast, but it's good enough to cook from scratch too. Mash the spuds and veg together with a bit of something spicy, cut them into rounds and fry them golden.",
+      "prep": "10 mins (20 from scratch)",
+      "cook": "8–10 mins",
+      "serves": "2",
+      "ingredients": [
+        "Potatoes (leftover roasties or boiled spuds)",
+        "Leftover veg from the roast: cabbage, sprouts, carrots, parsnips, peas, whatever you've got",
+        "A teaspoon of n'duja or sobrasada",
+        "Oil, for frying",
+        "Salt and black pepper",
+        "To serve: a poached egg, or sausages and Bisto gravy"
+      ],
+      "ingredientChecks": {
+        "A teaspoon of n'duja or sobrasada": "How much do you use? I've put a teaspoon.",
+        "Oil, for frying": "You didn't say what you fry it in. Oil, butter, or dripping from the roast?",
+        "Salt and black pepper": "Added by OGD. Keep or cut?"
+      },
+      "equipment": [
+        "Potato masher",
+        "Cookie cutter (or the rim of a mug)",
+        "Frying pan"
+      ],
+      "steps": [
+        {
+          "text": "Making it from scratch? Peel the potatoes and boil them until soft, about 15–20 minutes. Boil any veg you're using in there too.",
+          "tech": [
+            "peel-potatoes",
+            "mash-potatoes"
+          ],
+          "check": "Added by OGD for the from-scratch version. Right timings?"
+        },
+        {
+          "text": "Mash the potatoes.",
+          "tech": [
+            "mash-potatoes"
+          ]
+        },
+        {
+          "text": "Chop the leftover veg small and add it to the potato, with a bit of n'duja or sobrasada.",
+          "tech": [
+            "bubble-squeak-cakes"
+          ]
+        },
+        {
+          "text": "Mash it all together until it's well mixed.",
+          "tech": [
+            "bubble-squeak-cakes"
+          ]
+        },
+        {
+          "text": "Press the mix into a cookie cutter on a board to make rounds about as thick as your thumb. No cutter? Use the rim of a mug.",
+          "tech": [
+            "bubble-squeak-cakes"
+          ],
+          "check": "How thick do you make them? I've put thumb-thick."
+        },
+        {
+          "text": "Fry in a little oil on a medium heat for 3–4 minutes each side, until golden and crispy.",
+          "tech": [
+            "bubble-squeak-cakes"
+          ],
+          "check": "You didn't mention frying. Is this how you cook them?"
+        },
+        {
+          "text": "For a great breakfast, top each one with a poached egg.",
+          "tech": [
+            "poach-egg"
+          ]
+        },
+        {
+          "text": "For a tea-time feast, serve with sausages and Bisto gravy.",
+          "tech": [
+            "fry-sausages",
+            "gravy"
+          ]
+        }
+      ],
+      "tips": [
+        "Sobrasada is the soft, spicy sausage from Mallorca. N'duja is the Italian one, from Calabria. Either works."
+      ]
     }
   ]
 }

@@ -598,5 +598,37 @@
     "channel": "Gordon Ramsay",
     "short": false,
     "note": "Gordon Ramsay's short guide to boiling pasta in salted water. He adds olive oil to the water, which OG's method doesn't."
+  },
+  "mash-potatoes": {
+    "id": "HfdFlenF6XI",
+    "start": 0,
+    "title": "Mashed Potatoes Recipe",
+    "channel": "Preppy Kitchen",
+    "short": false,
+    "note": "Potatoes boiled until soft, drained and mashed."
+  },
+  "bubble-squeak-cakes": {
+    "id": "JM2IJitVBNk",
+    "start": 0,
+    "title": "Bubble and squeak cakes",
+    "channel": "Allrecipes UK | Ireland",
+    "short": false,
+    "note": "Potato and leftover veg mashed together, shaped into cakes and fried golden."
+  },
+  "poach-egg": {
+    "id": "0sl3eMAXspE",
+    "start": 0,
+    "title": "How to Poach Eggs For Beginners",
+    "channel": "Food Network",
+    "short": false,
+    "note": "An egg poached in simmering water."
+  },
+  "fry-sausages": {
+    "id": "bK-4kinBb6c",
+    "start": 0,
+    "title": "How to Cook Sausages in a Pan",
+    "channel": "Flavor Lab",
+    "short": false,
+    "note": "Sausages browned slowly in a frying pan."
   }
 }
