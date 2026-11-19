@@ -1232,13 +1232,11 @@
         "Leftover roast potatoes",
         "Leftover veg from the roast: cabbage, sprouts, carrots, parsnips, peas, whatever you've got",
         "At least a teaspoon of n'duja or sobrasada (more if you like it hot)",
-        "Oil, for frying",
+        "Something to fry in: oil, butter, or dripping from the roast",
         "Salt and black pepper",
         "To serve: a poached egg, or sausages and Bisto gravy"
       ],
-      "ingredientChecks": {
-        "Oil, for frying": "You didn't say what you fry it in. Oil, butter, or dripping from the roast?"
-      },
+      "ingredientChecks": {},
       "equipment": [
         "Potato masher",
         "Cookie cutter (or the rim of a mug)",
@@ -1270,11 +1268,10 @@
           ]
         },
         {
-          "text": "Fry in a little oil on a medium heat for 3–4 minutes each side, until golden and crispy.",
+          "text": "Fry on a medium heat for 3–4 minutes each side, until golden and crispy. Oil does the job, butter does a great job, and dripping from the roast is perfection.",
           "tech": [
             "bubble-squeak-cakes"
-          ],
-          "check": "You didn't mention frying. Is this how you cook them?"
+          ]
         },
         {
           "text": "For a great breakfast, top each one with a poached egg.",
