@@ -598,5 +598,13 @@
     "channel": "Gordon Ramsay",
     "short": false,
     "note": "Gordon Ramsay's short guide to boiling pasta in salted water. He adds olive oil to the water, which OG's method doesn't."
+  },
+  "carbonara-sauce": {
+    "id": "vQL_EbtrG-4",
+    "start": 0,
+    "title": "How to Make Classic Carbonara - The Emulsion",
+    "channel": "ChefSteps",
+    "short": true,
+    "note": "Short: pork fat and pasta water emulsion, then the egg and cheese mix added off the heat. oEmbed 200 on 20 Nov."
   }
 }

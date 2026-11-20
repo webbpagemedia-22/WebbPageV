@@ -1218,6 +1218,94 @@
       ],
       "image": "images/roast-chicken.jpg",
       "imageAlt": "Roast chicken dinner with sliced chicken, roast potatoes, parsnips, a Yorkshire pudding, stuffing, broccoli and gravy"
+    },
+    {
+      "id": "carbonara",
+      "name": "Carbonara the OG way",
+      "category": "Weekend",
+      "blurb": "Proper carbonara, no cream, with pancetta and a little kick of garlic and chilli.",
+      "intro": "Real carbonara is just pork, eggs, cheese and pepper, mixed off the heat into a glossy sauce. This one swaps the guanciale for pancetta, uses short pasta to catch the sauce, and wakes it up with garlic and chilli.",
+      "prep": "10 mins",
+      "cook": "15 mins",
+      "serves": "2",
+      "ingredients": [
+        "200g macaroni or fusilli",
+        "100g pancetta, cubed",
+        "1 clove of garlic, finely chopped",
+        "A pinch of chilli flakes, or a little fresh red chilli, finely chopped",
+        "2 egg yolks and 1 whole egg",
+        "30g Parmigiano Reggiano, finely grated, plus extra to serve",
+        "20g pecorino, finely grated",
+        "Plenty of black pepper",
+        "Salt, for the pasta water"
+      ],
+      "ingredientChecks": {
+        "2 egg yolks and 1 whole egg": "Yolks only, or yolks plus a whole egg? I've put 2 yolks and 1 whole egg for two people.",
+        "30g Parmigiano Reggiano, finely grated, plus extra to serve": "Half Parmigiano and half pecorino, or all pecorino? I've put a mix.",
+        "100g pancetta, cubed": "Serves 2 and 100g of pancetta: right for you?"
+      },
+      "equipment": [
+        "Large pan",
+        "Frying pan",
+        "Mixing bowl",
+        "Grater"
+      ],
+      "steps": [
+        {
+          "text": "Put a large pan of heavily salted water on to boil for the pasta.",
+          "tech": [
+            "boil-pasta"
+          ]
+        },
+        {
+          "text": "Put the pancetta in a cold, dry frying pan on a medium-low heat. Let it cook slowly for 6–8 minutes until the fat has run out and the pancetta is golden and crispy.",
+          "tech": [
+            "fry-pancetta"
+          ]
+        },
+        {
+          "text": "Add the garlic and chilli to the pancetta and fry for a minute, just until the garlic smells good. Don't let it brown. Turn the heat off and leave the pancetta in its fat.",
+          "tech": [
+            "chop-garlic"
+          ],
+          "check": "You said garlic and chilli go in at the start with the pancetta. Garlic can burn in 6–8 minutes, so I've put it in for the last minute. OK, or do you put it in right at the start?"
+        },
+        {
+          "text": "In a bowl, mix the egg yolks, the whole egg, both cheeses and lots of black pepper into a thick, sticky paste.",
+          "tech": [
+            "grate-cheese",
+            "whisk-eggs"
+          ]
+        },
+        {
+          "text": "Cook the pasta the OG way: take the lowest time on the packet and knock a minute off. Before you drain it, save a mug of the pasta water.",
+          "tech": [
+            "boil-pasta"
+          ]
+        },
+        {
+          "text": "Tip the pasta into the pancetta pan with a splash of the pasta water. Toss it on a low heat for a minute so every piece is coated in the fat, then take the pan off the heat.",
+          "tech": [
+            "carbonara-sauce"
+          ]
+        },
+        {
+          "text": "Give it 30 seconds to cool a touch, then pour in the egg mix and stir fast. Add pasta water a splash at a time until the sauce is glossy and creamy. Never put it back on the heat or you'll have scrambled eggs.",
+          "tech": [
+            "carbonara-sauce"
+          ]
+        },
+        {
+          "text": "Serve straight away with extra cheese and a good twist of black pepper.",
+          "tech": [
+            "grate-cheese"
+          ]
+        }
+      ],
+      "tips": [
+        "No cream. The creaminess comes from the eggs, the cheese and the starchy pasta water.",
+        "Macaroni and fusilli are perfect here: the tubes and twists hold on to the sauce and the bits of pancetta."
+      ]
     }
   ]
 }
