@@ -24,3 +24,8 @@ https://:worker.:subdomain.workers.dev/*
 # across 16 photos). Same rule: rename a photo if it's ever replaced.
 /neuro-spicy-cookbook/images/*
   Cache-Control: public, max-age=604800
+
+# Same for the Ginganinja book page's illustrations (about 3.5 MB across 16
+# pictures). Same rule: rename a picture if it's ever replaced.
+/ginganinja/images/*
+  Cache-Control: public, max-age=604800
