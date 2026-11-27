@@ -5,6 +5,9 @@ summary: The Home Office says networks blocked over a billion scam calls and tex
 source: https://www.gov.uk/government/news/home-office-and-mobile-networks-dial-up-the-fight-against-fraud
 source_name: GOV.UK (Home Office), 25 November 2026
 type: AI news
+image: /images/blog/2026-11-26-mobile-networks-ai-block-scam-calls-black-friday.jpg
+image_alt: Illustration of a man on a busy train checking his banking app on his phone while the passenger next to him glances at the screen
+image_credit: Webb Page Ventura (AI-generated illustration)
 ---
 
 The Home Office and the UK's biggest mobile networks have launched a Black Friday warning about scam calls and texts, and the numbers show AI working on both sides.

@@ -5,6 +5,9 @@ summary: Security researchers found that three companies hosting AI models were 
 source: https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html
 source_name: The Hacker News, 22 November 2026
 type: AI news
+image: /images/blog/2026-11-24-ai-hosting-firms-leaked-prompts-keep-passwords-out.jpg
+image_alt: Illustration of a man at an outdoor café typing a password into online banking on his laptop, with a public Wi-Fi unsecured warning beside him and a hooded figure watching
+image_credit: Webb Page Ventura (AI-generated illustration)
 ---
 
 Many AI apps don't run their own models. Behind the scenes they pass your request to a hosting company, sometimes via a "router" service such as OpenRouter, which picks the cheapest or fastest one. New research shows how risky that chain can be.

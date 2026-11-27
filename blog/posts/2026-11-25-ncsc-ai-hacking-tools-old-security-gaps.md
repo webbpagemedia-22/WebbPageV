@@ -5,6 +5,9 @@ summary: The National Cyber Security Centre says AI-driven attacks on UK organis
 source: https://www.ncsc.gov.uk/blogs/familiar-weaknesses-exploited-faster-defending-against-agentic-cyber-attacks
 source_name: National Cyber Security Centre, 24 November 2026
 type: AI news
+image: /images/blog/2026-11-25-ncsc-ai-hacking-tools-old-security-gaps.jpg
+image_alt: Illustration of a friendly robot giving a thumbs up at a desk of security screens showing a padlock shield, a house diagram and camera feeds
+image_credit: Webb Page Ventura (AI-generated illustration)
 ---
 
 The UK's National Cyber Security Centre (NCSC) has published a warning about a rise in attacks carried out with AI "agent" hacking tools. Since September it has dealt with several incidents where these tools found and broke into internet-facing systems one after another, causing downtime and giving criminals a way in.
