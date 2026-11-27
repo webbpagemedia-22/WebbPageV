@@ -174,7 +174,8 @@ ${image ? `<meta property="og:image" content="${SITE}${image}">${imageDims ? `
 <meta property="og:image:height" content="${imageDims.height}">` : ""}${imageAlt ? `
 <meta property="og:image:alt" content="${esc(imageAlt)}">` : ""}` : `<meta property="og:image" content="${SITE}/images/brand/share.png">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">`}
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Webb Page Ventura logo, two green leaves and a gold dot, beside the words Webb Page Ventura">`}
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:url" content="${SITE}${canonical}">
 <link rel="canonical" href="${SITE}${canonical}">
